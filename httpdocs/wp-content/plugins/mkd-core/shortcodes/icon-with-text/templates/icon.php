@@ -1,0 +1,1 @@
+<?php echo entre_mikado_execute_shortcode('mkd_icon', $icon_parameters); ?>

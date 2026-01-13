@@ -1,0 +1,1 @@
+<?php do_action( 'entre_mikado_get_footer_template' );

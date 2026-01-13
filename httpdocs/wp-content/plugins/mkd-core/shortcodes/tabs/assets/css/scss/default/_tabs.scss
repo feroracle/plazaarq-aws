@@ -1,0 +1,286 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.mkd-tabs {
+	@include mkdRelativeHolderLayout();
+	
+	.mkd-tabs-nav {
+		@include mkdRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: auto;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+			}
+		}
+	}
+	
+	.mkd-tab-container {
+		@include mkdRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.mkd-tabs-standard {
+		
+		.mkd-tabs-nav {
+			
+			li {
+				
+				a {
+					padding: 7px 26px;
+					font-size: 11px;
+					line-height: 25px;
+					font-weight: 700;
+					font-family: $first-heading-font;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					color: $default-heading-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					background-color: $first-main-color;
+				}
+			}
+		}
+		
+		.mkd-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.mkd-tabs-boxed {
+		
+		.mkd-tabs-nav {
+			
+			li {
+				margin: 0 12px 0 0;
+				
+				a {
+					padding: 7px 26px;
+					font-size: 11px;
+					line-height: 25px;
+					font-weight: 700;
+					text-transform: uppercase;
+					font-family: $first-heading-font;
+					letter-spacing: 1px;
+					color:#fff;
+					background-color: $default-heading-color;
+					border-color:2px solid $default-heading-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkd-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.mkd-tabs-simple {
+		
+		.mkd-tabs-nav {
+			border-bottom: 1px solid $default-border-color;
+			text-align: left;
+			clear: both;
+			
+			li {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;	
+				top: 1px;	
+				
+				a {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					padding: 13px 26px;
+					text-transform: uppercase;
+					color: $default-heading-color;
+					font-weight: 700;
+					font-family: $first-heading-font;
+					letter-spacing: 0.25em;
+
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: 5px;
+						left: 0;
+						background-color: $first-main-color;
+						height: 5px;
+						width: 0;
+						@include mkdTransition(width .5s ease .5s);
+					}
+				}
+
+				&.ui-state-hover a{
+
+					&:after {
+						width: 100%;
+					}
+				}
+
+				&.ui-state-active a.mkd-border-appeared {
+					&:after {
+						width: 100%;
+					}
+				}
+
+				&:last-child {
+					margin: 0;
+				}
+
+				&:first-child {
+					a {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+		
+		.mkd-tab-container {
+			padding: 31px 0;
+		}
+	}
+	
+	&.mkd-tabs-vertical {
+		display: table;
+		
+		.mkd-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			border-right: 1px solid $default-border-color;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				position: relative;
+				right: -1px;
+				
+				a {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					padding: 15px 26px 15px;
+					width: 100%;
+					text-transform: uppercase;
+					color: $default-heading-color;
+					font-weight: 700;
+					font-family: $first-heading-font;
+					letter-spacing: 0.25em;
+					position: relative;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: -5px;
+						right: -8px;
+					    background-color: $first-main-color;
+					    height: 5px;
+					    width: 55px;
+					} 
+
+				}
+				
+				&.ui-state-active a {
+					border-right: 1px solid #fff;
+				}
+				
+				&:last-child {
+					margin: 0;
+					a {
+						padding-bottom: 0;
+					}
+				}
+
+				&:first-child {
+					a {
+						padding-top: 0;
+
+						&:before {
+							display:none;
+						}
+					}
+				}
+			}
+		}
+		
+		.mkd-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.ui-widget-content {
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: 0;
+	border-radius: 0;
+
+    .ui-widget-header {
+	    font-size: inherit;
+	    line-height: inherit;
+	    font-weight: inherit;
+	    color: initial;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+	
+    .ui-tabs-nav {
+	    
+        li {
+	        position: initial;
+	        font-weight: inherit;
+	        color: inherit;
+	        background: initial;
+	        border: 0;
+	        border-radius: 0;
+        }
+    }
+
+    .ui-widget-content {
+	    color: inherit;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

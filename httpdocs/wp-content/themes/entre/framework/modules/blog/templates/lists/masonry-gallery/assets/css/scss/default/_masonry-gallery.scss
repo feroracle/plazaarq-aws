@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Blog List - Masonry Gallery style - begin
+   ========================================================================== */
+
+.mkd-blog-holder {
+    
+    &.mkd-blog-masonry-gallery {
+	
+	    article {
+	    	&:not(.format-quote):not(.format-link)  {
+
+	            &:hover {
+
+	            	.mkd-post-text {
+	            		opacity: 1;
+
+						.mkd-post-title {
+							opacity: 1;
+							@include mkdTransform(translateX(0));
+							@include mkdTransitionTransform(.5s ease .3s,opacity .5s 0.2s);
+						}
+
+						.mkd-post-info-category {
+							opacity: 1;
+							@include mkdTransform(translateX(0));
+							@include mkdTransitionTransform(.5s ease .4s,opacity .5s .4s);
+						}
+	            	}
+	            }
+
+	            .mkd-post-content {
+	                height: 100%;
+	            }
+			
+			    .mkd-post-image {
+				    height: 100%;
+				    
+				    img {
+					    height: 100%;
+				    }		    
+			    }
+			    
+			    .mkd-post-text {
+				    position: absolute;
+				    height: 100%;
+				    width: 100%;
+				    top: 0;
+				    text-align: left;
+				    box-sizing: border-box;
+				    opacity: 0;
+				    background-color: $first-main-color;
+				    @include mkdTransition(opacity 0.3s ease-out);
+
+				    .mkd-post-text-inner {
+				    	bottom: 48px;
+				        left: 28px;
+				        position: absolute;
+				    }
+				    
+				    a {
+					    position: relative;
+					    z-index: 2;
+
+					    &:hover {
+					    	color:inherit;
+					    }
+				    }
+
+					.mkd-post-title {
+						opacity: 0;
+						@include mkdTransform(translateX(20px));
+						@include mkdTransitionTransform(.3s ease,opacity .3s);
+					}
+
+				    .mkd-post-info-category {
+						opacity: 0;
+						@include mkdTransform(translateX(20px));
+						@include mkdTransitionTransform(.4s ease);
+
+				    	a {
+				    		margin-right: 5px;
+				    	}
+				    }
+			    }
+			    
+			    &.format-link,
+			    &.format-quote {
+				
+				    .mkd-post-text {
+					    background-color: transparent;
+				    }
+			    }
+	    	}
+
+	    	&.format-quote,
+	    	&.format-link {
+
+	    		.mkd-post-content {
+	    			height: 100%;
+	    			display: table;
+
+					.mkd-post-title {
+						a:hover {
+							color: $default-text-color;
+						}
+					}
+
+	    			.mkd-post-text {
+	    				display: table-cell;
+	    			}
+	    		}
+	    	}
+
+	    	&.format-quote {
+	    		.mkd-post-content  {
+	    			.mkd-post-text {
+	    				padding: 0 67px 0px 63px;
+	    			    background-color: transparent;
+		    			.mkd-post-mark {
+	    				    position: relative;
+						    display: block;
+						    height: auto;
+						    top: auto;
+						    left: auto;
+						    width: auto;
+						    vertical-align: top;
+						    text-align: center;
+
+						    .mkd-line-left,
+						    .mkd-line-right{
+						    	width: 35%;
+						    	position: absolute;
+						    	height: 100%;
+						    	left: 0;
+						    	bottom: 0;
+							    display: inline-block;
+							    border-bottom: 1px solid $default-border-color;
+						    }
+
+						    .mkd-line-right {
+						    	left: auto;
+						    	right: 0
+						    }
+
+						    .mkd-quote-mark  {
+					    	    padding-top: 0px; 
+							    font-size: 120px; 
+							    color: $default-heading-color;
+							    width: 30%;
+							    position: relative;
+							    margin: 0 auto;
+							    display: block;
+
+						    	&:before {
+							    	content: "\201D";
+								    color: inherit;
+								    font-family: $second-heading-font;
+								    display: block; 
+								    position: absolute;
+								    top: 25px;
+								    left: 25px;
+
+								}
+						    }
+		    			}
+
+		    			.mkd-post-quote-holder {
+		    				display: block;
+					    	text-align: center;
+					    	border-bottom: 1px solid $default-border-color;
+					    	padding-top: 50px;
+
+					    	.mkd-quote-title {
+					    		text-align: left;
+					    	}
+
+		    				.mkd-quote-author {					    	
+		    					padding: 0 0 17px 15px;
+
+						    	&:before {
+						    		background-color: $first-main-color;
+						    	}
+						    }
+		    			}
+		    		}
+	    		}
+	    	}
+
+	    	&.format-link {
+	  			
+	  			.mkd-post-content {
+	  				.mkd-post-text {
+	  					padding: 0 67px 52px 63px;
+		    			background-color: transparent;
+
+		    			.mkd-post-mark {
+	    				    position: relative;
+						    display: block;
+						    height: auto;
+						    top: auto;
+						    left: auto;
+						    width: auto;
+						    vertical-align: top;
+						    text-align: center;
+
+						    .mkd-line-left,
+						    .mkd-line-right{
+						    	width: 35%;
+						    	position: absolute;
+						    	height: 100%;
+						    	left: 0;
+						    	bottom: 0;
+							    display: inline-block;
+							    border-bottom: 1px solid $default-border-color;
+						    }
+
+						    .mkd-line-right {
+						    	left: auto;
+						    	right: 0
+						    }
+
+						    .mkd-link-mark  {
+						    	color: $default-heading-color;
+								display: block;
+								top: 30px;
+								width: 30%;
+								position: relative;
+								margin: 0 auto;
+								display: block;
+						    }
+		    			}
+
+		    			.mkd-post-link-holder {
+		    				display: block;
+					    	text-align: center;
+					    	border-bottom: 1px solid $default-border-color;
+					    	padding: 65px 0 55px;
+
+					    	.mkd-link-title {
+					    		text-align: left;
+					    	}
+		    			}
+		    	    }
+	  			}
+	        }
+            
+	    }
+
+	    &.mkd-no-space {
+	    	margin-bottom: 0;
+	    }
+    }
+}
+/* ==========================================================================
+   Blog List - Masonry Gallery style - end
+   ========================================================================== */

@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Image Slider shortcode style - begin
+   ========================================================================== */
+
+   .mkd-image-slider-holder{
+    .mkd-image-slider-item{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+         .mkd-image-slider-item-inner{
+            &.mkd-image-slider-image{
+                display: none;
+            }
+        }
+
+        .mkd-image-slider-item-inner-wrapper{
+            position: relative;
+            .mkd-image-slider-item-content{
+
+                height: auto;
+                position: absolute;
+                bottom: 60px;
+                width: 100%;
+                padding: 0 5%;
+                text-align: center;
+                box-sizing: border-box;
+
+                .mkd-image-slider-item-inner{
+                    &.mkd-image-slider-title{
+                        font-family: $first-heading-font;
+                        line-height: 1em;
+                        font-size: 80px;
+                        font-weight: 800;
+                        letter-spacing: 12.5px;
+                        text-transform: uppercase;
+                        color: $default-heading-color;
+                        margin: 0 0 5px;
+                    }
+                    &.mkd-image-slider-content{
+                        font-family: $second-heading-font;
+                        line-height: 1em;
+                        font-size: 25px;
+                        font-weight: 400;
+                        letter-spacing: 5px;
+                        color: $default-heading-color;
+                    }
+                }
+
+                &.mkd-image-slider-item-light {
+                    .mkd-image-slider-item-inner{
+                        &.mkd-image-slider-title,
+                        &.mkd-image-slider-content {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &.mkd-owl-slider{
+        .owl-nav{
+            .mkd-next-icon,
+            .mkd-prev-icon{
+                font-size: 20px;
+                color: #fff;
+                display: block;
+                line-height: 1em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Image Slider shortcode style - end
+   ========================================================================== */

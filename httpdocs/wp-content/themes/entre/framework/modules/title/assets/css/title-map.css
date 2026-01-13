@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Title styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+.mkd-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 240px;
+  background-color: #f6f6f6;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: 101;
+}
+.mkd-title-holder.mkd-title-full-width .mkd-grid {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.mkd-title-holder.mkd-bg-responsive {
+  height: auto !important;
+}
+.mkd-title-holder.mkd-bg-responsive .mkd-title-image {
+  display: block;
+}
+.mkd-title-holder.mkd-bg-responsive .mkd-title-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.mkd-title-holder.mkd-bg-parallax {
+  background-attachment: fixed;
+}
+.mkd-title-holder .mkd-title-image {
+  display: none;
+}
+.mkd-title-holder .mkd-title-image img {
+  display: block;
+  width: 100%;
+}
+.mkd-title-holder .mkd-title-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mkd-title-holder .mkd-title-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */
+/* ==========================================================================
+   Breadcrumbs Title type style - begin
+   ========================================================================== */
+.mkd-title-holder.mkd-breadcrumbs-type .mkd-breadcrumbs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  color: #707070;
+}
+.mkd-title-holder.mkd-breadcrumbs-type .mkd-breadcrumbs.mkd-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+.mkd-title-holder.mkd-breadcrumbs-type .mkd-breadcrumbs.mkd-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+.mkd-title-holder.mkd-breadcrumbs-type .mkd-breadcrumbs a,
+.mkd-title-holder.mkd-breadcrumbs-type .mkd-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+.mkd-title-holder.mkd-breadcrumbs-type .mkd-breadcrumbs a:hover {
+  color: #414347;
+}
+
+/* ==========================================================================
+   Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type style - begin
+   ========================================================================== */
+.mkd-title-holder.mkd-centered-type .mkd-title-inner {
+  text-align: center;
+}
+.mkd-title-holder.mkd-centered-type .mkd-page-title {
+  margin: 0;
+}
+.mkd-title-holder.mkd-centered-type .mkd-page-subtitle {
+  display: block;
+  margin: 10px 0 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Centered Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - begin
+   ========================================================================== */
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-title-info,
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-title-info {
+  width: 99%;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs-info {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-page-title {
+  margin: 0;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-page-subtitle {
+  margin: 5px 0 0;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs {
+  color: #707070;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs.mkd-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs.mkd-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs a,
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+.mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs a:hover {
+  color: #414347;
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style - begin
+   ========================================================================== */
+.mkd-title-holder.mkd-standard-type .mkd-page-title {
+  margin: 0;
+}
+.mkd-title-holder.mkd-standard-type .mkd-page-subtitle {
+  margin: 10px 0 0;
+}
+
+/* ==========================================================================
+   Standard Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title styles - end
+   ========================================================================== */
+/*# sourceMappingURL=title-map.css.map */

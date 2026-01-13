@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+
+.mkd-elements-holder {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	
+	&.mkd-eh-full-height {
+		height: 100%;
+	}
+	
+	&.mkd-ehi-float {
+		
+		.mkd-eh-item {
+			float: left;
+		}
+	}
+	
+	$columns_label: ('two', 'three', 'four', 'five', 'six');
+	
+	@for $i from 0 to length($columns_label) {
+		&.mkd-#{nth($columns_label,$i+1)}-columns {
+			$column_width: 100%/($i+2);
+			
+			.mkd-eh-item {
+				width: $column_width;
+			}
+		}
+	}
+
+	.mkd-eh-item {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+
+		&.mkd-vertical-alignment-top {
+			vertical-align: top;
+		}
+
+		&.mkd-vertical-alignment-bottom {
+			vertical-align: bottom;
+		}
+
+		&.mkd-horizontal-alignment-center {
+			text-align: center;
+		}
+
+		&.mkd-horizontal-alignment-right {
+			text-align: right;
+		}
+
+		.mkd-elements-holder-item-inner {
+			width: 100%;
+		}
+	}
+
+	.mkd-ehi-content {
+		padding: 0 20px;
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */

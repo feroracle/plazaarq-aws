@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	body.mkd-vss-initialized {
+		overflow-y: visible !important;
+		height: auto !important;
+	}
+	
+	.mkd-vertical-split-slider,
+	#multiscroll-nav {
+		display: none;
+	}
+
+	.mkd-vss-responsive {
+		display: block;
+	}
+}
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */

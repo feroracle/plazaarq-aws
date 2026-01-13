@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Image Slider shortcode style - begin
+   ========================================================================== */
+
+.mkd-split-scrolling-section{
+    @include ipad-landscape{
+
+        .mkd-image-slider-item-inner{
+            &.image{
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .mkd-sss-ms-left {
+          padding-top: 55px;
+          padding-left: 31px;
+
+          @include ipad-portrait {
+            display: none;
+          }
+        }
+
+        .mkd-sss-ms-right {
+          @include ipad-portrait {
+              margin: 75px 0 0;
+          }
+        }
+    }
+}
+
+@include ipad-landscape {
+  body.mkd-paspartu-enabled {
+    .mkd-split-scrolling-section {
+      .mkd-sss-ms-left {
+         height: 100vh;
+      }
+    } 
+  }
+}
+
+/* ==========================================================================
+   Image Slider shortcode style - end
+   ========================================================================== */

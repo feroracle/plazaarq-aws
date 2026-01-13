@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .mkd-drop-down .wide .second > .inner > ul {
+    width: 950px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-page-header {
+    display: none;
+  }
+  .mkd-drop-down .wide .second > .inner > ul {
+    width: 768px;
+  }
+}
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .mkd-boxed .mkd-page-header .mkd-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical - Sliding responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1490px) and (max-width: 1650px) {
+  .mkd-header-vertical-sliding .mkd-grid,
+  .mkd-header-vertical-sliding .mkd-container-inner,
+  .mkd-header-vertical-sliding .mkd-row-grid-section {
+    width: 1100px;
+  }
+}
+@media only screen and (min-width: 1314px) and (max-width: 1490px) {
+  .mkd-header-vertical-sliding .mkd-grid,
+  .mkd-header-vertical-sliding .mkd-container-inner,
+  .mkd-header-vertical-sliding .mkd-row-grid-section {
+    width: 1035px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1314px) {
+  .mkd-header-vertical-sliding .mkd-grid,
+  .mkd-header-vertical-sliding .mkd-container-inner,
+  .mkd-header-vertical-sliding .mkd-row-grid-section {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-header-vertical-sliding .mkd-404-page .mkd-content {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-header-vertical-sliding .mkd-vertical-menu-area {
+    display: none;
+  }
+  .mkd-header-vertical-sliding .mkd-content,
+  .mkd-header-vertical-sliding footer {
+    padding-left: 0;
+  }
+}
+/* ==========================================================================
+   Header Vertical - Sliding responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1025px) {
+  .mkd-header-vertical .mkd-404-page .mkd-content {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-header-vertical .mkd-vertical-menu-area {
+    display: none;
+  }
+  .mkd-header-vertical .mkd-content,
+  .mkd-header-vertical footer {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 950px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 768px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 768px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 420px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkd-mobile-header {
+    display: block;
+  }
+}
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .mkd-boxed .mkd-page-header .mkd-sticky-header {
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 470px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .mkd-top-bar > .mkd-vertical-align-containers {
+    padding: 0 40px;
+  }
+  .mkd-top-bar-in-grid-padding .mkd-top-bar .mkd-grid .mkd-vertical-align-containers {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-top-bar {
+    display: none;
+  }
+}
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+/*# sourceMappingURL=header-map-responsive.css.map */

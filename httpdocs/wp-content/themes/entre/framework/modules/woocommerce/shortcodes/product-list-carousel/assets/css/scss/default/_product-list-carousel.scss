@@ -1,0 +1,369 @@
+/* ==========================================================================
+   Product List - Carousel shortcode styles - begin
+   ========================================================================== */
+
+.mkd-plc-holder {
+    @include mkdRelativeHolderLayout();
+
+    .mkd-plc-outer {
+        @include mkdRelativeHolderLayout();
+    }
+
+   .mkd-plc {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 0;
+        z-index: 100;
+        box-sizing: border-box;
+
+        .mkd-plc-title {
+            margin: 0 0 4px;
+        }
+    
+        .mkd-plc-category {
+            margin: 11px 0 3px;
+        }
+
+        .mkd-plc-excerpt {
+            color: $default-heading-color;
+            line-height: 1.3em;
+            margin: 11px 0 3px;
+        }
+
+        .mkd-plc-rating-holder {
+            @include mkdRelativeHolderLayout();
+            line-height: 1;
+            margin: 10px 0 3px;
+        }
+
+        .mkd-plc-rating {
+            @include mkdWooCommerceRatingsStyle();
+        }
+
+        .mkd-plc-price {
+            @include mkdWooCommercePriceStyle();
+        }
+    }
+
+    .mkd-plc-inner {
+        position: relative;
+        vertical-align: middle;
+        overflow: hidden;
+
+        &:hover {
+
+            .mkd-plc-text {
+                opacity: 1;
+            }
+        }
+
+        .touch & {
+            cursor: pointer;
+        }
+
+        .mkd-plc-image {
+            @include mkdRelativeHolderLayout();
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            .mkd-plc-onsale,
+            .mkd-plc-out-of-stock {
+                @include mkdWooCommerceMarksGeneralStyle();
+            }
+
+            .mkd-plc-onsale {
+                @include mkdWooCommerceSaleStyle();
+            }
+
+            .mkd-plc-out-of-stock {
+                @include mkdWooCommerceOutOfStockyStyle();
+            }
+        }
+            
+        .mkd-plc-text {
+            @include mkdAbsoluteHolderLayout();
+            padding: 10px;
+            opacity: 0;
+            background-color: transparent;
+            box-sizing: border-box;
+            @include mkdTransition(opacity .2s ease-out);
+        }
+
+        .mkd-plc-text-outer {
+            @include mkdTableLayout();
+            text-align: center;
+        }
+
+        .mkd-plc-text-inner {
+            @include mkdTableCellLayout();
+
+            .mkd-plc-title {
+                margin: 0 0 22px;
+            }
+
+            .mkd-plc-add-to-cart {
+
+                &.mkd-default-skin {
+
+                    .button,
+                    .added_to_cart {
+                        @include mkdButtonDefaultStyle();
+                        @include mkdButtonSmallParams();
+                        @include mkdButtonOutlineColor();
+                        padding: 1px 15px 1px 16px;
+                        background-color: transparent;
+                        font-size: 18px;
+                        text-transform: lowercase;
+                        color: $default-heading-color;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        z-index: 3;
+
+                        &:hover {
+                            @include mkdButtonSolidHoverColor();
+                            color: transparent;
+                        }
+                    }
+                }
+
+                &.mkd-light-skin {
+
+                    .button,
+                    .added_to_cart {
+                        @include mkdButtonDefaultStyle();
+                        @include mkdButtonSmallParams();
+                        @include mkdButtonOutlineColor();
+                        padding: 1px 15px 1px 16px;
+                        background-color: transparent;
+                        font-size: 18px;
+                        text-transform: lowercase;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        z-index: 3;
+                        border-color:#fff;
+                        color: #fff;
+                        background-image: linear-gradient(to right, #fff 50%, #fff 50%), linear-gradient(to right, #fff 50%, transparent 50%);
+
+                        &:hover {
+                            @include mkdButtonSolidHoverColor();
+                            color: $default-heading-color;  
+                        }
+                    }
+                }
+        
+                &.mkd-dark-skin {
+            
+                    .button,
+                    .added_to_cart {
+                        @include mkdButtonDefaultStyle();
+                        @include mkdButtonSmallParams();
+                        @include mkdButtonOutlineColor();
+                        padding: 1px 15px 1px 16px;
+                        background-color: transparent;
+                        font-size: 18px;
+                        text-transform: lowercase;
+                        color: $default-heading-color;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        z-index: 3;
+                
+                        &:hover {
+                            @include mkdButtonSolidHoverColor();
+                        }
+                    }
+                }
+            }
+
+            .button,
+            .added_to_cart {
+                @include mkdButtonDefaultStyle();
+                @include mkdButtonMediumParams();
+                white-space: nowrap;
+                z-index: 3;
+            }
+
+            .button.added {
+                display: none !important;
+            }
+        }
+
+        .mkd-plc-link {
+            @include mkdAbsoluteHolderLayout();
+        }
+    }
+
+    .mkd-plc-text-wrapper {
+        @include mkdRelativeHolderLayout();
+        width: 100%;
+        margin: 22px 0 35px;
+
+        .mkd-plc-title {
+            width: auto;
+            float: left;
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .mkd-plc-rating-holder {
+            position: absolute;
+            right: 0;
+            width: auto;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .mkd-plc-price {
+            clear: both;
+            margin: 0;
+            text-align: left;
+        }
+    }
+    
+    &.mkd-product-info-light {
+        
+        .mkd-plc-inner {
+            
+            .mkd-plc-text-inner {
+                
+                .mkd-plc-title,
+                .mkd-plc-category a,
+                .mkd-plc-excerpt,
+                .mkd-plc-rating span:before,
+                .mkd-plc-price,
+                .mkd-plc-price del{
+                    color: #fff;
+                }
+                
+                .mkd-plc-category a:hover {
+                    color: rgba(#fff, .8);
+                }
+            }
+        }
+    }
+    
+    &.mkd-product-info-dark {
+        
+        .mkd-plc-inner {
+            
+            .mkd-plc-text-inner {
+                
+                .mkd-plc-title,
+                .mkd-plc-category a,
+                .mkd-plc-excerpt,
+                .mkd-plc-rating,
+                .mkd-plc-price {
+                    color: $default-heading-color;
+                }
+                
+                .mkd-plc-category a:hover {
+                    color: rgba($default-heading-color, .8);
+                }
+            }
+        }
+    }
+    &.mkd-simple-layout {
+        
+        .mkd-plc-image-outer {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            padding: 0 15px 0 0;
+        }
+
+        .mkd-plc-text-wrapper {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            padding: 0 0 0 15px;
+        }
+
+        .mkd-plc-text,
+        .mkd-plc-text-outer,
+        .mkd-plc-text-inner {
+            @include mkdRelativeHolderLayout();
+            -webkit-transform: translateZ(0);
+        }
+    }
+	
+	&.mkd-plc-nav-light-skin {
+		
+		.owl-nav {
+			
+			.owl-prev,
+			.owl-next {
+				color: $header-light-color;
+				
+				&:hover {
+					color: $header-light-hover-color;
+				}
+			}
+		}
+	}
+
+
+	
+	&.mkd-plc-pag-inside-slider {
+		
+		.owl-prev,
+		.owl-next {
+			@include mkdTransform(translateY(-50%));
+		}
+		
+		.owl-dots {
+			position: absolute;
+			left: 0;
+			bottom: 10px;
+			margin: 0;
+		}
+	}
+
+    .mkd-owl-slider {
+        .owl-nav {
+            .owl-prev {
+                left:-100px;
+            }   
+
+            .owl-next {
+                right: -100px;
+            }  
+
+            .owl-prev span,
+            .owl-next span {
+                font-size: 20px;
+                font-weight: 700;
+                color: $default-heading-color;
+            }
+        }
+    }  
+	
+	&.mkd-plc-pag-light-skin {
+		
+		.owl-dots {
+			
+			.owl-dot {
+
+				span {
+					background-color: $header-light-hover-color;
+				}
+
+				&:hover,
+				&.active {
+
+					span {
+						background-color: $header-light-color;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Product List - Carousel shortcode styles - end
+   ========================================================================== */

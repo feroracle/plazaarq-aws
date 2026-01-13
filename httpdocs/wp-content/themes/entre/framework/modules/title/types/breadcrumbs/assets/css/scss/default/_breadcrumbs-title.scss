@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Breadcrumbs Title type style - begin
+   ========================================================================== */
+
+.mkd-title-holder {
+	
+	&.mkd-breadcrumbs-type {
+		
+		.mkd-breadcrumbs {
+			@include mkdRelativeHolderLayout();
+			color: $default-text-color;
+			
+			&.mkd-has-inline-style {
+				
+				a {
+					opacity: 1;
+					@include mkdTransition(opacity .2s ease-out);
+					
+					&:hover {
+						color: inherit;
+						opacity: 0.9;
+					}
+				}
+			}
+			
+			a,
+			span {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				color: inherit;
+			}
+			
+			a:hover {
+				color: $default-heading-color;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Breadcrumbs Title type style - end
+   ========================================================================== */

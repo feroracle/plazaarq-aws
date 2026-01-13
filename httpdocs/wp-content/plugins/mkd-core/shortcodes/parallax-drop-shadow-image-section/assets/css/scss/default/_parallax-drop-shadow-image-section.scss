@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Parallax Drop Shadow Image Section shortcode style - begin
+   ========================================================================== */
+
+.mkd-parallax-ds-image-section  {
+	@include mkdRelativeHolderLayout();
+	text-align: center;
+
+	&.mkd-parallax-dsis-with-text-type {
+		text-align: right;
+
+		.mkd-parallax-dsis-image {
+			right: 6%;
+			width: 50%;
+		}
+	}
+
+	.mkd-parallax-dsis-image {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.mkd-parallax-dsis-text {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		padding:0 20%;
+		box-sizing: border-box;
+		text-align: center;
+		@include mkdTransform(translateY(-50%));
+
+		h6 {
+			margin: 0;
+		}
+	}
+
+	.mkd-parallax-dsis-shadow-holder {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: #D8D5CE;
+		z-index: -1;
+
+		&.mkd-parallax-dsis-left {
+			top: 35px;
+			left: -35px;
+		}
+
+		&.mkd-parallax-dsis-right {
+			top: 35px;
+			left: 35px;
+		}
+	}
+}
+/* ==========================================================================
+   Parallax Drop Shadow Image Section style - end
+   ========================================================================== */

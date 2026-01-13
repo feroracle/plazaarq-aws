@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+
+.mkd-title-holder {
+    @include mkdRelativeHolderLayout();
+    height: 240px;
+    background-color: #f6f6f6;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    z-index: 101;
+	
+	&.mkd-title-full-width {
+		
+		.mkd-grid {
+			@include mkdRelativeHolderLayout();
+			margin: 0;
+			padding: 0 60px;
+			box-sizing: border-box;
+		}
+	}
+	
+	&.mkd-bg-responsive {
+		height: auto !important; // because of inline style
+		
+		.mkd-title-image {
+			display: block;
+		}
+		
+		.mkd-title-wrapper {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			@include mkdTransform(translateY(-50%));
+		}
+	}
+	
+	&.mkd-bg-parallax {
+		background-attachment: fixed;
+	}
+	
+	.mkd-title-image {
+		display: none;
+		
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+    
+    .mkd-title-wrapper {
+        @include mkdTableLayout();
+	    box-sizing: border-box;
+    }
+    
+    .mkd-title-inner {
+        @include mkdTableCellLayout();
+    }
+}
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */

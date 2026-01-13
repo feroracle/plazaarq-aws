@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+@import '../../../../../../assets/css/scss/variables';
+@import '../../../../../../assets/css/scss/mixins';
+
+@import 'responsive/*.scss';
+@import '../../../templates/**/**/assets/css/scss/responsive/*.scss';
+@import '../../../shortcodes/**/assets/css/scss/responsive/*.scss';
+
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */

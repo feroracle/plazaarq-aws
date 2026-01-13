@@ -1,0 +1,17 @@
+@include phone-landscape {
+	.mkd-testimonials-holder {
+		&.mkd-testimonials-standard {
+			.mkd-testimonial-text-holder {
+				padding: 30px 36px 0 0;
+			}
+
+			.mkd-separator-top-line {
+			  width: 80%;
+			}
+
+			.mkd-author-separator-line {
+			   display: none;
+			}
+		}
+	}  
+}

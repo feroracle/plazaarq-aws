@@ -1,0 +1,2778 @@
+/*------------------------------------------------------------------
+ * This is main responsive css file for theme. It is broken into following sections:
+ * 1. Global responsive styles
+ * 2. Blog responsive styles
+ * 3. Footer responsive styles
+ * 4. Header responsive styles
+ * 5. Search responsive styles
+ * 6. Title area responsive styles
+ * 7. Shortcodes responsive styles
+ * 8. Custom Post Types responsive styles
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global responsive styles
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+@media only screen and (max-width: 1024px) {
+  body:not(.mkd-content-is-behind-header):not(.error404) .mkd-content {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkd-grid,
+  .mkd-container-inner,
+  .mkd-row-grid-section {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-grid,
+  .mkd-container-inner,
+  .mkd-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-grid,
+  .mkd-container-inner,
+  .mkd-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-grid,
+  .mkd-container-inner,
+  .mkd-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-grid,
+  .mkd-container-inner,
+  .mkd-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkd-grid,
+  .mkd-container-inner,
+  .mkd-row-grid-section {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkd-boxed .mkd-wrapper .mkd-wrapper-inner,
+  .mkd-boxed .mkd-wrapper .mkd-footer-inner {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-boxed .mkd-wrapper .mkd-wrapper-inner,
+  .mkd-boxed .mkd-wrapper .mkd-footer-inner {
+    width: 818px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-boxed .mkd-wrapper .mkd-wrapper-inner,
+  .mkd-boxed .mkd-wrapper .mkd-footer-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-boxed .mkd-wrapper .mkd-wrapper-inner,
+  .mkd-boxed .mkd-wrapper .mkd-footer-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-boxed .mkd-wrapper .mkd-wrapper-inner,
+  .mkd-boxed .mkd-wrapper .mkd-footer-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkd-boxed .mkd-wrapper .mkd-wrapper-inner,
+  .mkd-boxed .mkd-wrapper .mkd-footer-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  /*
+  * If you changed some value for space do the same thing in masonry-type, product-list-main-and-vc scss files
+  */
+
+  .mkd-huge-space.mkd-disable-bottom-space {
+    margin-bottom: -50px;
+  }
+
+  .mkd-huge-space .mkd-outer-space {
+    margin: 0 -25px;
+  }
+
+  .mkd-huge-space .mkd-outer-space .mkd-item-space {
+    padding: 0 25px;
+    margin: 0 0 50px;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Instagram widget responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-instagram-feed:not(.mkd-instagram-carousel) li img {
+    width: 100%;
+  }
+
+  .mkd-instagram-feed:not(.mkd-instagram-carousel).mkd-col-6 li {
+    width: 25%;
+  }
+
+  .mkd-instagram-feed:not(.mkd-instagram-carousel).mkd-col-9 li {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-instagram-feed:not(.mkd-instagram-carousel).mkd-col-6 li {
+    width: 33.3333333333%;
+  }
+
+  .mkd-instagram-feed:not(.mkd-instagram-carousel).mkd-col-9 li {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-instagram-feed:not(.mkd-instagram-carousel) li {
+    width: 50% !important;
+  }
+}
+
+/* ==========================================================================
+   Instagram widget responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/modules-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+
+.mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images.mkd-ps-four-columns .mkd-ps-image {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images.mkd-ps-four-columns .mkd-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images.mkd-ps-three-columns .mkd-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images.mkd-ps-three-columns .mkd-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images.mkd-ps-four-columns .mkd-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images.mkd-ps-four-columns .mkd-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images .mkd-ps-image {
+    width: 100% !important;
+  }
+}
+
+.mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-gallery-images {
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-image.mkd-ps-masonry-large-item {
+    width: 66.6666666667%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-five-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-five-columns .mkd-ps-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-five-columns .mkd-ps-image.mkd-ps-masonry-large-item {
+    width: 66.6666666667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-three-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-three-columns .mkd-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-three-columns .mkd-ps-image.mkd-ps-masonry-large-item {
+    width: 100%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-image.mkd-ps-masonry-large-item {
+    width: 100%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-five-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-five-columns .mkd-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-five-columns .mkd-ps-image.mkd-ps-masonry-large-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-two-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-two-columns .mkd-ps-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-three-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-three-columns .mkd-ps-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-image,
+  .mkd-portfolio-single-holder .mkd-ps-image-holder.mkd-ps-masonry-images.mkd-ps-four-columns .mkd-ps-grid-sizer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-single-holder .mkd-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkd-portfolio-list-holder.mkd-pl-floating-portfolio-item article .mkd-pl-item-inner {
+    display: block;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-floating-portfolio-item article .mkd-pl-item-inner .mkd-pli-image-holder {
+    width: 100% !important;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-floating-portfolio-item article .mkd-pl-item-inner .mkd-pli-text-holder {
+    padding: 50px 0 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-five-columns article {
+    width: 25%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-five-columns article:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns .mkd-pl-grid-sizer {
+    width: 25%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article.mkd-pl-masonry-large-width,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article.mkd-pl-masonry-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-four-columns article {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-four-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-five-columns article {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns .mkd-pl-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article.mkd-pl-masonry-large-width,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article.mkd-pl-masonry-large-width-height {
+    width: 66.6666666667%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns .mkd-pl-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article.mkd-pl-masonry-large-width,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article.mkd-pl-masonry-large-width-height {
+    width: 66.6666666667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery.mkd-pl-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-three-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-three-columns .mkd-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-three-columns article.mkd-pl-masonry-large-width,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-three-columns article.mkd-pl-masonry-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns .mkd-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article.mkd-pl-masonry-large-width,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article.mkd-pl-masonry-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns .mkd-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article.mkd-pl-masonry-large-width,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article.mkd-pl-masonry-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-portfolio-list-holder.mkd-pl-gallery article {
+    width: 100% !important;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-two-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-two-columns .mkd-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-three-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-three-columns .mkd-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-four-columns .mkd-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns article,
+  .mkd-portfolio-list-holder.mkd-pl-masonry.mkd-pl-five-columns .mkd-pl-grid-sizer {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 680px) {
+  .mkd-testimonials-holder.mkd-testimonials-standard .mkd-testimonial-text-holder {
+    padding: 30px 36px 0 0;
+  }
+
+  .mkd-testimonials-holder.mkd-testimonials-standard .mkd-separator-top-line {
+    width: 80%;
+  }
+
+  .mkd-testimonials-holder.mkd-testimonials-standard .mkd-author-separator-line {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/mkd-core/assets/css/custom-post-types-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-btn.mkd-btn-large,
+  .mkd-btn.mkd-btn-huge {
+    padding: 3px 30px 6px 32px;
+    font-size: 19px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .mkd-call-to-action-holder .mkd-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkd-call-to-action-holder.mkd-three-quarters-columns .mkd-cta-text-holder,
+  .mkd-call-to-action-holder.mkd-four-fifths-columns .mkd-cta-text-holder {
+    width: 66.6666666667%;
+  }
+
+  .mkd-call-to-action-holder.mkd-three-quarters-columns .mkd-cta-button-holder,
+  .mkd-call-to-action-holder.mkd-four-fifths-columns .mkd-cta-button-holder {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-inner,
+  .mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-text-holder,
+  .mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-button-holder {
+    display: block;
+  }
+
+  .mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+
+  .mkd-call-to-action-holder.mkd-two-halves-columns .mkd-cta-text-holder,
+  .mkd-call-to-action-holder.mkd-two-halves-columns .mkd-cta-button-holder,
+  .mkd-call-to-action-holder.mkd-two-thirds-columns .mkd-cta-text-holder,
+  .mkd-call-to-action-holder.mkd-two-thirds-columns .mkd-cta-button-holder,
+  .mkd-call-to-action-holder.mkd-three-quarters-columns .mkd-cta-text-holder,
+  .mkd-call-to-action-holder.mkd-three-quarters-columns .mkd-cta-button-holder,
+  .mkd-call-to-action-holder.mkd-four-fifths-columns .mkd-cta-text-holder,
+  .mkd-call-to-action-holder.mkd-four-fifths-columns .mkd-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-countdown .countdown-row.countdown-show4 .countdown-section,
+  .mkd-countdown .countdown-row.countdown-show5 .countdown-section,
+  .mkd-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.3333333333%;
+  }
+
+  .mkd-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkd-custom-font-holder.mkd-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-two-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-three-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-four-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-five-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-six-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-one-column-alignment-left .mkd-eh-item .mkd-eh-item-content {
+    text-align: left;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-one-column-alignment-right .mkd-eh-item .mkd-eh-item-content {
+    text-align: right;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1280.mkd-one-column-alignment-center .mkd-eh-item .mkd-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-two-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-three-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-four-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-five-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-six-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-one-column-alignment-left .mkd-eh-item .mkd-eh-item-content {
+    text-align: left;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-one-column-alignment-right .mkd-eh-item .mkd-eh-item-content {
+    text-align: right;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-1024.mkd-one-column-alignment-center .mkd-eh-item .mkd-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-two-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-three-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-four-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-five-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-six-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-one-column-alignment-left .mkd-eh-item .mkd-eh-item-content {
+    text-align: left;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-one-column-alignment-right .mkd-eh-item .mkd-eh-item-content {
+    text-align: right;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-768.mkd-one-column-alignment-center .mkd-eh-item .mkd-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-two-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-three-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-four-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-five-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-six-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-one-column-alignment-left .mkd-eh-item .mkd-eh-item-content {
+    text-align: left;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-one-column-alignment-right .mkd-eh-item .mkd-eh-item-content {
+    text-align: right;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-680.mkd-one-column-alignment-center .mkd-eh-item .mkd-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-two-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-three-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-four-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-five-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-six-columns .mkd-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-one-column-alignment-left .mkd-eh-item .mkd-eh-item-content {
+    text-align: left;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-one-column-alignment-right .mkd-eh-item .mkd-eh-item-content {
+    text-align: right;
+  }
+
+  .mkd-elements-holder.mkd-responsive-mode-480.mkd-one-column-alignment-center .mkd-eh-item .mkd-eh-item-content {
+    text-align: center;
+  }
+
+  .mkd-elements-holder .mkd-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Full Screen Image Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkd-full-screen-image-slider .mkd-fsis-content-image img {
+    max-width: 440px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots {
+    bottom: calc(8% - 14px);
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-thumb-nav {
+    top: 16%;
+    height: 68%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-top,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-bottom {
+    height: 14%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-left,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-right {
+    width: 14%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-top,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-bottom {
+    height: 0;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-left,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-right {
+    width: 0;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-content-image img {
+    max-width: 370px;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-frame-top,
+  .mkd-full-screen-image-slider .mkd-fsis-frame-bottom {
+    height: 16%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-frame-right,
+  .mkd-full-screen-image-slider .mkd-fsis-frame-left {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-full-screen-image-slider .mkd-fsis-content-image img {
+    max-width: 340px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav {
+    display: none;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots {
+    bottom: calc(5% - 14px);
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-thumb-nav {
+    display: none;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-image-left {
+    left: 2%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-image-right {
+    right: 5%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-subtitle {
+    margin: 15px 0 0;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-image-left {
+    left: calc(2% - 10px);
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-image-right {
+    right: calc(5% - 10px);
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-top,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-bottom {
+    height: 10%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-left,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-right {
+    width: 10%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-image-left {
+    left: calc(2% - 25px);
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-image-right {
+    right: calc(5% - 25px);
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-top,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-bottom {
+    height: 0;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-left,
+  .mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-right {
+    width: 0;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-frame-top,
+  .mkd-full-screen-image-slider .mkd-fsis-frame-bottom {
+    height: 10%;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-frame-right,
+  .mkd-full-screen-image-slider .mkd-fsis-frame-left {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots {
+    display: none;
+  }
+
+  .mkd-full-screen-image-slider .mkd-fsis-content-image {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Full Screen Image Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image:nth-child(6n+1) {
+    clear: none;
+  }
+
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-grid-sizer {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-grid-sizer {
+    width: 25%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 50%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-grid-sizer {
+    width: 25%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-four-columns .mkd-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-two-columns .mkd-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-three-columns .mkd-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-four-columns .mkd-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 66.6666666667%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 66.6666666667%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-three-columns .mkd-ig-image {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-two-columns .mkd-ig-image {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-three-columns .mkd-ig-image {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-four-columns .mkd-ig-image {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-two-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-two-columns .mkd-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-two-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image,
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image.mkd-large-masonry-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Image Slider shortcode style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-split-scrolling-section .mkd-image-slider-item-inner.image {
+    display: block;
+  }
+
+  .mkd-split-scrolling-section .mkd-image-slider-item-inner.image img {
+    width: 100%;
+  }
+
+  .mkd-split-scrolling-section .mkd-sss-ms-left {
+    padding-top: 55px;
+    padding-left: 31px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (max-width: 768px) {
+  .mkd-split-scrolling-section .mkd-sss-ms-left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (max-width: 768px) {
+  .mkd-split-scrolling-section .mkd-sss-ms-right {
+    margin: 75px 0 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body.mkd-paspartu-enabled .mkd-split-scrolling-section .mkd-sss-ms-left {
+    height: 100vh;
+  }
+}
+
+/* ==========================================================================
+   Image Slider shortcode style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Item Showcase shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-item-showcase-holder .mkd-is-image {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    margin-top: 0 !important;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-left-holder,
+  .mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-right-holder {
+    float: right;
+    width: 50%;
+    padding: 0 0 0 50%;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-right-holder {
+    margin: 36px 0 0;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item {
+    margin: 36px 0 0;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item.mkd-is-left {
+    text-align: left;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item.mkd-is-left .mkd-is-content {
+    padding: 0 0 0 20px;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item:not(.mkd-appeared) {
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-item-showcase-holder .mkd-is-image {
+    display: none;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-left-holder,
+  .mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-right-holder {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item {
+    opacity: 1;
+    -webkit-transform: translateX(0) translateY(0) !important;
+    -moz-transform: translateX(0) translateY(0) !important;
+    transform: translateX(0) translateY(0) !important;
+  }
+
+  .mkd-item-showcase-holder .mkd-is-item.mkd-is-left .mkd-is-content,
+  .mkd-item-showcase-holder .mkd-is-item.mkd-is-right .mkd-is-content {
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+   Item Showcase shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkd-parallax-ds-image-section .mkd-parallax-dsis-text {
+    padding: 0 11%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-parallax-ds-image-section .mkd-parallax-dsis-text {
+    padding: 0 6%;
+  }
+
+  .mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-left {
+    top: 30px;
+    left: -30px;
+  }
+
+  .mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-right {
+    top: 30px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-left {
+    top: 25px;
+    left: -25px;
+  }
+
+  .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-right {
+    top: 25px;
+    left: 25px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-parallax-ds-image-section.mkd-parallax-dsis-with-text-type .mkd-parallax-dsis-image {
+    width: 80%;
+  }
+
+  .mkd-parallax-ds-image-section.mkd-parallax-dsis-with-text-type .mkd-parallax-dsis-text {
+    display: none;
+  }
+
+  .mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-left {
+    top: 20px;
+    left: -20px;
+  }
+
+  .mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-right {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkd-pricing-tables.mkd-four-columns .mkd-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .mkd-pricing-tables.mkd-four-columns .mkd-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-pricing-tables.mkd-five-columns .mkd-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .mkd-pricing-tables.mkd-five-columns .mkd-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-pricing-tables.mkd-three-columns .mkd-price-table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-pricing-tables .mkd-price-table {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkd-section-title-holder {
+    padding: 0 !important;
+  }
+
+  .mkd-section-title-holder.mkd-st-disable-title-break .mkd-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Split Scrolling Section shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-split-scrolling-section .mkd-sss-ms-left {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .mkd-split-scrolling-section .mkd-sss-ms-right {
+    width: 100%;
+    float: left;
+    margin: 38px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Split Scrolling Section shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Split Section responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280 px) {
+  .mkd-ss-holder.mkd-ss-break-1280.mkd-ss-image-right .mkd-ss-image {
+    position: relative;
+    left: 0;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-1280 .mkd-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-1280 .mkd-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-1280 .mkd-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024 px) {
+  .mkd-ss-holder.mkd-ss-break-1024.mkd-ss-image-right .mkd-ss-image {
+    position: relative;
+    left: 0;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-1024 .mkd-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-1024 .mkd-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-1024 .mkd-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768 px) {
+  .mkd-ss-holder.mkd-ss-break-768.mkd-ss-image-right .mkd-ss-image {
+    position: relative;
+    left: 0;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-768 .mkd-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-768 .mkd-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-768 .mkd-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 680 px) {
+  .mkd-ss-holder.mkd-ss-break-680.mkd-ss-image-right .mkd-ss-image {
+    position: relative;
+    left: 0;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-680 .mkd-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-680 .mkd-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-680 .mkd-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480 px) {
+  .mkd-ss-holder.mkd-ss-break-480.mkd-ss-image-right .mkd-ss-image {
+    position: relative;
+    left: 0;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-480 .mkd-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-480 .mkd-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+
+  .mkd-ss-holder.mkd-ss-break-480 .mkd-ss-image img {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Split Section responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-tabs.mkd-tabs-standard .mkd-tabs-nav li a {
+    padding: 7px 21px;
+  }
+
+  .mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+
+  .mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li a {
+    padding: 7px 18px;
+  }
+
+  .mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav {
+    width: 180px;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-tabs.mkd-tabs-standard .mkd-tabs-nav li {
+    display: block;
+    float: none;
+  }
+
+  .mkd-tabs.mkd-tabs-standard .mkd-tabs-nav li a {
+    width: 100%;
+  }
+
+  .mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+
+  .mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li a {
+    width: 100%;
+  }
+
+  .mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav,
+  .mkd-tabs.mkd-tabs-vertical .mkd-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav {
+    border-right: 0;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-tabs.mkd-tabs-simple .mkd-tabs-nav {
+    padding: 0 0 20px;
+    border-bottom: none;
+  }
+
+  .mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+    border-bottom: 1px solid #c7c7c7;
+  }
+
+  .mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li a {
+    padding: 13px 0;
+    width: 100%;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  body.mkd-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .mkd-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+
+  .mkd-vss-responsive {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/mkd-core/assets/css/shortcodes-map-responsive.css.map */
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Blog Masonry general style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns .mkd-blog-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns .mkd-blog-masonry-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article.mkd-post-size-large-width-height {
+    width: 66.6666666667%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns .mkd-blog-masonry-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width-height {
+    width: 66.6666666667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns .mkd-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns .mkd-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns .mkd-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-two-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-two-columns .mkd-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-two-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-two-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns .mkd-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-three-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns .mkd-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-four-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns .mkd-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width,
+  .mkd-blog-holder.mkd-blog-type-masonry.mkd-blog-five-columns article.mkd-post-size-large-width-height {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog Masonry general style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text {
+    padding: 0 67px 0px 63px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 9px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-link .mkd-post-content .mkd-post-text {
+    padding: 0 67px 51px 63px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-link .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text {
+    padding: 4px 67px 0 63px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text .mkd-post-quote-holder {
+    padding-top: 30px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 5px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-quote-title {
+    margin-bottom: 20px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-link .mkd-post-content .mkd-post-text {
+    padding: 0 67px 51px 63px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-link .mkd-post-content .mkd-post-text .mkd-post-link-holder {
+    padding: 27px 0 26px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text {
+    padding: 2px 67px 0 63px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 18px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-link .mkd-post-content .mkd-post-text {
+    padding: 0 67px 51px 63px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-link .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 18px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 31px;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article:not(.format-quote):not(.format-link) .mkd-post-image {
+    width: 100%;
+  }
+
+  .mkd-blog-holder.mkd-blog-masonry-gallery article:not(.format-quote):not(.format-link) .mkd-post-image img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-blog-holder.mkd-blog-masonry-gallery article.format-quote .mkd-post-content .mkd-post-text .mkd-post-mark .mkd-quote-mark:before {
+    left: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-related-posts-holder .mkd-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-related-posts-holder .mkd-related-post {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-blog-holder.mkd-blog-single article .mkd-post-info-bottom .mkd-post-info-bottom-left,
+  .mkd-blog-holder.mkd-blog-single article .mkd-post-info-bottom .mkd-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+
+  .mkd-blog-holder.mkd-blog-single article .mkd-post-info-bottom .mkd-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-grid-sizer {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-four-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-four-columns .mkd-bl-item {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-four-columns .mkd-bl-item:nth-child(3n+1),
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-four-columns .mkd-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-five-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-five-columns .mkd-bl-item {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-five-columns .mkd-bl-item:nth-child(3n+1),
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-five-columns .mkd-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-four-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-four-columns .mkd-bl-grid-sizer {
+    width: 33.3333333333%;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-grid-sizer {
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-three-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-three-columns .mkd-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-three-columns .mkd-bl-item:nth-child(2n+1),
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-three-columns .mkd-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-four-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-four-columns .mkd-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-four-columns .mkd-bl-item:nth-child(2n+1),
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-four-columns .mkd-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-five-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-five-columns .mkd-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-blog-list-holder.mkd-bl-standard.mkd-bl-five-columns .mkd-bl-item:nth-child(2n+1),
+  .mkd-blog-list-holder.mkd-bl-boxed.mkd-bl-five-columns .mkd-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-three-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-three-columns .mkd-bl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-four-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-four-columns .mkd-bl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-grid-sizer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-blog-list-holder.mkd-bl-standard .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-boxed .mkd-bl-item {
+    width: 100% !important;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-two-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-two-columns .mkd-bl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-three-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-three-columns .mkd-bl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-four-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-four-columns .mkd-bl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-item,
+  .mkd-blog-list-holder.mkd-bl-masonry.mkd-bl-five-columns .mkd-bl-grid-sizer {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-blog-slider-holder.mkd-bs-carousel-centered .active.center .mkd-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3:nth-child(3),
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 .mkd-footer-column-inner {
+    float: none !important;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 .mkd-social-icons-group-widget.text-align-left {
+    text-align: left;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-4 {
+    width: 33.3333333333%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-page-footer .mkd-footer-top-holder .mkd-footer-top-alignment-left {
+    text-align: left;
+  }
+
+  .mkd-page-footer .mkd-footer-top-holder .mkd-footer-top-inner .mkd-footer-logo-area .mkd-footer-logo-wrapper {
+    width: 40%;
+  }
+
+  .mkd-page-footer .text-align-left {
+    text-align: left;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 {
+    margin-bottom: 30px;
+  }
+
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 .mkd-footer-column-inner {
+    float: none !important;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map-responsive.css.map */
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-drop-down .wide .second > .inner > ul {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-page-header {
+    display: none;
+  }
+
+  .mkd-drop-down .wide .second > .inner > ul {
+    width: 768px;
+  }
+}
+
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-boxed .mkd-page-header .mkd-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header Vertical - Sliding responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1490px) and (max-width: 1650px) {
+  .mkd-header-vertical-sliding .mkd-grid,
+  .mkd-header-vertical-sliding .mkd-container-inner,
+  .mkd-header-vertical-sliding .mkd-row-grid-section {
+    width: 1100px;
+  }
+}
+
+@media only screen and (min-width: 1314px) and (max-width: 1490px) {
+  .mkd-header-vertical-sliding .mkd-grid,
+  .mkd-header-vertical-sliding .mkd-container-inner,
+  .mkd-header-vertical-sliding .mkd-row-grid-section {
+    width: 1035px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1314px) {
+  .mkd-header-vertical-sliding .mkd-grid,
+  .mkd-header-vertical-sliding .mkd-container-inner,
+  .mkd-header-vertical-sliding .mkd-row-grid-section {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-header-vertical-sliding .mkd-404-page .mkd-content {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-header-vertical-sliding .mkd-vertical-menu-area {
+    display: none;
+  }
+
+  .mkd-header-vertical-sliding .mkd-content,
+  .mkd-header-vertical-sliding footer {
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical - Sliding responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header Vertical responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1025px) {
+  .mkd-header-vertical .mkd-404-page .mkd-content {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-header-vertical .mkd-vertical-menu-area {
+    display: none;
+  }
+
+  .mkd-header-vertical .mkd-content,
+  .mkd-header-vertical footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkd-header-vertical .mkd-grid,
+  .mkd-header-vertical .mkd-container-inner,
+  .mkd-header-vertical .mkd-row-grid-section {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-mobile-header {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkd-boxed .mkd-page-header .mkd-sticky-header {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkd-boxed.mkd-sticky-up-mobile-header .mobile-header-appear .mkd-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkd-top-bar > .mkd-vertical-align-containers {
+    padding: 0 40px;
+  }
+
+  .mkd-top-bar-in-grid-padding .mkd-top-bar .mkd-grid .mkd-vertical-align-containers {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-top-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map-responsive.css.map */
+/* ==========================================================================
+   Search responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+# Search template responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-search-page-holder article .mkd-post-image {
+    width: 80px;
+  }
+
+  .mkd-search-page-holder article .mkd-post-title-area {
+    padding: 0 0 0 105px;
+    min-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkd-search-page-holder article .mkd-post-image {
+    width: 60px;
+  }
+
+  .mkd-search-page-holder article .mkd-post-title-area {
+    padding: 0 0 0 80px;
+    min-height: 60px;
+  }
+}
+
+/* ==========================================================================
+# Search template responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-fullscreen-search-holder .mkd-form-holder-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-fullscreen-search-holder .mkd-search-submit {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkd-fullscreen-search-holder .mkd-form-holder-inner {
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */
+
+/* ==========================================================================
+   Search responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map-responsive.css.map */
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkd-title-holder.mkd-title-full-width .mkd-grid {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-title-holder.mkd-has-bg-image {
+    height: auto !important;
+    padding: 0 !important;
+    background-image: none !important;
+  }
+
+  .mkd-title-holder.mkd-has-bg-image .mkd-title-image {
+    display: block;
+  }
+
+  .mkd-title-holder.mkd-has-bg-image .mkd-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100% !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Centered Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-title-holder.mkd-centered-type .mkd-page-subtitle {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Centered Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-title-info,
+  .mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs-info {
+    display: block;
+    width: 100%;
+  }
+
+  .mkd-title-holder.mkd-standard-with-breadcrumbs-type .mkd-breadcrumbs-info {
+    margin: 10px 0 0;
+    text-align: initial;
+    white-space: inherit;
+  }
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map-responsive.css.map */

@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Image Tooltip shortcode style - begin
+   ========================================================================== */
+
+   	.mkd-image-tooltip {
+   		position: relative;
+
+		.mkd-image-tooltip-border {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 0;
+			height: 1px;
+			background: currentColor;
+			@include mkdTransition(width .5s ease .2s);
+
+			&.mkd-tooltip-appeared {
+				width: 100%;
+			}
+		}
+   	}
+
+   	.tooltip {
+	    position: absolute!important;
+	}
+
+/* ==========================================================================
+   Image Tooltip shortcode style - end
+   ========================================================================== */

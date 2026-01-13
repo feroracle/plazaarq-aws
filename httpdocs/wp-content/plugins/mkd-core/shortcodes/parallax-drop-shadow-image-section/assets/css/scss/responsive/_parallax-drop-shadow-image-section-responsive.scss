@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.mkd-parallax-ds-image-section {
+		.mkd-parallax-dsis-text {
+			padding: 0 11%;
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.mkd-parallax-ds-image-section {
+		.mkd-parallax-dsis-text {
+			padding: 0 6%;
+		}
+
+		.mkd-parallax-dsis-shadow-holder {
+
+			&.mkd-parallax-dsis-left {
+				top: 30px;
+				left: -30px;
+			}
+
+			&.mkd-parallax-dsis-right {
+				top: 30px;
+				left: 30px;
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.mkd-parallax-dsis-shadow-holder {
+
+		&.mkd-parallax-dsis-left {
+			top: 25px;
+			left: -25px;
+		}
+
+		&.mkd-parallax-dsis-right {
+			top: 25px;
+			left: 25px;
+		}
+	}
+}
+
+@include phone-landscape {
+
+	.mkd-parallax-ds-image-section {
+
+		&.mkd-parallax-dsis-with-text-type {
+			.mkd-parallax-dsis-image {
+				width: 80%;
+			}
+
+			.mkd-parallax-dsis-text {
+				display: none;
+			}
+		}
+
+		.mkd-parallax-dsis-shadow-holder {
+
+			&.mkd-parallax-dsis-left {
+				top: 20px;
+				left: -20px;
+			}
+
+			&.mkd-parallax-dsis-right {
+				top: 20px;
+				left: 20px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */

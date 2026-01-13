@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Top header style - begin
+   ========================================================================== */
+
+.mkd-top-bar {
+	@include mkdRelativeHolderLayout();
+	height: 32px;
+	color: #707070;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 1;
+	background-color: #ebebeb;
+	z-index: 111;
+	box-sizing: border-box;
+	
+	> .mkd-vertical-align-containers {
+		padding: 0 40px;
+	}
+	
+	.mkd-grid {
+		height: 100%;
+		
+		.mkd-vertical-align-containers {
+			padding-left: 0;
+			padding-right: 0;
+			
+			.mkd-top-bar-in-grid-padding & {
+				padding: 0 40px;
+			}
+		}
+	}
+	
+	.widget {
+		margin: 0;
+	}
+}
+/* ==========================================================================
+   Top header style - end
+   ========================================================================== */

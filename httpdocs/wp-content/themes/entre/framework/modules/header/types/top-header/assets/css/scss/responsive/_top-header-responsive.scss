@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-medium {
+	
+	.mkd-top-bar {
+		
+		> .mkd-vertical-align-containers {
+			padding: 0 40px;
+		}
+		
+		.mkd-grid {
+			
+			.mkd-vertical-align-containers {
+				
+				.mkd-top-bar-in-grid-padding & {
+					padding: 0 40px;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+	
+	.mkd-top-bar {
+		display: none;
+	}
+}
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */

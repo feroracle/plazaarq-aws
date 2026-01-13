@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Side area styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Side area style - begin
+========================================================================== */
+.mkd-light-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener,
+.mkd-light-header .mkd-top-bar .mkd-side-menu-button-opener {
+  color: #fff !important;
+}
+.mkd-light-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener.opened, .mkd-light-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener:hover,
+.mkd-light-header .mkd-top-bar .mkd-side-menu-button-opener.opened,
+.mkd-light-header .mkd-top-bar .mkd-side-menu-button-opener:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.mkd-dark-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener,
+.mkd-dark-header .mkd-top-bar .mkd-side-menu-button-opener {
+  color: #333 !important;
+}
+.mkd-dark-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener.opened, .mkd-dark-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener:hover,
+.mkd-dark-header .mkd-top-bar .mkd-side-menu-button-opener.opened,
+.mkd-dark-header .mkd-top-bar .mkd-side-menu-button-opener:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.mkd-side-menu-button-opener {
+  position: relative;
+  display: inline-block;
+  margin-left: 18px;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 17px;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines:hover .mkd-sm-line.mkd-line-1 {
+  width: 80%;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines:hover .mkd-sm-line.mkd-line-2 {
+  left: 0;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines:hover .mkd-sm-line.mkd-line-3 {
+  width: 80%;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines .mkd-sm-line {
+  position: absolute;
+  height: 3px;
+  background-color: currentColor;
+  -webkit-transition: -webkit-transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: -moz-transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+  transition: transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines .mkd-sm-line.mkd-line-1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  outline: transparent solid 1px;
+  -webkit-transition: width 0.2s ease 0.2s;
+  -moz-transition: width 0.2s ease 0.2s;
+  transition: width 0.2s ease 0.2s;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines .mkd-sm-line.mkd-line-2 {
+  top: calc(50% - 2px);
+  left: 8px;
+  width: 12px;
+  outline: transparent solid 1px;
+  -webkit-transition: left 0.2s ease 0.2s;
+  -moz-transition: left 0.2s ease 0.2s;
+  transition: left 0.2s ease 0.2s;
+}
+.mkd-side-menu-button-opener .mkd-sm-lines .mkd-sm-line.mkd-line-3 {
+  top: calc(100% - 3px);
+  left: 0;
+  width: 100%;
+  outline: transparent solid 1px;
+  -webkit-transition: width 0.2s ease 0.2s;
+  -moz-transition: width 0.2s ease 0.2s;
+  transition: width 0.2s ease 0.2s;
+}
+
+.mkd-side-menu {
+  position: fixed;
+  top: 0;
+  right: -485px;
+  width: 485px;
+  height: 100%;
+  min-height: 100%;
+  padding: 50px 65px 36px;
+  background-color: #fff;
+  text-align: left;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.mkd-side-menu .mkd-close-side-menu-holder {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 1000;
+}
+.admin-bar .mkd-side-menu .mkd-close-side-menu-holder {
+  top: 72px;
+}
+.mkd-side-menu a.mkd-close-side-menu {
+  z-index: 1000;
+}
+.mkd-side-menu a.mkd-close-side-menu .mkd-sm-lines .mkd-sm-line.mkd-line-2 {
+  display: none;
+}
+.mkd-side-menu a.mkd-close-side-menu .mkd-sm-lines .mkd-sm-line.mkd-line-1 {
+  width: 100%;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mkd-side-menu a.mkd-close-side-menu .mkd-sm-lines .mkd-sm-line.mkd-line-3 {
+  width: 100%;
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.mkd-side-menu-slide-from-right.mkd-right-side-menu-opened .mkd-wrapper .mkd-cover {
+  z-index: 3000;
+}
+.mkd-side-menu-slide-from-right.mkd-right-side-menu-opened .mkd-side-menu {
+  right: 0;
+  visibility: visible;
+}
+.mkd-side-menu-slide-from-right .mkd-wrapper .mkd-cover {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */
+/* ==========================================================================
+   Side area styles - end
+   ========================================================================== */
+/*# sourceMappingURL=sidearea-map.css.map */

@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.mkd-image-with-text-holder {
+    @include mkdRelativeHolderLayout();
+	
+	&.mkd-has-shadow {
+		
+		.mkd-iwt-image {
+			box-shadow: $default-box-shadow;
+		}
+	}
+	
+	.mkd-iwt-image {
+		@include mkdRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.mkd-iwt-text-holder {
+		@include mkdRelativeHolderLayout();
+	}
+	
+	.mkd-iwt-title {
+		margin: 32px 0 0;
+	}
+	
+	.mkd-iwt-text {
+		margin: 14px 0 0;
+	}
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-custom-link {
+		
+		.mkd-iwt-image {
+			
+			a {
+				@include mkdImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-lightbox {
+		
+		.mkd-iwt-image {
+			
+			a {
+				@include mkdImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-zoom {
+		
+		.mkd-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include mkdTransform(scale(1.04));
+				}
+			}
+			
+			img {
+				@include mkdTransform(scale(1));
+				@include mkdTransitionTransform(.3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-grayscale {
+		
+		.mkd-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include mkdTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

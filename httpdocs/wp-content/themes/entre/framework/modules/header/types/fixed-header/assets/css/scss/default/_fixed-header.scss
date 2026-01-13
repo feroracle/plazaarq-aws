@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Fixed header style - begin
+   ========================================================================== */
+
+.mkd-page-header {
+    
+    .mkd-fixed-wrapper {
+        
+        &.fixed {
+            position: fixed;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+            -webkit-backface-visibility: hidden;
+            
+            .admin-bar & {
+                margin-top: 32px;
+            }
+	
+	        .mkd-menu-area {
+		        background-color: #fff;
+	        }
+        }
+	
+	    .mkd-fixed-on-scroll & {
+		
+		    .mkd-menu-area {
+			    @include mkdTransition(height .2s ease);
+		    }
+	    }
+    }
+}
+/* ==========================================================================
+   Fixed header style - end
+   ========================================================================== */

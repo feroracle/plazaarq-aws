@@ -1,0 +1,169 @@
+.mkd-twitter-list-holder {
+	@include mkdRelativeHolderLayout();
+	clear: both;
+	
+	&:not(.mkd-tl-one-column) {
+		
+		.mkd-tl-item {
+			float: left;
+		}
+	}
+	
+	.mkd-twitter-list {
+		@include mkdRelativeHolderLayout();
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.mkd-tl-item {
+		@include mkdRelativeHolderLayout();
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	.mkd-tli-inner {
+		@include mkdRelativeHolderLayout();
+		background-color: #ffffff;
+		@include mkdTransition(all .2s ease-in-out);
+		
+		&:hover {
+			box-shadow: -2px 4px 13px 0 rgba(81, 137, 162, .05);
+			@include mkdTransform(translateY(-3px));
+		}
+	}
+	
+	.mkd-tli-content {
+		@include mkdRelativeHolderLayout();
+		padding: 35px 23px;
+		border: 1px solid #f2f2f2;
+		box-sizing: border-box;
+	}
+	
+	.mkd-twitter-content-top {
+		@include mkdRelativeHolderLayout();
+		margin-bottom: 25px;
+		box-sizing: border-box;
+	}
+	
+	.mkd-twitter-link-over {
+		@include mkdAbsoluteHolderLayout();
+		z-index: 1;
+	}
+	
+	.mkd-twitter-user {
+		@include mkdRelativeHolderLayout();
+		padding-right: 30px;
+		box-sizing: border-box;
+		
+		.mkd-twitter-image {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+			width: 56px;
+			height: 56px;
+			
+			img {
+				border-radius: 50%;
+			}
+		}
+		
+		.mkd-twitter-name {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+			width: calc(100% - 56px);
+			padding-left: 15px;
+			box-sizing: border-box;
+			
+			* {
+				margin: 0;
+			}
+		}
+	}
+	
+	.mkd-twitter-icon {
+		position: absolute;
+		top: -7px;
+		right: 3px;
+		width: 20px;
+		display: inline-block;
+		vertical-align: top;
+		color: $first-main-color;
+		font-size: 24px;
+		text-align: right;
+	}
+	
+	.mkd-tweet-text {
+		padding-left: 12px;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			color: #808080;
+			z-index: 2;
+			
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+	}
+	
+	.mkd-twitter-profile {
+		
+		a {
+			position: relative;
+			color: #808080;
+			z-index: 2;
+			
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+	}
+	
+	$columns_number: ('two', 'three', 'four', 'five');
+	
+	@for $i from 0 to length($columns_number) {
+		&.mkd-tl-#{nth($columns_number,$i+1)}-columns {
+			
+			.mkd-tl-item {
+				width: 100% / ($i+2);
+			}
+			
+			@if ($i > 1) { // set different break point for four and five columns
+				@media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+					.mkd-tl-item {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			} @else if ($i == 1) { // set different break point for three columns
+				@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+					
+					.mkd-tl-item {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			} @else {
+				@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+					
+					.mkd-tl-item {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+}

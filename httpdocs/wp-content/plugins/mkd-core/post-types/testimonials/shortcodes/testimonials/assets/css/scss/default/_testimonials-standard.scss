@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.mkd-testimonials-holder {
+    
+    &.mkd-testimonials-standard {
+        display: block;
+        position: relative;
+        margin: 0 0 30px;
+        border-bottom: 1px solid $default-border-color;
+
+        .mkd-cover-box {
+            display: block;
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            top: -35px;
+            left: 0;
+            background-color: transparent;
+            z-index: 3;
+
+            &:before {
+                content: "\201D";
+                color: $default-heading-color;
+                font-size: 170px;
+                font-family: Bellefair,serif;
+                display: block;
+                position: absolute;
+                left: -12px;
+                top: 78px;
+                z-index: 4;
+            }
+        }
+
+        .mkd-separator-top-line {
+            float: right;
+            display: block;
+            height: 1px;
+            width: 94%;
+            overflow: hidden;
+            background-color: $default-border-color;
+        }
+
+        .mkd-author-separator-line {
+            position: absolute;
+            height: 55px;
+            width: 5px;
+            left: 131px;
+            bottom: -15px;
+            background: $first-main-color;
+        }
+
+        .mkd-testimonial-image {
+            @include mkdRelativeHolderLayout();
+            margin: 25px 0 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .mkd-testimonial-title {
+            margin: 0;
+        }
+
+        .mkd-testimonial-author {
+            margin: 54px 0 0;
+            display: block;
+            text-align: left;
+
+            .mkd-testimonials-author-name {
+                position: relative;
+                display: inline-block;
+
+                &:after {
+                    content:',';
+                }
+            }
+        }
+
+        .mkd-testimonial-text-holder {
+            padding: 40px 150px 20px;
+            box-sizing: border-box;
+        }
+
+        .mkd-testimonial-text {
+            margin: 19px 0 0;
+            text-align: left;
+            font-family: $second-heading-font;
+            color: $default-heading-color;
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        /* Light/Dark styles */
+        &.mkd-testimonials-light {
+            
+            .mkd-testimonial-title,
+            .mkd-testimonial-text,
+            .mkd-testimonial-author {
+                color: #fff;
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkd-owl-slider {
+            .owl-nav {
+                .owl-prev {
+                    left: auto;
+                    right: 0px;
+
+                    > span {
+                       font-size: 15px;
+                       color: $default-text-color;
+                    }
+                }
+                .owl-next {
+                    top: calc(50% - 30px);
+                    right: 0px;
+
+                    > span {
+                       font-size: 15px;
+                       color: $default-text-color;
+                    }
+                }
+            }
+        }  
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

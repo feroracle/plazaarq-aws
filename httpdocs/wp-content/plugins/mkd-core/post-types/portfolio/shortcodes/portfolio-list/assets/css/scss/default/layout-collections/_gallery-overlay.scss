@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.mkd-portfolio-list-holder {
+	
+	&.mkd-pl-gallery-overlay {
+		
+		&.mkd-pl-has-shadow {
+			
+			.mkd-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+
+			opacity: 0;
+			@include mkdTransform(translateY(30px));
+			@include mkdTransitionTransform(.5s ease .1s, opacity .5s ease .1s);
+
+			&.mkd-ptf-appeared  {
+				opacity: 1;
+				@include mkdTransform(translateY(0));
+			}
+			
+			&:hover {
+				
+				.mkd-pli-text-holder {
+					opacity: 1;
+
+					.mkd-pli-go-text-wrapper .mkd-pli-go-text {
+
+						.mkd-pli-title,
+						.mkd-pli-separator-category-holder {
+							opacity: 1;
+							@include mkdTransform(translateX(0));
+							@include mkdTransitionTransform(.5s ease .3s, opacity .5s .3s);
+						}
+					}
+				}
+			}
+			
+			.mkd-pl-item-inner {
+				overflow: hidden;
+			}
+		}
+		
+		.mkd-pli-text-holder {
+			@include mkdAbsoluteHolderLayout();
+			padding: 20px;
+			background-color: rgba(255,255,255,.97);
+			opacity: 0;
+			text-align: center;
+			box-sizing: border-box;
+			@include mkdTransition(opacity .5s ease);
+
+			.mkd-pli-go-text-wrapper {
+				display: block;
+				position: relative;
+				height: 100%;
+
+				.mkd-pli-go-text {
+					position: relative;
+				    display: inline-block;
+				    width: 54%;
+				    top: 50%;
+				    @include mkdTransform(translateY(-50%));
+
+				    .mkd-pli-title {
+					    display: inline-block;
+					    float: left;
+					    margin-bottom: 0;
+						opacity: 0;
+						@include mkdTransform(translateX(-20px));
+						@include mkdTransitionTransform(.5s ease, opacity .5s);
+					}
+
+				    .mkd-pli-separator-category-holder {
+					    display: inline-block;
+					    float: right;
+					    clear: both;
+						opacity: 0;
+						@include mkdTransform(translateX(20px));
+						@include mkdTransitionTransform(.5s ease, opacity .5s);
+
+						.mkd-separator-holder,
+						.mkd-pli-category-holder {
+							display: inline-block;
+						}
+
+						.mkd-separator-holder {
+							margin-right: 26px;
+							vertical-align: middle;
+						}
+
+					}
+
+					.mkd-pli-excerpt {
+						float: left;
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

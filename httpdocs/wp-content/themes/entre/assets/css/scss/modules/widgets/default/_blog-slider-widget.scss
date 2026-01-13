@@ -1,0 +1,31 @@
+.widget {
+	&.mkd-blog-slider-widget {
+		.mkd-blog-slider-holder {
+			.mkd-owl-slider {
+				.owl-nav {
+					.owl-prev,
+					.owl-next {
+						top: auto;
+						left: auto;
+						bottom: -23px;
+						> span {
+							font-size: 18px;
+						}
+					}
+
+					.owl-prev {
+						right: 33px;
+					}
+
+					.owl-next {
+						right: 10px;
+					}	
+				} 	
+			}
+
+			.mkd-item-text-holder-inner {
+				padding: 9px 15px;
+			}
+	    }  
+	}
+}

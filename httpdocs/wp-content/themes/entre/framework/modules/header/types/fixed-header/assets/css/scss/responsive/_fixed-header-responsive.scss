@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape {
+    
+    .mkd-boxed .mkd-page-header .mkd-fixed-wrapper.fixed {
+        width: $grid-width-laptop-landscape-boxed;
+    }
+}
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */

@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - begin
+   ========================================================================== */
+
+.mkd-portfolio-list-holder {
+	
+	&.mkd-pl-gallery-slide-from-left-midway {
+		
+		&.mkd-pl-has-shadow {
+			
+			.mkd-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.mkd-pli-text {
+					@include mkdTransform(translate3d(0,0,0));
+					@include mkdTransitionTransform(.5s ease);
+				}
+
+				.mkd-pli-title {
+					opacity: 1;
+					@include mkdTransform(translateX(0));
+					@include mkdTransitionTransform(.5s ease .5s, opacity .5s .3s);
+				}
+
+				.mkd-pli-text-inner {
+                    opacity: 1;
+                    @include mkdTransform(translate3d(0,0,0));
+                    @include mkdTransition(all .4s .35s);
+				}
+
+				.mkd-pli-text-holder {
+
+					.mkd-pli-category-holder {
+						opacity: 1;
+						@include mkdTransform(translateX(0));
+						@include mkdTransitionTransform(.5s ease .6s, opacity .5s .6s);
+					}
+				}
+			}
+			
+			.mkd-pl-item-inner {
+				overflow: hidden;
+			}
+
+			&.mkd-pl-masonry-default {
+				.mkd-pli-text-holder {
+					width: 70%;
+				}
+			}
+		}
+		
+		.mkd-pli-text-holder {
+			position: absolute;
+			display: block;
+			width: 50%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			box-sizing: border-box;
+
+
+            .mkd-pli-category-holder{
+				opacity: 0;
+				@include mkdTransform(translateX(20px));
+				@include mkdTransitionTransform(.4s ease);
+
+                .mkd-pli-category{
+                    margin: -12px 0 0;
+                }
+
+                > p {
+                	margin: 0;
+                }
+            }
+		}
+
+        .mkd-pli-text-wrapper{
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+		.mkd-pli-text-wrapper-inner {
+            height: auto;
+            display: table-cell;
+            vertical-align: middle;
+		}
+
+        .mkd-pli-text{
+            background-color: #fff;
+            width: 100%;
+            display: inline-block;
+            height: auto;
+            padding: 32px 20px 26px 36px;
+			box-sizing: border-box;
+			@include mkdTransform(translate3d(-100%,0,0));
+			@include mkdTransitionTransform(.3s ease, opacity .3s);
+        }
+
+		.mkd-pli-title {
+			opacity: 0;
+			@include mkdTransform(translateX(20px));
+			@include mkdTransitionTransform(.3s ease, opacity .3s);
+		}
+
+        .mkd-pli-text-inner {
+            opacity: 0;
+            @include mkdTransform(translate3d(-20px,0,0));
+            -webkit-transition: -webkit-transform .0s .3s, opacity .3s;
+            transition: transform .0s .3s, opacity .3s;
+        }
+
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - end
+   ========================================================================== */

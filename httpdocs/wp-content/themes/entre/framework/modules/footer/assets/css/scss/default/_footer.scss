@@ -1,0 +1,182 @@
+/* ==========================================================================
+   #Content bottom styles - begin
+   ========================================================================== */
+
+.mkd-content-bottom {
+    
+    .mkd-content-bottom-inner{
+        box-sizing: border-box;
+        
+        &.mkd-grid{
+            padding: 20px 0;
+        }
+        
+        &.mkd-full-width{
+            padding: 20px 40px;
+        }
+    }
+}
+/* ==========================================================================
+   #Content bottom styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+
+.mkd-page-footer {
+    @include mkdRelativeHolderLayout();
+    z-index: 100;
+    box-sizing: border-box;
+
+    .mkd-footer-top-holder {
+        @include mkdRelativeHolderLayout();
+        background-color: #ebebeb;
+        box-sizing: border-box;
+
+        .mkd-footer-top-alignment-center{
+            text-align: center;
+        }
+	    
+        .mkd-footer-top-alignment-left{
+            text-align: left;
+        }
+	    
+        .mkd-footer-top-alignment-right{
+            text-align: right;
+        }
+
+        .mkd-footer-top-inner{
+            box-sizing: border-box;
+	        
+            &.mkd-grid{
+                padding: 80px 0;
+            }
+	        
+            &.mkd-full-width{
+                padding: 80px 40px;
+            }
+
+            .mkd-footer-line {
+                border-bottom: 1px solid $default-border-color;
+                position: relative;
+                margin-top: 53px;
+            }
+
+            .mkd-footer-logo-area {
+                margin-bottom: 43px;
+
+                .mkd-footer-logo-wrapper {
+                    display: inline-block;
+                    position: relative;
+                    width: 18%;
+                    padding-right: 3.5%;
+                    box-sizing: border-box;
+                }
+
+                .mkd-footer-line {
+                    margin-top: 0px;
+                }
+            }
+
+            &.mkd-footer-top-has-logo {
+
+                .mkd-footer-column-inner {
+                    display: inline-block;
+                    position: relative;
+                    float: right;
+                }
+
+                .mkd-footer-logo-area {
+                    .mkd-footer-line {
+                        width: calc( 82% - 4px ); // 4px inline-block elements
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .mkd-footer-bottom-holder {
+        @include mkdRelativeHolderLayout();
+        background-color: #ebebeb;
+        box-sizing: border-box;
+        text-align: left;
+
+        .mkd-footer-bottom-inner {
+            box-sizing: border-box;
+
+            p,a {
+                font-size: 11px;
+            }
+	        
+            &.mkd-grid {
+                padding: 57px 0;  
+            }
+	        
+            &.mkd-full-width {
+                padding: 57px 40px;
+            }
+        }
+    }
+
+    &.mkd-footer-has-footer-bottom.mkd-footer-has-footer-top {
+
+        .mkd-footer-top-holder .mkd-footer-top-inner {
+
+            &.mkd-grid {
+                padding: 180px 0 56px;
+            }
+
+            &.mkd-full-width {
+                padding: 180px 40px 56px;
+            }
+                        
+
+            &.mkd-footer-top-has-logo {
+                &.mkd-grid {
+                    padding: 156px 0 56px;
+                }
+
+                &.mkd-full-width {
+                    padding: 156px 40px 56px;
+                }
+            }
+
+        }
+
+        .mkd-footer-bottom-holder .mkd-footer-bottom-inner {
+        
+            &.mkd-grid {
+                padding: 0 0 95px;
+            }
+
+            &.mkd-full-width {
+                padding: 0px 40px 95px;
+            }
+        }
+    }
+
+    &.mkd-footer-uncover {
+
+        .no-touch body:not(.error404) & {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 99;
+            @include mkdTransition(left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1));
+        }
+    
+        .no-touch body.mkd-paspartu-enabled & {
+            left: 27px;
+            width: calc(100% - 54px);
+        }
+
+        .mkd-right-side-menu-opened & {
+            left: -270px;
+        }
+    }
+}
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */

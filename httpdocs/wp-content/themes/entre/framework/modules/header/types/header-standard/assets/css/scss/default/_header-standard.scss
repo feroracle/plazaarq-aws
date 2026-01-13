@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Header Standard style - begin
+   ========================================================================== */
+
+.mkd-header-standard {
+	
+	.mkd-menu-area {
+		
+		&.mkd-menu-left {
+			
+			.mkd-main-menu {
+				width: auto;
+				padding: 0 0 0 20px;
+			}
+			
+			.mkd-vertical-align-containers {
+				
+				.mkd-position-left-inner {
+					height: 100%;
+				}
+			}
+		}
+		
+		&.mkd-menu-center {
+			
+			.mkd-vertical-align-containers {
+				
+				.mkd-position-center-inner {
+					height: 100%;
+				}
+			}
+		}
+		
+		&.mkd-menu-right {
+			
+			.mkd-main-menu {
+				width: auto;
+			}
+			
+			.mkd-vertical-align-containers {
+				
+				.mkd-position-right-inner {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Header Standard style - end
+   ========================================================================== */

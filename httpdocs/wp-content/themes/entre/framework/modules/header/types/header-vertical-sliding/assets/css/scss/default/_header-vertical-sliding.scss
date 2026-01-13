@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Header Vertical - Sliding style - begin
+   ========================================================================== */
+$vertical-menu-width: 90px;
+
+@import 'blocks/header-vertical-sliding-logo.scss';
+@import 'blocks/header-vertical-sliding-navigation.scss';
+@import 'blocks/header-vertical-sliding-widgets.scss';
+
+.mkd-header-vertical-sliding {
+	
+	.mkd-content,
+	footer {
+		padding-left: $vertical-menu-width;
+		box-sizing: border-box;
+	}
+	
+	.mkd-vertical-menu-area {
+		position: fixed;
+		width: $vertical-menu-width;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		height: 100%;
+		z-index: 101;
+		-webkit-backface-visibility: hidden;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		outline: none;
+		
+		.mkd-vertical-menu-area-inner {
+			position: relative;
+			height: 100%;
+		}
+		
+		.mkd-vertical-area-background {
+			position: fixed;
+			width: $vertical-menu-width;
+			height: 100%;
+			background-position: right top;
+			background-repeat: no-repeat;
+			background-color: #fff;
+			background-size: cover;
+			border-right: 1px solid $default-border-color;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			opacity: 1;
+			@include mkdTransition(opacity 0.3s ease, background-color 0.3s ease, border-color 0.3s ease);
+		}
+		
+		.mkd-vertical-menu-holder {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+		}
+		
+		.mkd-vertical-menu-table {
+			display: table;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.mkd-vertical-menu-table-cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		&.mkd-with-scroll {
+			overflow: hidden;
+		}
+	}
+	
+	&.admin-bar .mkd-vertical-menu-area {
+		top: 33px;
+	}
+	
+	.mkd-vertical-menu-area.opened {
+		
+		.mkd-vertical-area-background {
+			background-color: #fff;
+			border-color: transparent;
+		}
+		
+		.mkd-logo-wrapper a {
+			
+			img.mkd-normal-logo {
+				opacity: 0;
+			}
+			
+			img.mkd-light-logo {
+				opacity: 1;
+			}
+		}
+		
+		.mkd-vertical-menu-opener {
+			
+			.mkd-vs-lines {
+            
+	            .mkd-vs-line {
+
+					&.mkd-line-1,
+					&.mkd-line-3 {
+						left: 0;
+						@include mkdTransitionTransform(.2s ease);
+					}
+
+					&.mkd-line-1 {
+						top: 10px;
+						@include mkdTransform(rotate(-45deg));
+					}
+
+					&.mkd-line-3 {
+						top: 10px;
+						@include mkdTransform(rotate(45deg));
+					}
+
+					&.mkd-line-2 {
+						opacity: 0;
+					}
+	            }
+	        }
+		}
+	}
+}
+/* ==========================================================================
+   Header Vertical - Sliding style - end
+   ========================================================================== */

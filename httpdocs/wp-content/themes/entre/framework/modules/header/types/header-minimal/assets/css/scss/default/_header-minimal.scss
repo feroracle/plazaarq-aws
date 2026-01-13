@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Header Minimal style - begin
+   ========================================================================== */
+
+.mkd-header-minimal {
+	
+    .mkd-page-header {
+	    
+	    .mkd-menu-area {
+		
+		    .mkd-position-right-inner {
+			    height: auto;
+		    }
+	    }
+	
+	    .mkd-position-left:before,
+	    .mkd-position-right:before {
+		    content: "";
+	    }
+	
+	    .mkd-sticky-header {
+		
+		    .mkd-position-left-inner {
+			    height: auto;
+		    }
+		
+		    .mkd-vertical-align-containers .mkd-position-right .mkd-position-right-inner {
+			    height: auto;
+		    }
+	    }
+    }
+}
+/* ==========================================================================
+   Header Minimal style - end
+   ========================================================================== */

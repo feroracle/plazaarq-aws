@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+.mkd-image-gallery {
+	@include mkdRelativeHolderLayout();
+	
+	&.mkd-has-shadow {
+	
+		.mkd-ig-image-inner {
+			box-shadow: $default-box-shadow;
+		}
+		
+		&.mkd-ig-slider-type,
+		&.mkd-ig-carousel-type {
+			
+			.owl-stage-outer {
+				padding: 0 0 20px;
+			}
+			
+			.mkd-ig-image {
+				box-shadow: $default-box-shadow;
+			}
+		}
+	}
+	
+	.mkd-ig-image {
+		@include mkdRelativeHolderLayout();
+		box-sizing: border-box;
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.mkd-ig-image-inner {
+		@include mkdRelativeHolderLayout();
+	}
+	
+	.mkd-ig-slider {
+		@include mkdRelativeHolderLayout();
+
+		&.mkd-pointer-on {
+
+			.owl-nav {
+				pointer-events: none;
+			}
+		}
+	}
+	
+	/***** Image Gallery Grid Style - begin *****/
+	
+	.mkd-ig-grid {
+		
+		.mkd-ig-image {
+			float: left;
+		}
+		
+		$gallery_columns: ('two', 'three', 'four', 'five', 'six');
+		@for $i from 0 to length($gallery_columns) {
+			&.mkd-ig-#{nth($gallery_columns, $i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				.mkd-ig-image {
+					width: $column_width;
+					
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Grid Style - end *****/
+	
+	/***** Image Gallery Masonry Style - begin *****/
+	
+	.mkd-ig-masonry {
+		opacity: 0;
+		@include mkdTransition(opacity .2s ease-out);
+		
+		.mkd-ig-grid-sizer {
+			width: 100%;
+		}
+		
+		.mkd-ig-grid-gutter {
+			width: 0;
+		}
+		
+		$masonry_columns: ('two', 'three', 'four', 'five', 'six');
+		
+		@for $i from 0 to length($masonry_columns) {
+			&.mkd-ig-#{nth($masonry_columns,$i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				.mkd-ig-image,
+				.mkd-ig-grid-sizer {
+					width: $column_width;
+				}
+				
+				.mkd-ig-image.mkd-large-masonry-item {
+					width: $column_width * 2;
+				}
+			}
+		}
+	}
+	
+	/***** Image Gallery Masonry Style - end *****/
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-custom-link {
+		
+		.mkd-ig-image {
+			
+			a {
+				@include mkdImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-lightbox {
+		
+		.mkd-ig-image {
+			
+			a {
+				@include mkdImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-zoom {
+		
+		.mkd-ig-image {
+
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include mkdTransform(scale(1.05) translateZ(0));
+					@include mkdTransitionTransform( 3s ease);
+				}
+			}
+			
+			img {
+				@include mkdTransform(scale(1) translateZ(0));
+				@include mkdTransitionTransform(1s ease);
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.mkd-image-behavior-grayscale {
+		
+		.mkd-ig-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				@include mkdTransition(all .3s ease-in-out);
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+
+	&:not(.mkd-ig-carousel-type) {
+		.mkd-owl-slider {
+			.owl-nav {
+				.owl-prev {
+					right: 35px;
+					left: auto;
+					top: calc(50% + 15px);
+
+					> span {
+						font-size: 15px;
+					}
+				}	
+
+				.owl-next {
+					top: calc(50% - 15px);
+					right: 35px;
+					
+					&:hover {
+						right: 35px;
+					}
+
+					> span {
+						font-size: 15px;
+					}
+				}
+			}
+		} 
+	}
+
+	&.mkd-fullscreen-carousel {
+		.mkd-ig-slider {
+			overflow: hidden;
+			height: 100%;
+		}
+	}
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */

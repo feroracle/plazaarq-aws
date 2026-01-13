@@ -1,0 +1,250 @@
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+.mkd-elements-holder {
+	
+	$columns_label: ('two', 'three', 'four', 'five', 'six');
+	
+	@include laptop-landscape-medium {
+		
+		&.mkd-responsive-mode-1280 {
+			
+			@for $i from 0 to length($columns_label) {
+				&.mkd-#{nth($columns_label,$i+1)}-columns {
+					
+					.mkd-eh-item {
+						width: 100%;
+						height: auto;
+						display: inline-block;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-left {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: left;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-right {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: right;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-center {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	
+	@include ipad-landscape {
+		
+		&.mkd-responsive-mode-1024 {
+			
+			@for $i from 0 to length($columns_label) {
+				&.mkd-#{nth($columns_label,$i+1)}-columns {
+					
+					.mkd-eh-item {
+						width: 100%;
+						height: auto;
+						display: inline-block;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-left {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: left;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-right {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: right;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-center {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	
+	@include ipad-portrait {
+		
+		&.mkd-responsive-mode-768 {
+			
+			@for $i from 0 to length($columns_label) {
+				&.mkd-#{nth($columns_label,$i+1)}-columns {
+					
+					.mkd-eh-item {
+						width: 100%;
+						height: auto;
+						display: inline-block;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-left {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: left;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-right {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: right;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-center {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	
+	@include phone-landscape {
+		
+		&.mkd-responsive-mode-680 {
+			
+			@for $i from 0 to length($columns_label) {
+				&.mkd-#{nth($columns_label,$i+1)}-columns {
+					
+					.mkd-eh-item {
+						width: 100%;
+						height: auto;
+						display: inline-block;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-left {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: left;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-right {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: right;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-center {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	
+	@include phone-portrait {
+		
+		&.mkd-responsive-mode-480 {
+			
+			@for $i from 0 to length($columns_label) {
+				&.mkd-#{nth($columns_label,$i+1)}-columns {
+					
+					.mkd-eh-item {
+						width: 100%;
+						height: auto;
+						display: inline-block;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-left {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: left;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-right {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: right;
+					}
+				}
+			}
+			
+			&.mkd-one-column-alignment-center {
+				
+				.mkd-eh-item {
+					
+					.mkd-eh-item-content {
+						text-align: center;
+					}
+				}
+			}
+		}
+		
+		.mkd-eh-item-content{
+			padding: 0 10px;
+		}
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */

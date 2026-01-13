@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.mkd-title-holder {
+		
+		&.mkd-standard-with-breadcrumbs-type {
+			
+			.mkd-title-info,
+			.mkd-breadcrumbs-info {
+				display: block;
+				width: 100%;
+			}
+			
+			.mkd-breadcrumbs-info {
+				margin: 10px 0 0;
+				text-align: initial;
+				white-space: inherit;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */

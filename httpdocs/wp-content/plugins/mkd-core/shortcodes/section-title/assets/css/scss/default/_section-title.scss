@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.mkd-section-title-holder {
+    @include mkdRelativeHolderLayout();
+	box-sizing: border-box;
+	
+    .mkd-st-title {
+	    display: block;
+        margin: 0;
+        margin-bottom: 5px;
+	    
+	    .mkd-st-title-bold {
+		    font-weight: 700;
+	    }
+	    
+	    .mkd-st-title-light {
+		    font-weight: 300;
+	    }
+    }
+    
+    .mkd-st-subtitle,
+    .mkd-separator-holder {
+    	display: inline-block;
+    }
+
+    .mkd-separator-holder {
+    	vertical-align: middle;
+    	padding-left: 16%;
+    	padding-right: 2.5%;
+
+    	.mkd-separator {
+    		margin: 0;
+    	}
+    }
+
+    .mkd-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

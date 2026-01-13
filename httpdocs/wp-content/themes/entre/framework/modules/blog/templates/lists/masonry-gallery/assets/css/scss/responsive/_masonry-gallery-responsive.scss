@@ -1,0 +1,173 @@
+@include laptop-landscape-large {
+	.mkd-blog-holder {
+	    &.mkd-blog-masonry-gallery {
+	    	article {
+	    		&.format-quote {
+	    			.mkd-post-content {
+	    				.mkd-post-text {
+		    				padding: 0 67px 0px 63px;
+		    				.mkd-post-mark {
+		    					.mkd-quote-mark {
+		    						&:before {
+		    							left:9px;
+		    						}
+		    					}
+		    				}
+		    			}
+	    			}
+	    		}
+
+	    		&.format-link{
+	    			.mkd-post-content {
+	    				.mkd-post-text {
+		    				padding: 0 67px 51px 63px;
+		    				.mkd-post-mark {
+		    					.mkd-quote-mark {
+		    						&:before {
+		    							left:10px;
+		    						}
+		    					}
+		    				}
+	    			    }		
+	    			}
+	    		}
+	    	}
+	    }
+	}	
+}
+
+@media only screen and (max-width: 1366px ) {
+	.mkd-blog-holder {
+		&.mkd-blog-masonry-gallery {
+			article {
+				&.format-quote {
+					.mkd-post-content {
+						.mkd-post-text {
+							padding: 4px 67px 0 63px;
+
+							.mkd-post-quote-holder {
+								padding-top: 30px;
+							}
+
+						    .mkd-post-mark {
+						    	.mkd-quote-mark {
+						    		&:before {
+						    			left:5px;
+						    		}		
+						    	}
+						    } 
+						}	
+					}
+
+					.mkd-quote-title {
+						margin-bottom: 20px;
+					} 		
+				}
+
+				&.format-link {
+					.mkd-post-content {
+						.mkd-post-text {
+							padding: 0 67px 51px 63px;
+
+							.mkd-post-link-holder {
+								padding: 27px 0 26px;
+							}
+						}	
+					} 		
+				}
+			}  
+		}
+	}  
+}
+
+@include laptop-landscape-medium {
+	.mkd-blog-holder {
+	    &.mkd-blog-masonry-gallery {
+	    	article {
+	    		&.format-quote {
+	    			.mkd-post-content {
+	    				.mkd-post-text {
+		    				padding: 2px 67px 0 63px;
+		    				.mkd-post-mark {
+		    					.mkd-quote-mark {
+		    						&:before {
+		    							left:18px;
+		    						}
+		    					}
+		    				}
+		    			}
+	    			}
+	    		}
+
+	    		&.format-link {
+	    			.mkd-post-content {
+	    				.mkd-post-text {
+		    				padding: 0 67px 51px 63px;
+
+		    				.mkd-post-mark {
+		    					.mkd-quote-mark {
+		    						&:before {
+		    							left:18px;
+		    						}
+		    					}
+		    				}
+		    			}
+	    			}
+	    		}
+	    	}
+	    }
+	}
+}
+
+@include ipad-landscape {
+	.mkd-blog-holder {
+	    &.mkd-blog-masonry-gallery {
+	    	article {
+	    		&.format-quote {
+	    			.mkd-post-content {
+	    				.mkd-post-text {
+		    				.mkd-post-mark {
+		    					.mkd-quote-mark {
+		    						&:before {
+		    							left:31px;
+		    						}
+		    					}
+		    				}
+	    			    }
+	    			}
+	    		}
+
+	    		&:not(.format-quote):not(.format-link) {
+	    			.mkd-post-image {
+	    				width: 100%;
+	    				img {
+	    					width: 100%;
+	    				}
+	    			}
+	    		} 
+	    	}
+	    }
+	}
+}
+
+@include ipad-portrait {
+	.mkd-blog-holder {
+	    &.mkd-blog-masonry-gallery {
+	    	article {
+	    		&.format-quote {
+	    			.mkd-post-content {
+	    				.mkd-post-text {
+		    				.mkd-post-mark {
+		    					.mkd-quote-mark {
+		    						&:before {
+		    							left:12px;
+		    						}
+		    					}
+		    				}
+	    			    }
+	    			}
+	    		}
+	    	}
+	    }
+	}
+}

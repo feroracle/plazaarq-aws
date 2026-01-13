@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Grid System responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-medium {
+	
+	/*
+	* If you changed some value for space do the same thing in masonry-type, product-list-main-and-vc scss files
+	*/
+	$columns_space_label: ('huge' );
+	$columns_space_width: (25);
+	
+	@for $i from 0 to length($columns_space_label) {
+		.mkd-#{nth($columns_space_label,$i+1)}-space {
+			$column_width: nth($columns_space_width,$i+1);
+			$column_width_margin: $column_width * 2;
+			
+			&.mkd-disable-bottom-space {
+				margin-bottom: -#{$column_width_margin}px;
+			}
+			
+			.mkd-outer-space {
+				margin: 0 -#{$column_width}px;
+				
+				.mkd-item-space {
+					padding: 0 #{$column_width}px;
+					margin: 0 0 #{$column_width_margin}px;
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Grid System responsive style - end
+   ========================================================================== */

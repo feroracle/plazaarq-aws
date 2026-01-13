@@ -1,0 +1,825 @@
+@import 'variables';
+@import 'mixins';
+
+/* ==========================================================================
+   #Comments styles - start
+   ========================================================================== */
+
+.mkd-comment-holder {
+    @include mkdRelativeHolderLayout();
+    padding: 0;
+    box-sizing: border-box;
+
+    .mkd-comment-holder-inner {
+        padding: 39px 0 20px;
+    }
+	
+	.mkd-comment {
+		
+		&.mkd-pingback-comment {
+			
+			.mkd-comment-text {
+				padding: 0;
+			}
+		}
+	}
+
+    .mkd-comment-list {
+        list-style: none;
+        position: relative;
+        z-index: 150;
+        padding: 0;
+        margin: 0;
+
+        > li {
+            border-bottom: 1px solid $default-border-color;
+            margin: 35px 0 0;
+            padding: 0 0 35px;
+
+            > ul.children {
+                border-top: 1px solid $default-border-color;
+                margin-top: 62px;
+
+                > li {
+                    padding-top: 35px;
+                }
+            }
+        }
+
+        li {
+            @include mkdRelativeHolderLayout();
+        }
+
+        > li:first-child {
+            margin: 0;
+            padding-top: 0;
+        }
+
+        .children {
+            padding: 0 0 0 81px;
+        }
+    }
+
+    .mkd-comments-title {
+        margin-bottom: 35px;
+        text-transform: uppercase;
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    .mkd-comment-image {
+        position: relative;
+        display: block;
+        top: 10px;
+        left: 0;
+        width: 95px;
+        height: 95px;
+        float: left;
+
+        img {
+            display: block;
+        }
+    }
+
+    .mkd-comment-text {
+        padding: 0 0 0 143px;
+        min-height: 82px;
+
+        .mkd-comment-info {
+            @include mkdRelativeHolderLayout();
+            width: auto;
+            margin: 13px 0 1px;
+        }
+
+        .replay,
+        .comment-reply-link,
+        .comment-edit-link {
+            float: right;
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $second-heading-font;
+            color: $default-heading-color;
+            letter-spacing: 0.15em;
+
+            &:hover {
+                color: $default-heading-color;
+            }
+        }
+
+        .comment-reply-link {
+            &:before {
+                content: '\4a';
+                font-family: 'ElegantIcons';
+                font-size: 11px;
+                margin-right: 15px;
+            }
+        }
+
+        .mkd-comment-name {
+            float: left;
+            font-family: $first-heading-font;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $default-heading-color;
+            letter-spacing: 0.25em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .mkd-comment-date {
+            float: right;
+            margin: 0;
+            text-transform: none;
+            font-size: 15px;
+            font-family: $default-text-font;
+        }
+
+        .mkd-text-holder p {
+            margin: 7px 0 16px;
+        }
+
+        .comment-respond {
+            margin: 20px 0;
+
+            .comment-reply-title {
+                margin: 0 0 10px;
+                font-size: 14px;
+            }
+
+            .logged-in-as {
+                margin: 0 0 8px;
+            }
+        }
+
+        #cancel-comment-reply-link {
+            margin-left: 10px;
+            font-size: 12px;
+            color: $first-main-color;
+
+            &:hover {
+                color: $default-heading-color;
+            }
+        }
+	
+	    ul, ol {
+		    
+		    li {
+			    display: list-item;
+		    }
+	    }
+
+        li {
+            margin: 0 !important;
+            padding: 0 !important;
+            border: 0 !important;
+        }
+    }
+}
+
+.mkd-comment-form {
+    padding: 0;
+    clear: both;
+    box-sizing: border-box;
+    
+    .mkd-comment-form-inner {
+        padding: 22px 0 98px;
+    }
+    
+    .comment-reply-title {
+        margin: 0 0 18px;
+        text-transform: uppercase;
+    }
+    
+    .logged-in-as {
+        margin: 0 0 8px;
+    }
+}
+
+@include ipad-portrait {
+
+    .mkd-comment-holder {
+	    
+        .mkd-comment-list {
+	        
+            .children {
+                padding: 0 0 0 40px;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+	
+    .mkd-comment-holder {
+	    
+        .mkd-comment-list {
+	        
+            .children {
+                padding: 0;
+            }
+        }
+	
+	    .mkd-comment-image {
+		    float: none;
+	    }
+
+        .mkd-comment-text {
+	        padding: 20px 0 0;
+	        min-height: inherit;
+	        
+            .mkd-comment-date,
+            .mkd-comment-name {
+                float: none;
+            }
+	        
+            .replay,
+            .comment-reply-link,
+            .comment-edit-link {
+                float: none;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   #Comments styles - end
+   ========================================================================== */
+
+#respond textarea,
+.mkd-style-form textarea,
+#respond input[type='text'],
+input[type='text'],
+input[type='email'],
+input[type='password'],
+.post-password-form input[type='password'] {
+	@extend %input-style;
+}
+
+.post-password-form input[type='password'] {
+	margin-top: 10px;
+}
+
+.wpcf7-form-control {
+	&.wpcf7-text,
+	&.wpcf7-number,
+	&.wpcf7-date,
+	&.wpcf7-textarea,
+	&.wpcf7-select,
+	&.wpcf7-quiz {
+		@extend %input-style;
+		
+		footer & {
+			margin: 0;
+		}
+	}
+}
+
+.mkd-newsletter {
+    position: relative;
+
+   .wpcf7-form-control {
+     &.wpcf7-text {
+       width: 100%;
+       font-size: 25px;
+       line-height: 1.6em;
+       color: $default-heading-color;
+       font-family: $second-heading-font; 
+       padding: 5px 0;
+       @include phone-landscape {
+            font-size: 16px;
+       }
+     }
+   } 
+
+    input.wpcf7-form-control.wpcf7-submit {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        border:0;
+        background-image: none;
+        background: none;
+        padding-right: 0;
+        font-size: 25px;
+        text-transform: capitalize;
+        color: #acacac;
+        letter-spacing: 0.05em;
+
+        @include phone-landscape {
+            position: relative;
+            left: 0;
+            right: auto;
+            padding: 0 0 10px;
+            font-size: 16px;
+        }
+
+
+        &:hover {
+            color:$default-text-color;
+            background: none;
+        }
+    }
+}
+
+.mkd-cf7-contact-form {
+    .wpcf7-form-control.wpcf7-text, 
+    .wpcf7-form-control.wpcf7-textarea{
+        width: 100%;
+    }
+
+    .wpcf7-form-control.wpcf7-textarea {
+        padding-top: 45px;
+    } 
+
+     .mkd-submit-button-wrapper {
+        position: relative;
+
+        .mkd-submit-btn-icon {
+            font-size: 25px;
+            position: absolute;
+            right: 2px;
+            top: 28px;
+            color: #898989;
+        }
+
+       .ajax-loader {
+            display: none;
+        }
+     }
+}
+
+#submit_comment,
+.post-password-form input[type='submit'],
+input.wpcf7-form-control.wpcf7-submit {
+	@include mkdButtonDefaultStyle();
+	@include mkdButtonMediumParams();
+	@include mkdButtonMinimalColor();
+    background-color: transparent;
+    text-transform: lowercase;
+	cursor: pointer;
+    padding: 7px 30px 10px 19px;
+    line-height: 1em;
+	
+	&:hover {
+		@include mkdButtonMinimalHoverColor();
+        color: #fff;
+	}
+}
+
+p.form-submit,
+.wpcf7-form p {
+	margin: 0;
+}
+
+p.form-submit {
+    margin-top: 50px;
+
+    &:after {
+       content: "\24";
+       font-family: 'ElegantIcons';
+       font-size: 25px;
+       vertical-align: middle;
+       position: relative;
+       top: 2px;
+       z-index: -1;
+       margin-left: -26px;
+    }
+}
+
+#respond textarea,
+.mkd-style-form textarea,
+.wpcf7-form textarea {
+	display: block;
+	padding: 44px 0 9px;
+}
+
+.mkd-two-columns-form-without-space {
+	
+	.wpcf7-form .ajax-loader {
+		display: none;
+	}
+}
+/* ==========================================================================
+   #Comments styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Global Owl Slider - begin
+   ========================================================================== */
+.mkd-owl-slider {
+	visibility: hidden;
+	
+    .owl-stage-outer {
+        z-index: 1;
+    }
+	
+	&.mkd-slider-is-moving {
+		
+		.owl-item {
+			
+			.mkd-block-drag-link {
+				z-index: -1 !important;
+			}
+		}
+	}
+    
+    &.mkd-slider-has-both-nav {
+        
+        .owl-nav {
+            
+            .owl-prev,
+            .owl-next {
+                $pos: calc(-50% - 21px); // 21 is is half height of pagination control + top margin
+                @include mkdTransform(translateY($pos));
+            }
+        }
+    }
+	
+	.owl-nav {
+		
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			color: #fff;
+			@include mkdTransform(translateY(-50%));
+			@include mkdTransition(color .2s ease-out);
+			
+			> span {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 25px;
+				line-height: 1;
+				
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+		
+		.owl-prev {
+			left: 30px;
+            @include mkdTransition(left .2s ease-out);
+
+            &:hover {
+                left: 25px;
+            }            
+		}
+		
+		.owl-next {
+			right: 30px;
+            @include mkdTransition(right .2s ease-out);
+
+            &:hover {
+                right: 25px;
+            }
+		}
+	}
+
+	.owl-dots {
+		text-align: center;
+		margin: 16px 0 0;
+		
+		.owl-dot {
+			display: inline-block;
+			vertical-align: middle;
+            position: relative;
+            overflow: hidden;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 7px -7px 0 1px #fff, -7px -7px 0 1px #fff, -7px 7px 0 1px #fff, 7px 7px 0 1px #fff, 0 0 0 1px #fff;
+            margin: 0 10px;
+			
+			span {
+				display: inline-block;
+				vertical-align: middle;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                @include mkdTransform(translate(-50%, -50%));
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background-color: $default-heading-color;
+				box-sizing: border-box;
+				@include mkdTransition(background-color .2s ease-out);
+			}
+			
+			&:hover,
+			&.active {
+                animation: border 0.5s ease 1 forwards;
+			}
+		}
+	}
+
+    @keyframes border{
+      0% {
+        box-shadow: 7px -7px 0 1px #fff, -7px -7px 0 1px #fff, -7px 7px 0 1px #fff, 7px 7px 0 1px #fff, 0 0 0 1px #fff;
+      }
+      25% {
+        box-shadow: 0 -17px 0 1px #fff, -7px -7px 0 1px #fff, -7px 7px 0 1px #fff, 7px 7px 0 1px #fff, 0 0 0 1px $default-heading-color;
+      }
+      50% {
+        box-shadow: 0 -17px 0 1px #fff, -17px 0px 0 1px #fff, -7px 7px 0 1px #fff, 7px 7px 0 1px #fff, 0 0 0 1px $default-heading-color;
+      }
+      75% {
+        box-shadow: 0 -17px 0 1px #fff, -17px 0px 0 1px #fff, 0px 17px 0 1px #fff, 7px 7px 0 1px #fff, 0 0 0 1px $default-heading-color;
+      }
+      100% {
+        box-shadow: 0 -17px 0 1px #fff, -17px 0 0 1px #fff, 0 17px 0 1px #fff, 12px 5px 0 1px #fff, 0 0 0 1px $default-heading-color;
+      } 
+    }
+	
+	.owl-carousel .owl-item img {
+		-webkit-transform: translateZ(0); //chrome text cut off fix
+	}
+
+
+    + .mkd-slider-thumbnail {
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        margin: 20px -10px 0;
+
+        > .mkd-slider-thumbnail-item {
+            float: left;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        $thumbnail_columns_number: ('two', 'three', 'four', 'five', 'six');
+
+        @for $i from 0 to length($thumbnail_columns_number) {
+            &.mkd-slider-columns-#{nth($thumbnail_columns_number,$i+1)} {
+
+                .mkd-slider-thumbnail-item {
+                    width: 100% / ($i+2);
+                }
+            }
+        }
+
+
+    }
+
+}
+/* ==========================================================================
+   #Global Owl Slider - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #404 styles - start
+   ========================================================================== */
+
+.mkd-404-page {
+
+    &.mkd-wrapper {
+        padding: 0 !important;
+    }
+    
+    .mkd-content {
+        height: 100vh;
+	
+	    .admin-bar & {
+		    height: calc(100vh - 32px);
+	    }
+    }
+
+    .mkd-content-inner {
+        position: relative;
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mkd-page-not-found {
+        position: relative;
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        padding: 0 14%;
+	    text-align: left;
+
+        .mkd-404-title {
+            margin: 0;
+            font-size: 226px;
+            letter-spacing: 0.15em;
+        }
+	
+	    .mkd-404-subtitle {
+            margin: 35px 0 0;
+        }
+	    
+	    .mkd-404-text {
+		    margin: -35px 0 0;
+            font-size: 25px;
+            font-family: $second-heading-font;
+            line-height: 40px;
+            font-weight: 400;
+            color: $default-heading-color;
+            padding-left: 220px;
+            position: relative;
+            width: 50%;
+
+            &:before {
+                content:'';
+                background-color:$first-main-color;
+                display:inline-block;
+                width:55px;
+                height:3px;
+                position: absolute;
+                top: 18px;
+                left: 0;
+                vertical-align: middle;
+                margin: 0 20px 0 130px;
+            }
+	    }
+
+
+        .mkd-btn {
+            margin: 23px 0 0;
+	
+	        &.mkd-btn-light-style {
+		        color: #585858;
+		        background-color: #fff;
+		        border-color: #fff;
+		
+		        &:hover {
+			        color: #fff !important;
+			        background-color: transparent !important;
+			        border-color: #fff !important;
+		        }
+	        }
+        }
+    }
+
+    @include ipad-portrait {
+
+        .mkd-page-not-found {
+            padding: 30% 5%;
+            text-align: center;
+        }
+    }
+	
+	@include phone-landscape {
+		
+		.mkd-content {
+			height: auto;
+			margin: 0 !important;
+			
+			.admin-bar & {
+				height: auto;
+			}
+		}
+
+        .mkd-page-not-found {
+            .mkd-404-title {
+                font-size: 100px;
+            }
+
+            .mkd-404-text {
+                font-size: 15px;
+                margin: 0;
+                width: 100%;
+                padding: 0;
+
+                &:before {
+                    display:none;
+                }
+            }
+        }
+	}
+}
+
+/* ==========================================================================
+   #404 styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Back to Top styles - start
+   ========================================================================== */
+#mkd-back-to-top {
+    position: fixed;
+    width: 41px;
+    right: 25px;
+    bottom: 25px;
+    margin: 0;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+
+    &.off {
+        opacity: 0;
+        visibility: hidden;
+        @include mkdTransition(opacity 0.15s ease, visibility .0s .15s);
+    }
+
+    &.on {
+        opacity: 1;
+        visibility: visible;
+        @include mkdTransition(opacity 0.3s ease);
+    }
+
+    > span {
+        position: relative;
+        display: block;
+        width: 39px;
+        height: 39px;
+        line-height: 40px;
+        font-size: 22px;
+        text-align: center;
+        color: $default-grey-color;
+        background-color: transparent;
+        overflow: hidden;
+        @include mkdTransition(color .5s ease);
+
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $default-grey-color;
+            z-index: -1;
+            @include mkdTransition(height .2s ease-in-out);
+        }
+
+
+        &:hover {
+            color: #fff;
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+
+    span span {
+        display: block;
+        line-height: inherit;
+    }
+}
+
+.mkd-comment-pager {
+    .page-numbers {
+        &.current {
+            color: $default-dark-color;
+            font-weight: 700;
+        }
+    } 
+}
+
+/* ==========================================================================
+   #Back to Top styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Self Hosted Video styles - begin
+   ========================================================================== */
+.mkd-self-hosted-video-holder {
+	
+    .mkd-video-wrap {
+	
+	    .mejs-poster,
+        .mejs-container,
+        .mejs-overlay-play {
+            height: 100% !important; /*!important because of the inline style*/
+            width: 100% !important; /*!important because of the inline style*/
+        }
+    }
+}
+/* ==========================================================================
+   #Self Hosted Video styles - end
+   ========================================================================== */
+/* ==========================================================================
+   #Custom Font - start
+   ========================================================================== */
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../fonts/caviar-dreams.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'CaviarDreamsBold';
+    src: url('../fonts/caviar-dreams-bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'CaviarDreamsBoldItalic';
+    src: url('../fonts/caviar-dreams-bold-italic.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'CaviarDreamsItalic';
+    src: url('../fonts/caviar-italic.ttf')  format('truetype');
+}

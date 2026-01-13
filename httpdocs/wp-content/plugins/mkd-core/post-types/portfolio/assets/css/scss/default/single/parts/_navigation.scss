@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.mkd-ps-navigation-wrapper {
+	background-color: $first-main-color;
+	margin: 0 0 10px;
+
+	.mkd-ps-navigation {
+		position: relative;
+		display: table;
+		width: 100%;
+		vertical-align: middle;
+		padding: 20px 0 27px 0;
+		margin: 0;
+		clear: both;
+	    box-sizing: border-box;
+
+	    .mkd-ps-full-width-custom-layout & {
+	        padding: 0 40px;
+	    }
+		
+		.mkd-ps-back-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: inline-block;
+			vertical-align: middle;
+			@include mkdTransform(translateX(-50%) translateY(-50%));
+
+			a {
+				position: relative;
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				vertical-align: middle;
+				cursor: pointer;
+				line-height: 1;
+				width: 15px;
+				height: 15px;
+
+
+				.mkd-square-bck {
+					display: block;
+					line-height: inherit;
+					position: absolute;
+					height: 3px;
+					width: 3px;
+					background-color: $default-heading-color;
+
+
+					&:nth-child(1)  {
+						left: 0;
+						top: 0;
+					}
+
+					&:nth-child(2) {
+						left: 6px;
+						top: 0;
+					}
+
+					&:nth-child(3) {
+						right: 0;
+						top: 0;
+					}
+
+					&:nth-child(4) {
+						left: 0;
+						top: 6px;
+					}
+
+					&:nth-child(5) {
+						left: 6px;
+						top: 6px;
+					}
+
+					&:nth-child(6) {
+						right: 0;
+						top: 6px;
+					}
+
+					&:nth-child(7) {
+						left: 0;
+						top: 12px;
+					}
+
+					&:nth-child(8) {
+						left: 6px;
+						top: 12px;
+					}
+
+					&:nth-child(9) {
+						top: 12px;
+						right: 0;
+					}
+
+
+				}
+			}
+		}
+		
+		.mkd-ps-prev,
+		.mkd-ps-next {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			width: 49%;
+			padding: 0;
+			box-sizing: border-box;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 25px;
+				line-height: 35px;
+				
+				.mkd-ps-nav-mark {
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					
+					&:before {
+						display: block;
+						line-height: inherit;
+					}
+				}
+
+				&:hover {
+					color: $default-text-color;
+				}
+			}
+		}
+		
+		.mkd-ps-prev {
+			
+			a {
+				
+				.mkd-ps-nav-mark {
+					left: 0;
+				}
+			}
+		}
+		
+		.mkd-ps-next {
+			text-align: right;
+			
+			a {
+				
+				.mkd-ps-nav-mark {
+					right: 0;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

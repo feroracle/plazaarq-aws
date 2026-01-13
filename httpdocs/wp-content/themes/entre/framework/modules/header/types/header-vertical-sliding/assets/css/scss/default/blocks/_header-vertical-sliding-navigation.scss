@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Header Vertical - Sliding navigation style - begin
+   ========================================================================== */
+.mkd-header-vertical-sliding {
+
+    .mkd-vertical-menu-opener{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 10;
+        left: 50%;
+        top: 3%;
+        @include mkdTransform(translateX(-50%));
+        
+        .mkd-vs-lines {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 20px;
+
+            &:hover {
+
+                .mkd-vs-line {
+
+                    &.mkd-line-1 {
+                        width: 80%;
+                    }
+
+                    &.mkd-line-2 {
+                        left: 0;
+                    }
+
+                    &.mkd-line-3 {
+                        width: 80%;
+                    }
+                }
+            }
+            
+            .mkd-vs-line {
+                position: absolute;
+                height: 3px;
+                background-color: currentColor;
+                @include mkdTransitionTransform(.3s ease, top .2s ease-out, background-color .2s ease-out);
+                z-index: 10;
+                
+                &.mkd-line-1 {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    outline: transparent solid 1px;
+                    @include mkdTransition(width .2s ease);
+
+                }
+                
+                &.mkd-line-2 {
+                    top: calc(50% - 2px);
+                    left: 9px;
+                    width: 15px;
+                    outline: transparent solid 1px;
+                    @include mkdTransition(left .2s ease);
+                }
+                
+                &.mkd-line-3 {
+                    top: calc(100% - 4px);
+                    left: 0;
+                    width: 100%;
+                    outline: transparent solid 1px;
+                    @include mkdTransition(width .2s ease);
+
+                }
+            }
+        }
+    }
+
+    .mkd-vertical-menu-nav-holder-outer{
+        width: 66.66%;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        @include mkdTransform(translateX(-100%));
+        @include mkdTransition(transform 0.3s ease);
+        z-index: 1;
+
+        &.active{
+            @include mkdTransform(translateX(0%));
+        }
+
+        .mkd-vertical-menu-nav-holder{
+            background-color: #fff;
+            display: table;
+            height: 100%;
+            width: 100%;
+
+            .mkd-vertical-menu-holder-nav-inner{
+                display: table-cell;
+                vertical-align: middle;
+                padding: 145px 0px;
+            }
+
+            nav.mkd-fullscreen-menu{
+                padding: 0 5% 0 7%;
+            }
+        }
+    }
+
+    .mkd-vertical-alignment-top {
+        .mkd-vertical-menu-nav-holder-outer{
+            .mkd-vertical-menu-nav-holder{
+                .mkd-vertical-menu-holder-nav-inner{
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+
+    .mkd-vertical-menu {
+        position: relative;
+        z-index: 101;
+        text-align: left;
+
+        ul {
+            position: relative;
+            list-style-type: none;
+        }
+
+        > ul > li {
+            position: relative;
+            width: 210px;
+        }
+
+        ul li a:hover {
+            color: #fff;
+        }
+
+        & > ul > li > a {
+            position: relative;
+            display: block;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            color: #fff;
+            padding: 12px 0px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0;
+            cursor: pointer;
+
+            @include mkdTransition(
+                            color 0.15s ease-out,
+                            text-decoration 0.15s ease-out,
+                            background-color 0.15s ease-out
+            );
+
+        }
+
+        & > ul > li > a:before {
+            content: '';
+            display: block;
+            opacity: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            background-color: $first-main-color;
+            -webkit-transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+            -moz-transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+            -o-transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+            -ms-transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+            transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+
+            @include mkdTransition(background-color 0.2s ease-out, opacity 0.2s ease-out);
+        }
+
+        & > ul > li > a:after {
+            display: none;
+            height: 1px;
+            width: 44px;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $first-main-color;
+        }
+
+        & > ul > li > a > span.mkd-item-inner {
+            @include mkdTransition(text-decoration 0.2s ease-out);
+        }
+
+        & > ul > li:last-child > a:after {
+            content: none;
+        }
+
+        ul > li.menu-item-has-children > a .plus {
+            width: 14px;
+            height: 14px;
+            z-index: 10000;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            color: #9d9d9d;
+            font-size: 14px;
+            line-height: 14px;
+            font-family: 'ElegantIcons';
+            cursor: pointer;
+
+            @include mkdTransform(translateY(-50%));
+        }
+
+        ul > li.menu-item-has-children > a .plus:before {
+            content: "\4c";
+        }
+
+        ul > li.menu-item-has-children.open > a .plus:before,
+        ul > li.menu-item-has-children.current-menu-ancestor > a .plus:before {
+            content: "\4b";
+        }
+
+        ul > li.menu-item-has-children a .plus {
+            display: none;
+        }
+
+        .mkd-menu-second .inner {
+            position: relative;
+            display: block;
+            padding: 0;
+            z-index: 997;
+        }
+
+        .mkd-menu-icon:not(.blank):not(.null) {
+            padding-right: 5px;
+        }
+    }
+}
+/* ==========================================================================
+   Header Vertical - Sliding navigation style - end
+   ========================================================================== */

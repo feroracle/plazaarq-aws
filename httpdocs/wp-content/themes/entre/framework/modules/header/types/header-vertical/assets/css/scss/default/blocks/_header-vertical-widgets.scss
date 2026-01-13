@@ -1,0 +1,18 @@
+.mkd-header-vertical {
+
+    .mkd-vertical-area-widget-holder {
+        @include mkdRelativeHolderLayout();
+        margin: 16px 0 0;
+        z-index: 100;
+    }
+
+    .mkd-vertical-alignment-center{
+
+        .mkd-vertical-area-widget-holder {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}

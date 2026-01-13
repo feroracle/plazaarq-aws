@@ -1,0 +1,426 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">portfolio-item</custom-type>
+		<custom-type translate="1">testimonials</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">portfolio-category</taxonomy>
+		<taxonomy translate="1">portfolio-tag</taxonomy>
+		<taxonomy translate="1">testimonials-category</taxonomy>
+	</taxonomies>
+	<custom-fields>
+		<custom-field action="translate">mkd_page_slider_meta</custom-field>
+		<custom-field action="translate">mkd_post_video_link_meta</custom-field>
+		<custom-field action="translate">mkd_post_video_custom_meta</custom-field>
+		<custom-field action="translate">mkd_post_audio_link_meta</custom-field>
+		<custom-field action="translate">mkd_post_audio_custom_meta</custom-field>
+		<custom-field action="translate">mkd_post_link_link_meta</custom-field>
+		<custom-field action="translate">mkd_post_quote_text_meta</custom-field>
+		<custom-field action="translate">mkd_post_quote_author_meta</custom-field>
+		<custom-field action="translate">mkd_show_posts_per_page_meta</custom-field>
+		<custom-field action="translate">mkd_number_of_chars_meta</custom-field>
+		<custom-field action="translate">portfolio_external_link</custom-field>
+		<custom-field action="translate">mkd_dropdown_top_position_meta</custom-field>
+		<custom-field action="translate">mkd_title_area_subtitle_meta</custom-field>
+		<custom-field action="translate">mkd_testimonial_title</custom-field>
+		<custom-field action="translate">mkd_testimonial_text</custom-field>
+		<custom-field action="translate">mkd_testimonial_author</custom-field>
+		<custom-field action="translate">mkd_testimonial_author_position</custom-field>
+		<custom-field action="copy">mkd_boxed_background_image_meta</custom-field>
+		<custom-field action="copy">mkd_boxed_pattern_background_image_meta</custom-field>
+		<custom-field action="copy">mkd_blog_list_featured_image_meta</custom-field>
+		<custom-field action="copy">mkd_post_video_image_meta</custom-field>
+		<custom-field action="copy">mkd_portfolio_featured_image_meta</custom-field>
+		<custom-field action="copy">mkd_logo_image_meta</custom-field>
+		<custom-field action="copy">mkd_logo_image_dark_meta</custom-field>
+		<custom-field action="copy">mkd_logo_image_light_meta</custom-field>
+		<custom-field action="copy">mkd_logo_image_sticky_meta</custom-field>
+		<custom-field action="copy">mkd_logo_image_mobile_meta</custom-field>
+		<custom-field action="copy">mkd_vertical_header_background_image_meta</custom-field>
+		<custom-field action="copy">mkd_title_area_background_image_meta</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="mkd_options_entre">
+			<key name="dropdown_top_position" />
+			<key name="mobile_menu_title" />
+			<key name="number_of_chars" />
+			<key name="portfolio_single_slug" />
+			<key name="twitter_via" />
+			<key name="404_title" />
+			<key name="404_subtitle" />
+			<key name="404_text" />
+			<key name="404_back_to_home" />
+			<key name="logo_image" />
+			<key name="logo_image_dark" />
+			<key name="logo_image_light" />
+			<key name="logo_image_sticky" />
+			<key name="logo_image_mobile" />
+			<key name="boxed_background_image" />
+			<key name="boxed_pattern_background_image" />
+			<key name="preload_pattern_image" />
+			<key name="fullscreen_menu_background_image" />
+			<key name="fullscreen_menu_pattern_image" />
+			<key name="vertical_header_background_image" />
+			<key name="title_area_background_image" />
+			<key name="footer_logo" />
+			<key name="facebook_icon" />
+			<key name="twitter_icon" />
+			<key name="linkedin_icon" />
+			<key name="tumblr_icon" />
+			<key name="pinterest_icon" />
+			<key name="vk_icon" />
+			<key name="open_graph_image" />
+			<key name="404_page_background_image" />
+			<key name="404_page_background_pattern_image" />
+			<key name="404_page_title_image" />
+		</key>
+		<key name="mkd_blog_list_widget">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="category" />
+			</key>
+		</key>
+		<key name="mkd_blog_slider_widget">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="category" />
+			</key>
+		</key>
+		<key name="mkd_button_widget">
+			<key name="*">
+				<key name="text" />
+				<key name="link" />
+			</key>
+		</key>
+		<key name="mkd_contact_form_7_widget">
+			<key name="*">
+				<key name="widget_title" />
+			</key>
+		</key>
+		<key name="mkd_custom_font_widget">
+			<key name="*">
+				<key name="title" />
+			</key>
+		</key>
+		<key name="mkd_icon_widget">
+			<key name="*">
+				<key name="icon_text" />
+				<key name="link" />
+			</key>
+		</key>
+		<key name="mkd_image_gallery_widget">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="images" />
+				<key name="custom_links" />
+			</key>
+		</key>
+		<key name="mkd_side_area_opener">
+			<key name="*">
+				<key name="widget_title" />
+			</key>
+		</key>
+		<key name="mkd_social_icon_widget">
+			<key name="*">
+				<key name="link" />
+			</key>
+		</key>
+		<key name="mkd_social_icons_group_widget">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="link_1" />
+				<key name="link_2" />
+				<key name="link_3" />
+				<key name="link_4" />
+				<key name="link_5" />
+				<key name="link_6" />
+			</key>
+		</key>
+	</admin-texts>
+	<shortcodes>
+		<shortcode>
+			<tag>mkd_accordion_tab</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_banner</tag>
+			<attributes>
+				<attribute>subtitle</attribute>
+				<attribute>title</attribute>
+				<attribute>link</attribute>
+				<attribute>link_text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_button</tag>
+			<attributes>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_call_to_action</tag>
+			<attributes>
+				<attribute>button_text</attribute>
+				<attribute>button_link</attribute>
+				<attribute>content</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_clients_carousel_item</tag>
+			<attributes>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_countdown</tag>
+			<attributes>
+				<attribute>month_label</attribute>
+				<attribute>day_label</attribute>
+				<attribute>hour_label</attribute>
+				<attribute>minute_label</attribute>
+				<attribute>second_label</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_counter</tag>
+			<attributes>
+				<attribute>digit</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_custom_font</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>type_out_position</attribute>
+				<attribute>typed_ending_1</attribute>
+				<attribute>typed_ending_2</attribute>
+				<attribute>typed_ending_3</attribute>
+				<attribute>typed_ending_4</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_floating_product_categories</tag>
+			<attributes>
+				<attribute>y_axis_translation</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_full_screen_image_slider_item</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_google_map</tag>
+			<attributes>
+				<attribute>address1</attribute>
+				<attribute>address1_info_title</attribute>
+				<attribute>address1_info_address</attribute>
+				<attribute>address2</attribute>
+				<attribute>address2_info_title</attribute>
+				<attribute>address2_info_address</attribute>
+				<attribute>address3</attribute>
+				<attribute>address3_info_title</attribute>
+				<attribute>address3_info_address</attribute>
+				<attribute>address4</attribute>
+				<attribute>address4_info_title</attribute>
+				<attribute>address4_info_address</attribute>
+				<attribute>address5</attribute>
+				<attribute>address5_info_title</attribute>
+				<attribute>address5_info_address</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_icon_list_item</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_icon_with_text</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_icon</tag>
+			<attributes>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_image_gallery</tag>
+			<attributes>
+				<attribute>custom_links</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_image_slider</tag>
+			<attributes>
+				<attribute type="area" encoding="urlencoded_json">content_item</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_image_with_text</tag>
+			<attributes>
+				<attribute>custom_link</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_item_showcase_item</tag>
+			<attributes>
+				<attribute>item_title</attribute>
+				<attribute>item_link</attribute>
+				<attribute>item_text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_parallax_ds_image_section</tag>
+			<attributes>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_parallax_holder</tag>
+			<attributes>
+				<attribute>y_axis_translation</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_pie_chart</tag>
+			<attributes>
+				<attribute>percent</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_portfolio_project_info</tag>
+			<attributes>
+				<attribute>project_info_title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_pricing_table_item</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>price</attribute>
+				<attribute>currency</attribute>
+				<attribute>price_period</attribute>
+				<attribute>button_text</attribute>
+				<attribute>link</attribute>
+				<attribute>content</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_product_categories</tag>
+			<attributes>
+				<attribute>y_axis_translation</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_product_list_carousel</tag>
+			<attributes>
+				<attribute>taxonomy_values</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_product_list_simple</tag>
+			<attributes>
+				<attribute>number</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_product_list</tag>
+			<attributes>
+				<attribute>taxonomy_values</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_progress_bar</tag>
+			<attributes>
+				<attribute>percent</attribute>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_section_title</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>title_bold_words</attribute>
+				<attribute>subtitle</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_single_image</tag>
+			<attributes>
+				<attribute>custom_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_social_share</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_split_section</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+				<attribute>button_text</attribute>
+				<attribute>button_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_tabs_item</tag>
+			<attributes>
+				<attribute>tab_title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_team</tag>
+			<attributes>
+				<attribute>team_name</attribute>
+				<attribute>team_email</attribute>
+				<attribute>team_position</attribute>
+				<attribute>team_description</attribute>
+				<attribute>team_social_icon_1_link</attribute>
+				<attribute>team_social_icon_2_link</attribute>
+				<attribute>team_social_icon_3_link</attribute>
+				<attribute>team_social_icon_4_link</attribute>
+				<attribute>team_social_icon_5_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_testimonials</tag>
+			<attributes>
+				<attribute>number</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_uncovering_sections_item</tag>
+			<attributes>
+				<attribute>background_position</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>mkd_video_button</tag>
+			<attributes>
+				<attribute>video_link</attribute>
+			</attributes>
+		</shortcode>
+	</shortcodes>
+</wpml-config>

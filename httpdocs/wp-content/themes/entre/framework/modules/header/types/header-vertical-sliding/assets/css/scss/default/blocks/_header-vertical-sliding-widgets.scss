@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Header Vertical - Sliding widget style - begin
+   ========================================================================== */
+
+.mkd-header-vertical-sliding {
+    .mkd-vertical-area-widget-holder{
+        width: 100%;
+        z-index: 100;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+
+        .mkd-vertical-header-widget {
+            text-align: center;
+            padding: 5px 0;
+
+            > div,
+            > a,
+            > span {
+                position: relative;
+                display: inline-block;
+                padding: 0;
+            }
+        }
+
+        .mkd-social-icon-widget-holder{
+            display: block;
+            text-align: center;
+            padding: 5px 0;
+
+            &:hover{
+                color: #000 !important;
+            }
+        }
+    }
+
+    .mkd-vertical-menu-area.opened {
+        .mkd-social-icon-widget-holder{
+            &:hover{
+                color: #fff !important;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Header Vertical - Sliding widget style - end
+   ========================================================================== */

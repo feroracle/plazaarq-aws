@@ -1,0 +1,176 @@
+/* ==========================================================================
+# Side area style - begin
+========================================================================== */
+
+.mkd-light-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener,
+.mkd-light-header .mkd-top-bar .mkd-side-menu-button-opener {
+	color: $header-light-color !important; //Color can be set inline from widget opener;
+	
+	&.opened,
+	&:hover {
+		color: $header-light-hover-color !important; //Color can be set inline from widget opener;
+	}
+}
+
+.mkd-dark-header .mkd-page-header > div:not(.mkd-sticky-header):not(.fixed) .mkd-side-menu-button-opener,
+.mkd-dark-header .mkd-top-bar .mkd-side-menu-button-opener {
+	color: $header-dark-color !important; //Color can be set inline from widget opener;
+	
+	&.opened,
+	&:hover {
+		color: $header-dark-hover-color !important; //Color can be set inline from widget opener;
+	}
+}
+
+.mkd-side-menu-button-opener {
+	position: relative;
+    display: inline-block;
+    margin-left: 18px;
+
+    .mkd-sm-lines {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 17px;
+
+        &:hover {
+
+            .mkd-sm-line {
+
+                &.mkd-line-1 {
+                  width: 80%;
+                }
+
+                &.mkd-line-2 {
+                    left: 0;
+                }
+
+                &.mkd-line-3 {
+                    width: 80%;
+                }
+            }
+        }
+        
+        .mkd-sm-line {
+            position: absolute;
+            height: 3px;
+            background-color: currentColor;
+            @include mkdTransitionTransform(.3s ease, top .2s ease-out, background-color .2s ease-out);
+            
+            &.mkd-line-1 {
+                top: 0;
+                left: 0;
+                width: 100%;
+                outline: transparent solid 1px;
+                @include mkdTransition(width .2s ease .2s);
+            }
+            
+            &.mkd-line-2 {
+                top: calc(50% - 2px);
+                left: 8px;
+                width: 12px;
+                outline: transparent solid 1px;
+                @include mkdTransition(left .2s ease .2s);
+            }
+            
+            &.mkd-line-3 {
+                top: calc(100% - 3px);
+                left: 0;
+                width: 100%;
+                outline: transparent solid 1px;
+                @include mkdTransition(width .2s ease .2s);
+            }
+        }
+    }
+}
+
+.mkd-side-menu {
+    position: fixed;
+    top: 0;
+	right: -485px;
+	width: 485px;
+    height: 100%;
+    min-height: 100%;
+	padding: 50px 65px 36px;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 9999;
+    -webkit-backface-visibility: hidden;
+    box-sizing: border-box;
+    @include mkdTransition(all .6s cubic-bezier(.77,0,.175,1));
+
+    .mkd-close-side-menu-holder {
+        position: absolute;
+	    top: 40px;
+	    right: 40px;
+        z-index: 1000;
+	
+	    .admin-bar & {
+		    top: 72px;
+	    }
+    }
+
+	a.mkd-close-side-menu {
+		z-index: 1000;
+
+		.mkd-sm-lines {
+            
+	        .mkd-sm-line {
+	            
+	            &.mkd-line-2 {
+	                display: none;
+	            }
+	            
+	            &.mkd-line-1 {
+                    width: 100%;
+	                top: 50%;
+	                @include mkdTransform(rotate(45deg));
+	            }
+	            
+	            &.mkd-line-3 {
+                    width: 100%;
+	                top: 50%;
+	                @include mkdTransform(rotate(-45deg));
+	            }
+	        }
+	    }
+	}
+}
+
+.mkd-side-menu-slide-from-right {
+	
+	&.mkd-right-side-menu-opened {
+		
+		.mkd-wrapper {
+			
+			.mkd-cover {
+				z-index: 3000;
+			}
+		}
+		
+		.mkd-side-menu {
+			right: 0;
+			visibility: visible;
+		}
+	}
+
+    .mkd-wrapper {
+
+        .mkd-cover {
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 0;
+        }
+    }
+}
+/* ==========================================================================
+# Side area style - end
+========================================================================== */

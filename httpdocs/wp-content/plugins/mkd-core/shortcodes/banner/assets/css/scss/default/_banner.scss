@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.mkd-banner-holder {
+    @include mkdRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	&.mkd-visible-on-hover {
+		
+		&:hover {
+			
+			.mkd-banner-text-holder {
+				opacity: 1;
+			}
+		}
+		
+		.mkd-banner-text-holder {
+			opacity: 0;
+			@include mkdTransition(opacity .2s ease-out);
+		}
+	}
+	
+	&.mkd-disabled {
+		
+		.mkd-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.mkd-banner-info-centered {
+		
+		.mkd-banner-text-holder {
+			padding: 70px 20px;
+			text-align: center;
+		}
+	}
+	
+	.mkd-banner-image {
+		@include mkdRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.mkd-banner-text-holder {
+		@include mkdAbsoluteHolderLayout();
+		padding: 35px;
+		background-color: rgba($default-heading-color, .4);
+		box-sizing: border-box;
+		
+		@include ipad-portrait {
+			padding: 25px;
+		}
+	}
+	
+	.mkd-banner-text-outer {
+		@include mkdTableLayout();
+	}
+	
+	.mkd-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: bottom;
+	}
+	
+	.mkd-banner-subtitle {
+		margin: 0 0 4px;
+		color: #fff;
+	}
+	
+	.mkd-banner-title {
+		margin: 0;
+		color: #fff;
+		
+		.mkd-banner-title-light {
+			font-weight: 300;
+		}
+	}
+	
+	.mkd-banner-link-text {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 11px 0 0;
+		color: #fff;
+		line-height: 1em;
+		z-index: 2;
+		@include mkdTransform(translateZ(0));
+		
+		&:hover {
+			
+			.mkd-banner-link-hover {
+				width: 100%;
+			}
+		}
+		
+		.mkd-banner-link-original {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			
+			span {
+				color: inherit;
+			}
+		}
+		
+		.mkd-banner-link-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0.1%;
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			white-space: nowrap;
+			overflow: hidden;
+			@include mkdTransition(width .4s ease-in-out);
+			
+			span {
+				color: $first-main-color;
+			}
+		}
+		
+		.mkd-banner-link-icon,
+		.mkd-banner-link-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.mkd-banner-link-icon {
+			margin: 0 2px 0 0;
+			font-size: 15px;
+		}
+		
+		.mkd-banner-link-label {
+			font-size: 14px;
+			line-height: inherit;
+		}
+	}
+
+	.mkd-banner-link {
+		@include mkdAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

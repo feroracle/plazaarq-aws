@@ -1,0 +1,202 @@
+/* ==========================================================================
+Product Categories shortcode styles - begin
+========================================================================== */
+
+.mkd-prod-cats-holder{
+
+    .mkd-prod-cat{
+        float: left;
+        position: relative;
+        box-sizing: border-box;
+        @include mkdTransition(opacity .2 ease-in-out);
+
+        .mkd-prod-cat-inner{
+            @include mkdRelativeHolderLayout();
+            @include mkdTransition(padding 0.2s ease-in-out);
+            height: 100%;
+            box-sizing: border-box;
+            padding: 0 0 15px;
+        }
+
+        .mkd-prod-cat-content{
+           &.top{
+               position: absolute;
+               top:0;
+               left:0;
+           }
+
+           &.bottom{
+               position: relative;
+               margin: 50px 0 0 0;
+               text-align: center;
+            }
+
+            .mkd-category-title{
+                margin: 0;
+                letter-spacing: 0.32em;
+            }
+
+            .mkd-prod-cat-price-holder{
+                letter-spacing: 0.5px;
+            }
+        }
+
+        &:hover{
+
+            .mkd-prod-cat-content{
+
+                .mkd-prod-cat-button-holder{
+                    opacity: 1;
+                }
+                &.top{
+
+                    .mkd-prod-cat-button-holder{
+                        background-color: #f4f4f4;
+                    }
+                }
+            }
+        }
+
+        &.mkd-cat-with-image{
+
+            .mkd-prod-cat-content{
+
+                &.top{
+                    top: 23px;
+                    left: 25px;
+                }
+            }
+
+        }
+    }
+
+    &.mkd-regular-zoom {
+
+        .mkd-cat-with-image {
+
+            .mkd-pcw-inner {
+                overflow:hidden;
+            }
+
+            a {
+                display:block;
+            }
+
+            img {
+                display:block;
+                @include mkdTransition(all 0.25s ease-in-out);
+            }
+
+            .mkd-prod-cat-inner {
+
+                &:hover {
+
+                    .mkd-pcw-inner {
+
+                        @include mkdTransform(none);
+
+                        img{
+                            @include mkdTransform(scale(1.1));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.mkd-shrink-zoom {
+
+        .mkd-cat-with-image {
+
+            .mkd-pcw-inner {
+
+                overflow:hidden;
+                @include mkdTransition(all .5s ease 0s);
+
+                img {
+                    display:block;
+                    backface-visibility: hidden;
+                    @include mkdTransition(all .5s ease 0s);
+                }
+            }
+
+            .mkd-prod-cat-inner {
+
+                &:hover {
+
+                    .mkd-pcw-inner {
+                        @include mkdTransition(all .5s ease .1s);
+                        @include mkdTransform(scale(0.95) translateZ(0));
+                        backface-visibility: hidden;
+
+                        img {
+                            @include mkdTransition(all .5s ease .1s);
+                            @include mkdTransform(scale(1.15) translateZ(0));
+                            backface-visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.mkd-sss-ms-section {
+    .mkd-prod-cats-holder{
+
+        .mkd-prod-cat.mkd-cat-with-image{
+            &:nth-child(even){
+                top: 39px;
+            }
+        }
+
+    }
+}
+
+$columns_space_label: ('no', 'tiny', 'small', 'normal', 'large');
+$columns_space_width: (0, 5, 10, 15, 25);
+
+@for $i from 0 to length($columns_space_label) {
+.mkd-#{nth($columns_space_label,$i+1)}-space {
+    $column_width: nth($columns_space_width,$i+1);
+    $column_width_padding: $column_width * 2;
+
+    .mkd-prod-cat-holder-inner {
+        @if($column_width == 0) {
+            margin: 0;
+            } @else {
+                margin: 0 -#{$column_width}px;
+            }
+
+            .mkd-prod-cat{
+                padding: 0 #{$column_width}px;
+                margin: 0 0 #{2*$column_width}px;
+            }
+        }
+    }
+}
+
+/*************** Standard Layout - begin ***************/
+
+$standard_list_columns: ('two', 'three', 'four');
+
+@for $i from 0 to length($standard_list_columns) {
+    .mkd-#{nth($standard_list_columns,$i+1)}-columns {
+        $column_width: 100%/($i+2);
+
+        .mkd-prod-cat{
+            width: $column_width;
+
+            @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                &:nth-child(#{$i+2}n+1) {
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+/*************** Standard Layout - end ***************/

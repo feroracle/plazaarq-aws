@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Header styles - begin
+   ========================================================================== */
+
+$logo-area-height: 115px;
+$menu-area-height: 115px;
+
+.mkd-page-header {
+    @include mkdRelativeHolderLayout();
+    margin: 0;
+    padding: 0;
+    z-index: 110;
+    box-sizing: border-box;
+
+    /* ==========================================================================
+    #General header layout - start
+    ========================================================================== */
+    a img {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+    
+    .mkd-vertical-align-containers {
+        padding: 0 40px;
+    
+        .mkd-paspartu-enabled & {
+            padding: 0;
+        }
+    }
+
+    .mkd-grid {
+        height: 100%;
+
+        .mkd-vertical-align-containers {
+            padding: 0;
+            @include mkdTransition(background-color 0.3s ease);
+        }
+    }
+
+    /* ==========================================================================
+    #General header layout - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Logo area styles - start
+    ========================================================================== */
+    .mkd-logo-area {
+	    position: relative;
+	    height: $logo-area-height;
+	    overflow: hidden;
+        background-color: #fff;
+
+        .mkd-logo-wrapper a {
+            max-height: $logo-area-height;
+        }
+    }
+    /* ==========================================================================
+    #Logo area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Menu area styles - start
+    ========================================================================== */
+    .mkd-menu-area {
+        position: relative;
+        height: $menu-area-height;
+        background-color: #fff;
+        box-sizing: border-box;
+
+        .mkd-boxed & {
+            padding: 0;
+        }
+
+        .mkd-logo-wrapper a {
+            max-height: $menu-area-height;
+        }
+
+        .widget {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+        }
+    }
+    /* ==========================================================================
+    #Menu area styles - end
+    ========================================================================== */
+    
+    /* ==========================================================================
+    #Specific styles - start
+    ========================================================================== */
+    
+    .mkd-logo-area {
+    
+        .mkd-logo-area-border-disable & {
+            border: none;
+        }
+        
+        .mkd-logo-area-in-grid-border-disable & {
+    
+            .mkd-grid {
+                
+                .mkd-vertical-align-containers {
+                    border: none;
+                }
+            }
+        }
+    
+        .mkd-header-logo-area-in-grid-padding & {
+        
+            .mkd-vertical-align-containers {
+                padding: 0 25px;
+            }
+        }
+    }
+    
+    .mkd-menu-area {
+    
+        .mkd-menu-area-shadow-disable & {
+            box-shadow: none;
+    
+            .mkd-grid {
+        
+                .mkd-vertical-align-containers {
+                    box-shadow: none;
+                }
+            }
+        }
+    
+        .mkd-menu-area-border-disable & {
+            border: none;
+        }
+    
+        .mkd-menu-area-in-grid-border-disable & {
+        
+            .mkd-grid {
+            
+                .mkd-vertical-align-containers {
+                    border: none;
+                }
+            }
+        }
+    
+        .mkd-header-logo-area-in-grid-padding & {
+    
+            .mkd-vertical-align-containers {
+                padding: 0 25px;
+            }
+        }
+    }
+    /* ==========================================================================
+    #Specific styles - end
+    ========================================================================== */
+}
+
+/* ==========================================================================
+#Light header - begin
+========================================================================== */
+
+.mkd-light-header {
+
+    .mkd-page-header > div:not(.fixed):not(.mkd-sticky-header) {
+
+        .mkd-logo-wrapper {
+
+            .mkd-light-logo {
+                opacity: 1;
+            }
+
+            .mkd-normal-logo,
+            .mkd-dark-logo {
+                opacity: 0;
+            }
+        }
+
+        .mkd-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+
+        &.mkd-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+#Light header - end
+========================================================================== */
+
+/* ==========================================================================
+#Dark header - begin
+========================================================================== */
+
+.mkd-dark-header {
+
+    .mkd-page-header {
+
+        > div:not(.fixed):not(.mkd-sticky-header) {
+
+            .mkd-logo-wrapper {
+
+                .mkd-dark-logo {
+                    opacity: 1;
+                }
+
+                .mkd-normal-logo,
+                .mkd-light-logo {
+                    opacity: 0;
+                }
+            }
+
+            .mkd-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+
+            &.mkd-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+#Dark header - end
+========================================================================== */
+
+/* ==========================================================================
+   Header end - end
+   ========================================================================== */

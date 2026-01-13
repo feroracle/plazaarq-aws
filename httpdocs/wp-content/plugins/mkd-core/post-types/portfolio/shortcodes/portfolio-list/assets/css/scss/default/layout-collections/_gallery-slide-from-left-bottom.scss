@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - begin
+   ========================================================================== */
+
+.mkd-portfolio-list-holder {
+	
+	&.mkd-pl-gallery-slide-from-left-bottom  {
+		
+		&.mkd-pl-has-shadow {
+			
+			.mkd-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.mkd-pli-text-holder {
+					@include mkdTransform(translateX(0));
+					@include mkdTransitionTransform(.6s ease);
+				}
+
+				.mkd-pli-text {
+
+					.mkd-pli-title {
+						opacity: 1;
+						@include mkdTransform(translateX(0));
+						@include mkdTransitionTransform(.5s ease .5s, opacity .5s .3s);
+					}
+
+					.mkd-pli-category-holder {
+						opacity: 1;
+						@include mkdTransform(translateX(0));
+						@include mkdTransitionTransform(.5s ease .6s, opacity .5s .6s);
+					}
+				}
+			}
+			
+			.mkd-pl-item-inner {
+				overflow: hidden;
+			}
+
+			.mkd-pli-text {
+
+				.mkd-pli-title {
+					opacity: 0;
+					@include mkdTransform(translateX(20px));
+					@include mkdTransitionTransform(.3s ease, opacity .3s);
+				}
+
+				.mkd-pli-category-holder {
+
+					opacity: 0;
+					@include mkdTransform(translateX(20px));
+					@include mkdTransitionTransform(.3s ease, opacity .3s);
+
+					a {
+						margin: -12px 0 0;
+					}
+				} 
+			} 
+		}
+		
+		.mkd-pli-text-holder {
+			position: absolute;
+			display: block;
+			width: 92%;
+			height: auto;
+			bottom: 0;
+			left: 0;
+			padding: 45px 28px 26px;
+			background-color: #fff;
+			overflow: hidden;
+			box-sizing: border-box;
+			@include mkdTransform(translateX(-100%));
+			@include mkdTransitionTransform(.4s ease);
+		}
+		
+		.mkd-pli-text-wrapper {
+
+			.mkd-pli-category-holder {
+				> p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - end
+   ========================================================================== */

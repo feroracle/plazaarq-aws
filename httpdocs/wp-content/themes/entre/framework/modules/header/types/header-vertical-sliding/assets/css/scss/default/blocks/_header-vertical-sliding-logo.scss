@@ -1,0 +1,26 @@
+.mkd-header-vertical-sliding {
+
+    .mkd-logo-wrapper {
+        z-index: 100;
+        display: block;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        padding: 10px 10px 30px;
+
+        a {
+            display: inline-block;
+            position: relative;
+            height: 100%;
+
+        }
+
+        img {
+            display: inline-block;
+            height: auto;
+            max-height: 100%;
+
+            @include mkdTransition(opacity 0.3s ease);
+        }
+    }
+}

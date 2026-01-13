@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.mkd-btn {
+    @include mkdButtonDefaultStyle();
+    @include mkdButtonMediumParams();
+    cursor: pointer;
+
+    &.mkd-btn-minimal {
+        padding: 0 0 5px 27px!important;
+        vertical-align: middle;
+        @include mkdButtonMinimalColor();
+
+        .mkd-btn-text,
+        .mkd-btn-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .mkd-btn-icon { 
+            font-size: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+        &:hover {
+            @include mkdButtonMinimalHoverColor();
+        }
+    }
+    
+    &.mkd-btn-simple {
+        padding: 0 !important;
+        color: $default-text-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        .mkd-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.mkd-btn-custom-hover-color):hover {
+           /* important because of inline color attribute. :not is used so we don't have to use important in JS*/
+            color: $default-dark-color !important;
+        }
+
+        &:not(.mkd-btn-custom-hover-bg):hover {
+            /*important because of inline color attribute. :not is used so we don't have to use important in JS*/
+            background-color: transparent !important;
+        }
+
+        &:not(.mkd-btn-custom-border-hover):hover {
+            /*important because of inline color attribute. :not is used so we don't have to use important in JS*/
+            border-color: transparent !important;
+        }
+    }
+
+    &.mkd-btn-solid {
+        @include mkdButtonSolidColor();
+
+        &:hover {
+            @include mkdButtonSolidHoverColor();
+        }
+    }
+
+    &.mkd-btn-outline {
+	    @include mkdButtonOutlineColor();
+
+        &:hover {
+            @include mkdButtonOutlineHoverColor();
+        }
+    }
+
+    &.mkd-btn-small {
+        @include mkdButtonSmallParams();
+    }
+
+    &.mkd-btn-medium {
+        //same as default
+    }
+
+    &.mkd-btn-large {
+        @include mkdButtonLargeParams();
+    }
+
+    &.mkd-btn-huge {
+        @include mkdButtonHugeParams();
+    }
+
+    &.mkd-btn-icon {
+
+        > i,
+        > span:not(.mkd-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 0 4px;
+            font-size: 1.142857142857143em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Floating Product Categories shortcode styles - begin
+   ========================================================================== */
+
+.mkd-floating-prod-cats-holder{
+
+    .mkd-floating-prod-cat{
+        float: left;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        @include mkdTransition(opacity .2 ease-in-out);
+        &.show{
+          opacity: 1;
+        }
+
+      .mkd-floating-cat-inner{
+        @include mkdRelativeHolderLayout();
+        height: 100%;
+        padding: 0;
+        border:0 solid #fff;
+        box-sizing: border-box;
+        //@include mkdTransition(all 0.2s ease-in-out);
+
+        .mkd-floating-cat-wrapper{
+            @include mkdRelativeHolderLayout();
+            @include mkdBackgroundStyle();
+            height: 100%;
+            background-size:100%;
+            @include mkdTransition(all 0.2s ease-in-out);
+
+
+            .mkd-floating-cat-image {
+              display: inline-block;
+              vertical-align: middle;
+            }
+
+            .mkd-floating-cat-content{
+              position: absolute;
+              backface-visibility: hidden;
+              width: calc(100% - 20px);
+
+              .mkd-category-title{
+                  margin-bottom: 12px;
+              }
+
+              .mkd-floating-cat-price-holder{
+                display: block;
+                font-family: $second-heading-font;
+                font-weight: 400;
+                color: $default-heading-color;
+                font-size: 25px;
+                line-height: 1.32em;
+                letter-spacing: 0.2em;
+                margin-bottom: 28px;
+
+                > span {
+                  margin-left: -10px;
+                }
+
+                .mkd-separator-holder {
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding-left: 12%;
+                  padding-right: 2%;
+                }
+            }
+          }
+        }
+      }
+
+    &.mkd-img-big-size{
+      .mkd-floating-cat-inner{
+        width: 88.5%;
+        height: 100%;
+      }
+    }
+
+    &.mkd-img-small-size{
+      .mkd-floating-cat-inner{
+        width: 81%;
+        height: auto;
+        top: 50%;
+        @include mkdTransform(translateY(-50%));
+      }
+    }
+    &.mkd-img-right-side{
+      .mkd-floating-cat-inner{
+        float: right;
+      }
+    }
+    .mkd-floating-cat-content{
+      position: absolute;
+    }
+
+    &.mkd-content-top-left{
+      .mkd-floating-cat-content{
+        top: -65px;
+        left: 20px;
+      }
+    }
+    &.mkd-content-bottom-left{
+      .mkd-floating-cat-content{
+        bottom: -65px;
+        left: 20px;
+      }
+    }
+
+    &.mkd-content-top-right{
+      .mkd-floating-cat-content{
+        top: -65px;
+        right: 20px;
+      }
+    }
+    &.mkd-content-bottom-right{
+      .mkd-floating-cat-content{
+        bottom: -70px;
+        right: -190px;
+      }
+    }
+
+    &.mkd-content-middle-right{
+      .mkd-floating-cat-content{
+        top: 50%;
+        right: -357px;
+        @include mkdTransform(translateY(-50%));
+          -webkit-filter: blur(0);
+          filter: blur(0);
+      }
+    }
+    &.mkd-content-middle-left{
+      .mkd-floating-cat-content{
+          top: 50%;
+          left: -114px;
+          @include mkdTransform(translateY(-50%));
+          -webkit-filter: blur(0);
+          filter: blur(0);
+      }
+    }
+  }
+
+  $columns_space_label: ('no', 'tiny', 'small', 'normal', 'large');
+  $columns_space_width: (0, 5, 10, 15, 25);
+
+  @for $i from 0 to length($columns_space_label) {
+    .mkd-#{nth($columns_space_label,$i+1)}-space {
+      $column_width: nth($columns_space_width,$i+1);
+      $column_width_padding: $column_width * 2;
+
+      .mkd-floating-prod-cat-holder-inner {
+        @if($column_width == 0) {
+          margin: 0;
+        } @else {
+          margin: 0 -#{$column_width}px;
+        }
+
+        .mkd-floating-prod-cat{
+          padding: 0 #{$column_width}px;
+          margin: 0 0 #{2*$column_width + 37}px;
+        }
+      }
+    }
+  }
+
+  /*************** Standard Layout - begin ***************/
+
+
+
+  $standard_list_columns: ('two', 'three', 'four');
+
+  @for $i from 0 to length($standard_list_columns) {
+    .mkd-#{nth($standard_list_columns,$i+1)}-columns {
+      $column_width: 100%/($i+2);
+
+      .mkd-floating-prod-cat{
+        width: $column_width;
+
+        @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+          &:nth-child(#{$i+2}n+1) {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+  /*************** Standard Layout - end ***************/

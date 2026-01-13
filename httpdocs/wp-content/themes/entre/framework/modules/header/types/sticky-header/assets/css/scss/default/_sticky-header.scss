@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Sticky header style - begin
+   ========================================================================== */
+
+$sticky-header-height: 70px;
+
+.mkd-sticky-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $sticky-header-height;
+	width: 100%;
+    z-index: 100;
+	-webkit-backface-visibility: hidden;
+	@include mkdTransform(translateY(-100%));
+	@include mkdTransitionTransform(.6s ease);
+    
+    .mkd-grid {
+        height: 100% !important; //override settings for other instances of this div
+
+    }
+    
+    &.header-appear {
+        transform: translateY(0%);
+    }
+    
+    .mkd-sticky-holder {
+	    position: relative;
+	    height: 100%;
+        z-index: 2;
+        background-color: #fff;
+        box-sizing: border-box;
+
+        .mkd-grid {
+        	.mkd-vertical-align-containers {
+        		padding: 0;
+        	}
+        }
+        
+        .mkd-vertical-align-containers {
+            padding: 0 40px;
+        }
+	
+	    .mkd-logo-wrapper a {
+		    max-height: $sticky-header-height;
+	    }
+    }
+    
+    .admin-bar &.header-appear {
+        top: 32px;
+    }
+	
+	.mkd-position-center-inner,
+	.mkd-position-right-inner {
+		height: 100%;
+	}
+	
+	.mkd-sticky-right {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.widget {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+	}
+}
+/* ==========================================================================
+   Sticky header style - end
+   ========================================================================== */

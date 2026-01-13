@@ -1,0 +1,50 @@
+.mkd-floating-prod-cats-holder{
+    @include ipad-landscape{
+        $standard_list_columns: ('two', 'three', 'four');
+
+        @for $i from 0 to length($standard_list_columns) {
+            &.mkd-#{nth($standard_list_columns,$i+1)}-columns {
+                $column_width: 100%;
+
+                .mkd-floating-prod-cat{
+                    width: $column_width;
+                }
+            }
+        }
+        &.mkd-normal-space {
+            .mkd-floating-prod-cat-holder-inner {
+                .mkd-floating-prod-cat {
+                    margin-bottom: 100px;
+                }     
+            }
+        }  
+    }
+
+    @include phone-portrait {
+        .mkd-floating-prod-cat.mkd-content-middle-left {
+            .mkd-floating-cat-content {
+                left: auto;
+            }          
+        }
+
+        .mkd-floating-prod-cat.mkd-content-middle-right {
+            .mkd-floating-cat-content {
+                right: auto;
+            }          
+        }
+
+        .mkd-floating-prod-cat.mkd-content-bottom-right {
+            .mkd-floating-cat-content {
+                right: auto;
+            }
+        }
+
+        .mkd-floating-prod-cat.mkd-content-bottom-left {
+            .mkd-floating-cat-content {
+                left: auto;
+            }
+        }
+    }
+}
+
+  

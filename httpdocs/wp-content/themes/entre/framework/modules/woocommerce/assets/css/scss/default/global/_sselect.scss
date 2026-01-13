@@ -1,0 +1,17 @@
+/* ==========================================================================
+   WooCommerce Select 2 Script override - begin
+   ========================================================================== */
+
+.mkd-woocommerce-page {
+    
+    .cart-collaterals .woocommerce-shipping-calculator {
+        
+        .select2-container--default {
+            width: 100% !important;
+            margin: 0 0 14px;
+        }
+    }
+}
+/* ==========================================================================
+   WooCommerce Select 2 Script override - end
+   ========================================================================== */

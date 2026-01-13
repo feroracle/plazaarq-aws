@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Blog List shortcode global style - begin
+   ========================================================================== */
+
+.mkd-blog-list-holder {
+	@include mkdRelativeHolderLayout();
+	clear: both;
+	
+	.mkd-blog-list {
+		@include mkdRelativeHolderLayout();
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.mkd-bl-item {
+		@include mkdRelativeHolderLayout();
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	.mkd-bli-inner {
+		@include mkdRelativeHolderLayout();
+
+		&:hover {
+			.mkd-post-image {
+
+				img {
+					@include mkdTransform(scale(1.05) translateZ(0));
+					@include mkdTransitionTransform(3s ease);
+				}
+			}
+		}
+	}
+	
+	.mkd-bli-content {
+		@include mkdRelativeHolderLayout();
+		box-sizing: border-box;
+	}
+	
+	.mkd-post-image {
+		@include mkdRelativeHolderLayout();
+		margin: 0 0 31px;
+		overflow: hidden;
+		
+		a {
+			display: block;
+		}
+		
+		img {
+			display: block;
+			@include mkdTransform(scale(1) translateZ(0));
+			@include mkdTransitionTransform(1s ease);
+		}
+	}
+	
+	.mkd-bli-info {
+		@include mkdRelativeHolderLayout();
+		margin: 0 0 11px;
+		clear: both;
+		
+		> div {
+			position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    padding: 0 10px 0 0;
+		    color: $default-text-color;
+		    font-size: 16px;
+		    font-weight: 400;
+		    letter-spacing: .07em;
+						
+			&:after {
+                content: '/';
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            &:last-child {
+                padding: 0;
+    
+                &:after {
+                    content: '';
+                }
+            }
+
+            a {
+                color: inherit
+            }
+		}
+
+		.mkd-post-info-date {
+			a {
+				margin-right: 2px;
+			}
+		}
+
+		.mkd-post-info-category {
+			margin-left: 4px;
+		}
+	}
+	
+	.mkd-post-title {
+		margin: 0;
+	}
+	
+	.mkd-post-excerpt {
+		@include mkdRelativeHolderLayout();
+		margin: 13px 0 12px;
+		
+		p {
+			margin: 0;
+		}
+		
+		&:after {
+			content: '.';
+		}
+	}
+	
+	.mkd-post-read-more-button {
+		@include mkdRelativeHolderLayout();
+		margin: 22px 0 0;
+	}
+}
+/* ==========================================================================
+   Blog List shortcode global style - end
+   ========================================================================== */

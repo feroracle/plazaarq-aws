@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Split Scrolling Section shortcode style - begin
+   ========================================================================== */
+
+.mkd-split-scrolling-section {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	
+	.mkd-sss-ms-left,
+	.mkd-sss-ms-right {
+		width: calc(50% - 22px);
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	 .mkd-sss-ms-section{
+		 height: 100%;
+		 overflow: hidden;
+	 }
+
+	.mkd-sss-ms-left {
+		position: fixed;
+		padding-right: 34px;
+
+		div,ul,li{
+			height: 100%;
+		}
+		
+		.mkd-sss-ms-section {
+			background-position: 100% center;
+			background-size: cover;
+		}
+	}
+
+	.mkd-sss-ms-right {
+		float: right;
+		margin-top: 21px;
+		padding-left: 15px;
+		
+		.mkd-sss-ms-section {
+			background-position: 0 center;
+			background-size: cover;
+		}
+	}
+
+	.mkd-owl-slider .owl-nav .owl-next,
+	.mkd-owl-slider .owl-nav .owl-prev{
+		@include mkdTransform(none);
+		top: calc(100% - 48px );
+	}
+}
+
+body.mkd-paspartu-enabled {
+	.mkd-split-scrolling-section {
+		.mkd-sss-ms-left {
+			height: calc(100vh - 72px);
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Split Scrolling Section shortcode style - end
+   ========================================================================== */

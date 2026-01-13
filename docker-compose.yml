@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db-plazaarq:
+    image: mariadb:10.6
+    container_name: plazaarq_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: db_plazaarq
+      MYSQL_ROOT_PASSWORD: password_seguro
+    volumes:
+      # Importante: aquí va tu archivo .sql real
+      - ./rociopla_wp_k40qo_2026-01-10_13-00-47.sql:/docker-entrypoint-initdb.d/init.sql
+
+  web-plazaarq:
+    image: wordpress:5.8-php7.4-apache
+    container_name: plazaarq_web
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      WORDPRESS_DB_HOST: db-plazaarq
+      WORDPRESS_DB_NAME: db_plazaarq
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password_seguro
+    volumes:
+      - ./httpdocs:/var/www/html
+    depends_on:
+      - db-plazaarq

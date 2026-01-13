@@ -1,0 +1,4347 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+.mkd-accordion-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-accordion-holder .mkd-accordion-title {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.mkd-accordion-holder .mkd-accordion-title .mkd-tab-title {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-accordion-holder .mkd-accordion-title .mkd-accordion-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #f2e9e9;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mkd-accordion-holder .mkd-accordion-title .mkd-accordion-mark span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkd-accordion-holder .mkd-accordion-title .mkd-accordion-mark span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-accordion-holder .mkd-accordion-title .mkd-accordion-mark span.mkd_icon_minus {
+  opacity: 0;
+}
+
+.mkd-accordion-holder .mkd-accordion-title .mkd-accordion-mark span.mkd_icon_plus {
+  opacity: 1;
+}
+
+.mkd-accordion-holder .mkd-accordion-title.ui-state-active .mkd-accordion-mark span.mkd_icon_minus, .mkd-accordion-holder .mkd-accordion-title.ui-state-hover .mkd-accordion-mark span.mkd_icon_minus {
+  opacity: 1;
+}
+
+.mkd-accordion-holder .mkd-accordion-title.ui-state-active .mkd-accordion-mark span.mkd_icon_plus, .mkd-accordion-holder .mkd-accordion-title.ui-state-hover .mkd-accordion-mark span.mkd_icon_plus {
+  opacity: 0;
+}
+
+.mkd-accordion-holder .mkd-accordion-content {
+  margin: 0;
+}
+
+.mkd-accordion-holder .mkd-accordion-content p {
+  margin: 0;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed.mkd-white-skin .mkd-accordion-title {
+  background-color: #fff;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title {
+  margin: 15px 0 0;
+  padding: 13px 20px 7px 40px;
+  background-color: transparent;
+  border: 1px solid #f2e9e9;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title:first-child {
+  margin: 0;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title .mkd-accordion-mark {
+  left: 10px;
+  color: #414347;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title.ui-state-active, .mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title.ui-state-hover {
+  color: #414347;
+  background-color: #f2e9e9;
+  border-color: #f2e9e9;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title.ui-state-active .mkd-accordion-mark, .mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-title.ui-state-hover .mkd-accordion-mark {
+  color: #414347;
+}
+
+.mkd-accordion-holder.mkd-ac-boxed .mkd-accordion-content {
+  padding: 12px 0 16px 30px;
+}
+
+.mkd-accordion-holder.mkd-ac-simple .mkd-accordion-title {
+  padding: 27px 0 7px 30px;
+  border-bottom: 1px solid #f2e9e9;
+}
+
+.mkd-accordion-holder.mkd-ac-simple .mkd-accordion-title .mkd-accordion-mark {
+  top: calc(50% + 7px);
+}
+
+.mkd-accordion-holder.mkd-ac-simple .mkd-accordion-content.ui-accordion-content-active {
+  border-color: #f2e9e9;
+}
+
+.mkd-accordion-holder.mkd-ac-simple .mkd-accordion-content {
+  padding: 11px 0 16px 30px;
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+.mkd-banner-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .mkd-banner-holder {
+  cursor: pointer;
+}
+
+.mkd-banner-holder.mkd-visible-on-hover:hover .mkd-banner-text-holder {
+  opacity: 1;
+}
+
+.mkd-banner-holder.mkd-visible-on-hover .mkd-banner-text-holder {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkd-banner-holder.mkd-disabled .mkd-banner-text-holder {
+  display: none;
+}
+
+.mkd-banner-holder.mkd-banner-info-centered .mkd-banner-text-holder {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.mkd-banner-holder .mkd-banner-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-banner-holder .mkd-banner-image img {
+  display: block;
+}
+
+.mkd-banner-holder .mkd-banner-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 35px;
+  background-color: rgba(65, 67, 71, 0.4);
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .mkd-banner-holder .mkd-banner-text-holder {
+    padding: 25px;
+  }
+}
+
+.mkd-banner-holder .mkd-banner-text-outer {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkd-banner-holder .mkd-banner-text-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.mkd-banner-holder .mkd-banner-subtitle {
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.mkd-banner-holder .mkd-banner-title {
+  margin: 0;
+  color: #fff;
+}
+
+.mkd-banner-holder .mkd-banner-title .mkd-banner-title-light {
+  font-weight: 300;
+}
+
+.mkd-banner-holder .mkd-banner-link-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 11px 0 0;
+  color: #fff;
+  line-height: 1em;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.mkd-banner-holder .mkd-banner-link-text:hover .mkd-banner-link-hover {
+  width: 100%;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-original {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-original span {
+  color: inherit;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.1%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-hover span {
+  color: #f2e9e9;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-icon,
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-icon {
+  margin: 0 2px 0 0;
+  font-size: 15px;
+}
+
+.mkd-banner-holder .mkd-banner-link-text .mkd-banner-link-label {
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.mkd-banner-holder .mkd-banner-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+.mkd-btn {
+  font-family: "Bellefair", serif;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  line-height: 2em;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  padding: 3px 30px 6px 32px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.mkd-btn.mkd-btn-minimal {
+  padding: 0 0 5px 27px !important;
+  vertical-align: middle;
+  border: 0;
+  border-left: 2px solid #898989;
+  background-size: 201% 100%;
+  background-image: linear-gradient(to right, #fff 50%, #898989 50%), linear-gradient(to right, #898989 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -webkit-background-clip: text, border-box;
+  background-clip: text, border-box;
+  color: #898989;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mkd-btn.mkd-btn-minimal .mkd-btn-text,
+.mkd-btn.mkd-btn-minimal .mkd-btn-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkd-btn.mkd-btn-minimal .mkd-btn-icon {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.mkd-btn.mkd-btn-minimal:hover {
+  background-position: left bottom;
+}
+
+.mkd-btn.mkd-btn-minimal:hover .mkd-btn-text {
+  color: #fff;
+}
+
+.mkd-btn.mkd-btn-simple {
+  padding: 0 !important;
+  color: #707070;
+  background-color: transparent;
+  border: 0;
+  vertical-align: middle;
+}
+
+.mkd-btn.mkd-btn-simple .mkd-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkd-btn.mkd-btn-simple:not(.mkd-btn-custom-hover-color):hover {
+  /* important because of inline color attribute. :not is used so we don't have to use important in JS*/
+  color: #414347 !important;
+}
+
+.mkd-btn.mkd-btn-simple:not(.mkd-btn-custom-hover-bg):hover {
+  /*important because of inline color attribute. :not is used so we don't have to use important in JS*/
+  background-color: transparent !important;
+}
+
+.mkd-btn.mkd-btn-simple:not(.mkd-btn-custom-border-hover):hover {
+  /*important because of inline color attribute. :not is used so we don't have to use important in JS*/
+  border-color: transparent !important;
+}
+
+.mkd-btn.mkd-btn-solid {
+  border: 2px solid #414347;
+  background-size: 201% 100%;
+  background-image: linear-gradient(to right, #414347 50%, #fff 50%), linear-gradient(to right, transparent 50%, #414347 50%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -webkit-background-clip: text, border-box;
+  background-clip: text, border-box;
+  color: transparent;
+  -webkit-transition: background-position 0.3s;
+  -moz-transition: background-position 0.3s;
+  transition: background-position 0.3s;
+}
+
+.mkd-btn.mkd-btn-solid:hover {
+  background-position: left bottom;
+}
+
+.mkd-btn.mkd-btn-outline {
+  border: 2px solid #414347;
+  background-size: 201% 100%;
+  background-image: linear-gradient(to right, #fff 50%, #414347 50%), linear-gradient(to right, #414347 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -webkit-background-clip: text, border-box;
+  background-clip: text, border-box;
+  color: transparent;
+  -webkit-transition: background-position 0.3s;
+  -moz-transition: background-position 0.3s;
+  transition: background-position 0.3s;
+}
+
+.mkd-btn.mkd-btn-outline:hover {
+  background-position: left bottom;
+}
+
+.mkd-btn.mkd-btn-small {
+  padding: 2px 24px 6px 26px;
+  font-size: 16px;
+}
+
+.mkd-btn.mkd-btn-large {
+  padding: 4px 34px 6px 36px;
+  font-size: 20px;
+}
+
+.mkd-btn.mkd-btn-huge {
+  display: block;
+  text-align: center;
+  padding: 4px 34px 6px 36px;
+  font-size: 20px;
+}
+
+.mkd-btn.mkd-btn-icon > i,
+.mkd-btn.mkd-btn-icon > span:not(.mkd-btn-text) {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 4px;
+  font-size: 1.142857142857143em;
+  line-height: inherit;
+}
+
+.mkd-btn.mkd-btn-icon > i:before,
+.mkd-btn.mkd-btn-icon > span:not(.mkd-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+.mkd-call-to-action-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Layout Style - begin *****/
+  /***** Layout Style - end *****/
+  /***** Columns Space - begin *****/
+  /***** Columns Space - end *****/
+}
+
+.mkd-call-to-action-holder .mkd-cta-text-holder,
+.mkd-call-to-action-holder .mkd-cta-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkd-call-to-action-holder .mkd-cta-text-holder h1, .mkd-call-to-action-holder .mkd-cta-text-holder h2, .mkd-call-to-action-holder .mkd-cta-text-holder h3, .mkd-call-to-action-holder .mkd-cta-text-holder h4, .mkd-call-to-action-holder .mkd-cta-text-holder h5, .mkd-call-to-action-holder .mkd-cta-text-holder h6 {
+  margin: 0;
+}
+
+.mkd-call-to-action-holder .mkd-cta-button-holder .mkd-btn {
+  white-space: nowrap;
+}
+
+.mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-inner {
+  display: table;
+}
+
+.mkd-call-to-action-holder.mkd-normal-layout:not(.mkd-content-in-grid) .mkd-cta-inner {
+  width: 100%;
+}
+
+.mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-text-holder,
+.mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-button-holder {
+  display: table-cell;
+  box-sizing: border-box;
+}
+
+.mkd-call-to-action-holder.mkd-normal-layout .mkd-cta-button-holder {
+  text-align: right;
+}
+
+.mkd-call-to-action-holder.mkd-simple-layout .mkd-cta-inner {
+  text-align: center;
+}
+
+.mkd-call-to-action-holder.mkd-simple-layout .mkd-cta-text-holder,
+.mkd-call-to-action-holder.mkd-simple-layout .mkd-cta-button-holder {
+  width: 100%;
+}
+
+.mkd-call-to-action-holder.mkd-simple-layout .mkd-cta-button-holder {
+  margin: 28px 0 0;
+}
+
+.mkd-call-to-action-holder.mkd-two-halves-columns .mkd-cta-text-holder,
+.mkd-call-to-action-holder.mkd-two-halves-columns .mkd-cta-button-holder {
+  width: 50%;
+}
+
+.mkd-call-to-action-holder.mkd-two-thirds-columns .mkd-cta-text-holder {
+  width: 66.66666666666667%;
+}
+
+.mkd-call-to-action-holder.mkd-two-thirds-columns .mkd-cta-button-holder {
+  width: 33.33333333333333%;
+}
+
+.mkd-call-to-action-holder.mkd-three-quarters-columns .mkd-cta-text-holder {
+  width: 75%;
+}
+
+.mkd-call-to-action-holder.mkd-three-quarters-columns .mkd-cta-button-holder {
+  width: 25%;
+}
+
+.mkd-call-to-action-holder.mkd-four-fifths-columns .mkd-cta-text-holder {
+  width: 80%;
+}
+
+.mkd-call-to-action-holder.mkd-four-fifths-columns .mkd-cta-button-holder {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+.mkd-clients-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.mkd-clients-carousel-holder .mkd-cc-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-clients-carousel-holder .mkd-cc-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .mkd-clients-carousel-holder .mkd-cc-item {
+  cursor: pointer;
+}
+
+.mkd-clients-carousel-holder .mkd-cc-item .mkd-cc-item {
+  position: relative;
+  display: block;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-switch-images .mkd-cc-item:hover .mkd-cc-image {
+  opacity: 0;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-switch-images .mkd-cc-item:hover .mkd-cc-hover-image {
+  opacity: 1;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-switch-images .mkd-cc-item .mkd-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-switch-images .mkd-cc-item .mkd-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-roll-over .mkd-cc-item {
+  overflow: hidden;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-roll-over .mkd-cc-item:hover .mkd-cc-image {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-roll-over .mkd-cc-item:hover .mkd-cc-hover-image {
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-roll-over .mkd-cc-item .mkd-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+.mkd-clients-carousel-holder.mkd-cc-hover-roll-over .mkd-cc-item .mkd-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+.mkd-countdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-countdown.mkd-light-skin .countdown-row .countdown-section .countdown-amount,
+.mkd-countdown.mkd-light-skin .countdown-row .countdown-section .countdown-period {
+  color: #fff;
+}
+
+.mkd-countdown .countdown-rtl {
+  direction: rtl;
+}
+
+.mkd-countdown .countdown-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  clear: both;
+}
+
+.mkd-countdown .countdown-row.countdown-show1 .countdown-section {
+  width: 100%;
+}
+
+.mkd-countdown .countdown-row.countdown-show2 .countdown-section {
+  width: 50%;
+}
+
+.mkd-countdown .countdown-row.countdown-show3 .countdown-section {
+  width: 33.33333%;
+}
+
+.mkd-countdown .countdown-row.countdown-show4 .countdown-section {
+  width: 25%;
+}
+
+.mkd-countdown .countdown-row.countdown-show5 .countdown-section {
+  width: 20%;
+}
+
+.mkd-countdown .countdown-row.countdown-show6 .countdown-section {
+  width: 16.66667%;
+}
+
+.mkd-countdown .countdown-row .countdown-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.mkd-countdown .countdown-row .countdown-section .countdown-amount {
+  height: 1em;
+  display: block;
+  vertical-align: middle;
+  color: #414347;
+  font-size: 47px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1em;
+  letter-spacing: .15em;
+  font-weight: 700;
+}
+
+.mkd-countdown .countdown-row .countdown-section .countdown-period {
+  margin: 23px 0 0;
+  letter-spacing: .05em;
+  display: block;
+  font-family: "Bellefair", serif;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #414347;
+  font-size: 25px;
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+.mkd-counter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.mkd-counter-holder .mkd-counter-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkd-counter-holder .mkd-counter {
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  color: #414347;
+  font-size: 47px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1em;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.mkd-counter-holder .mkd-counter-title {
+  margin: 5px 0 0;
+  letter-spacing: 0.05em;
+}
+
+.mkd-counter-holder .mkd-counter-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode style - begin
+   ========================================================================== */
+.mkd-custom-font-holder .mkd-cf-typed-wrap {
+  width: 0;
+  white-space: nowrap;
+}
+
+.mkd-custom-font-holder .mkd-cf-typed {
+  display: inline-block;
+}
+
+.mkd-custom-font-holder .mkd-cf-typed span {
+  display: none;
+}
+
+.mkd-custom-font-holder .mkd-cf-typed ~ .typed-cursor {
+  display: inline-block;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Dropcaps shortcode style - begin
+   ========================================================================== */
+.mkd-dropcaps {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  line-height: 42px;
+  font-size: 42px;
+  color: #999;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 7px 0 0;
+}
+
+.mkd-dropcaps.mkd-square, .mkd-dropcaps.mkd-circle {
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #414347;
+  margin: 6px 9px 0 0;
+  box-sizing: border-box;
+}
+
+.mkd-dropcaps.mkd-circle {
+  border-radius: 3em;
+}
+
+/* ==========================================================================
+   Dropcaps shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+.mkd-elements-holder {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.mkd-elements-holder.mkd-eh-full-height {
+  height: 100%;
+}
+
+.mkd-elements-holder.mkd-ehi-float .mkd-eh-item {
+  float: left;
+}
+
+.mkd-elements-holder.mkd-two-columns .mkd-eh-item {
+  width: 50%;
+}
+
+.mkd-elements-holder.mkd-three-columns .mkd-eh-item {
+  width: 33.33333%;
+}
+
+.mkd-elements-holder.mkd-four-columns .mkd-eh-item {
+  width: 25%;
+}
+
+.mkd-elements-holder.mkd-five-columns .mkd-eh-item {
+  width: 20%;
+}
+
+.mkd-elements-holder.mkd-six-columns .mkd-eh-item {
+  width: 16.66667%;
+}
+
+.mkd-elements-holder .mkd-eh-item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.mkd-elements-holder .mkd-eh-item.mkd-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.mkd-elements-holder .mkd-eh-item.mkd-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.mkd-elements-holder .mkd-eh-item.mkd-horizontal-alignment-center {
+  text-align: center;
+}
+
+.mkd-elements-holder .mkd-eh-item.mkd-horizontal-alignment-right {
+  text-align: right;
+}
+
+.mkd-elements-holder .mkd-eh-item .mkd-elements-holder-item-inner {
+  width: 100%;
+}
+
+.mkd-elements-holder .mkd-ehi-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Full Screen Image Slider shortcode style - begin
+   ========================================================================== */
+.mkd-full-screen-image-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.mkd-full-screen-image-slider.mkd-fsis-is-init {
+  opacity: 1;
+}
+
+.mkd-full-screen-image-slider.mkd-fsis-active .mkd-fsis-slider .owl-nav .owl-prev {
+  left: -100px;
+}
+
+.mkd-full-screen-image-slider.mkd-fsis-active .mkd-fsis-slider .owl-nav .owl-next {
+  right: -100px;
+}
+
+.mkd-full-screen-image-slider.mkd-fsis-active .mkd-fsis-slider .owl-dots {
+  bottom: -30px;
+}
+
+.mkd-full-screen-image-slider.mkd-fsis-active .mkd-fsis-prev-nav {
+  left: -100px;
+}
+
+.mkd-full-screen-image-slider.mkd-fsis-active .mkd-fsis-next-nav {
+  right: -100px;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100vh;
+  z-index: inherit;
+}
+
+.admin-bar .mkd-full-screen-image-slider .mkd-fsis-slider {
+  height: calc(100vh - 32px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-stage-outer {
+  overflow: visible;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav .owl-prev,
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav .owl-next {
+  width: 40px;
+  text-align: center;
+  -webkit-transition: left 0.4s ease, right 0.4s ease;
+  -moz-transition: left 0.4s ease, right 0.4s ease;
+  transition: left 0.4s ease, right 0.4s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav .owl-prev {
+  left: 25px;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav .owl-prev:hover {
+  left: 15px;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav .owl-next {
+  right: 25px;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-nav .owl-next:hover {
+  right: 15px;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots {
+  position: absolute;
+  left: 0;
+  bottom: calc(8% - 14px);
+  width: 100%;
+  margin: 0;
+  counter-reset: section;
+  z-index: 3;
+  -webkit-transition: bottom 0.4s ease;
+  -moz-transition: bottom 0.4s ease;
+  transition: bottom 0.4s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots .owl-dot {
+  margin: 0 14px;
+  color: #707070;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots .owl-dot:hover, .mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots .owl-dot.active {
+  color: #414347;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots .owl-dot span {
+  display: none;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider .owl-dots .owl-dot:after {
+  counter-increment: section;
+  content: "0" counter(section);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-thumb-nav {
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  width: 100px;
+  display: block;
+  z-index: 1;
+  background-position: 20% 20%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-prev-nav {
+  left: 0;
+  -webkit-transition: background 0.3s ease, left 0.4s ease;
+  -moz-transition: background 0.3s ease, left 0.4s ease;
+  transition: background 0.3s ease, left 0.4s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-next-nav {
+  right: 0;
+  -webkit-transition: background 0.3s ease, right 0.4s ease;
+  -moz-transition: background 0.3s ease, right 0.4s ease;
+  transition: background 0.3s ease, right 0.4s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider-mask {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-slider-mask.mkd-drag {
+  z-index: 2;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-bar .mkd-full-screen-image-slider .mkd-fsis-item {
+  height: calc(100vh - 32px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-image-top {
+  top: -2%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-image-left {
+  left: 9%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-image-right {
+  right: 14%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-title,
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-content-image-init .mkd-fsis-subtitle {
+  top: 0;
+  opacity: 1;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-image-top {
+  top: calc(-2% - 10px);
+  left: calc(28% - 20px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-image-left {
+  bottom: calc(2% - 20px);
+  left: calc(9% - 10px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-image-right {
+  bottom: calc(7% - 20px);
+  right: calc(14% - 10px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-top,
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-bottom {
+  height: 18%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-left,
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-image-hover .mkd-fsis-frame-right {
+  width: 18%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-image-top {
+  top: calc(-2% - 25px);
+  left: calc(28% - 50px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-image-left {
+  bottom: calc(2% - 50px);
+  left: calc(9% - 25px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-image-right {
+  bottom: calc(7% - 50px);
+  right: calc(14% - 25px);
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-top,
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-bottom {
+  height: 0;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-left,
+.mkd-full-screen-image-slider .mkd-fsis-item.mkd-fsis-active-image .mkd-fsis-frame-right {
+  width: 0;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-image-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-image-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-content-image {
+  position: absolute;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-content-image img {
+  width: auto;
+  max-width: 600px;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-image-top {
+  top: -50%;
+  left: 28%;
+  -webkit-transform: rotate(-23deg);
+  -moz-transform: rotate(-23deg);
+  transform: rotate(-23deg);
+  -webkit-transition: top 0.8s ease, left 0.8s ease;
+  -moz-transition: top 0.8s ease, left 0.8s ease;
+  transition: top 0.8s ease, left 0.8s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-image-left {
+  bottom: 2%;
+  left: -50%;
+  -webkit-transform: rotate(-10.5deg);
+  -moz-transform: rotate(-10.5deg);
+  transform: rotate(-10.5deg);
+  -webkit-transition: bottom 0.8s ease, left 0.8s ease;
+  -moz-transition: bottom 0.8s ease, left 0.8s ease;
+  transition: bottom 0.8s ease, left 0.8s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-image-right {
+  bottom: 7%;
+  right: -50%;
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  -webkit-transition: bottom 0.8s ease, right 0.8s ease;
+  -moz-transition: bottom 0.8s ease, right 0.8s ease;
+  transition: bottom 0.8s ease, right 0.8s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-title {
+  position: relative;
+  top: 15px;
+  margin: 0;
+  padding: 0 12%;
+  line-height: 1.2em;
+  color: #fff;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-in, top 0.3s ease-in;
+  -moz-transition: opacity 0.2s ease-in, top 0.3s ease-in;
+  transition: opacity 0.2s ease-in, top 0.3s ease-in;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-subtitle {
+  position: relative;
+  top: 25px;
+  margin: 20px 0 0;
+  padding: 0 14%;
+  color: #fff;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-in, top 0.3s ease-in;
+  -moz-transition: opacity 0.2s ease-in, top 0.3s ease-in;
+  transition: opacity 0.2s ease-in, top 0.3s ease-in;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-frame {
+  position: fixed;
+  background-color: #fff;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-frame-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-frame-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-frame-left {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+}
+
+.mkd-full-screen-image-slider .mkd-fsis-frame-right {
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+}
+
+/* ==========================================================================
+   Full Screen Image Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+.mkd-google-map-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-google-map-holder .mkd-google-map {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.mkd-google-map-holder .mkd-google-map iframe,
+.mkd-google-map-holder .mkd-google-map object,
+.mkd-google-map-holder .mkd-google-map embed {
+  width: 100%;
+  display: block;
+}
+
+.mkd-google-map-holder .mkd-google-map img {
+  max-width: none;
+}
+
+.mkd-google-map-holder .mkd-snazzy-map {
+  display: none;
+}
+
+.mkd-google-map-holder .firstHeading,
+.mkd-google-map-holder .address {
+  text-align: center;
+}
+
+.mkd-google-map-holder .firstHeading {
+  margin: 20px 0 13px;
+}
+
+.mkd-google-map-holder .address {
+  margin: 0 auto;
+  width: 70%;
+  line-height: 26px;
+}
+
+.mkd-google-map-holder #content {
+  width: 185px;
+  height: 130px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.mkd-google-map-holder .mkd-google-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+.mkd-icon-list-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.mkd-icon-list-holder .mkd-il-icon-holder,
+.mkd-icon-list-holder .mkd-il-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.mkd-icon-list-holder .mkd-il-icon-holder {
+  width: 1%;
+}
+
+.mkd-icon-list-holder .mkd-il-icon-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: #414347;
+  font-size: 17px;
+  line-height: inherit;
+}
+
+.mkd-icon-list-holder .mkd-il-icon-holder > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-icon-list-holder .mkd-il-text {
+  width: 99%;
+  padding: 0 0 0 13px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+.mkd-iwt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-iwt .mkd-iwt-icon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkd-iwt .mkd-iwt-icon .mkd-icon-shortcode {
+  line-height: 1;
+}
+
+.mkd-iwt .mkd-iwt-icon .mkd-icon-shortcode.mkd-circle, .mkd-iwt .mkd-iwt-icon .mkd-icon-shortcode.mkd-square, .mkd-iwt .mkd-iwt-icon .mkd-icon-shortcode.mkd-dropcaps.mkd-circle {
+  line-height: 2;
+}
+
+.mkd-iwt .mkd-iwt-title {
+  margin: 0;
+}
+
+.mkd-iwt .mkd-iwt-title a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkd-iwt .mkd-iwt-title-text {
+  display: block;
+}
+
+.mkd-iwt .mkd-iwt-text {
+  margin: 13px 0 0;
+}
+
+.mkd-iwt.mkd-iwt-icon-left {
+  width: auto;
+}
+
+.mkd-iwt.mkd-iwt-icon-left .mkd-iwt-icon,
+.mkd-iwt.mkd-iwt-icon-left .mkd-iwt-content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.mkd-iwt.mkd-iwt-icon-left .mkd-iwt-icon {
+  position: relative;
+  top: 1px;
+}
+
+.mkd-iwt.mkd-iwt-icon-left .mkd-iwt-icon img {
+  max-width: none;
+}
+
+.mkd-iwt.mkd-iwt-icon-left .mkd-iwt-content {
+  padding: 0 0 0 32px;
+}
+
+.mkd-iwt.mkd-iwt-icon-left-from-title .mkd-iwt-icon,
+.mkd-iwt.mkd-iwt-icon-left-from-title .mkd-iwt-title-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mkd-iwt.mkd-iwt-icon-left-from-title .mkd-iwt-icon .mkd-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.mkd-iwt.mkd-iwt-icon-left-from-title .mkd-iwt-icon img {
+  max-width: none;
+}
+
+.mkd-iwt.mkd-iwt-icon-left-from-title .mkd-iwt-title-text {
+  padding: 0 0 0 17px;
+}
+
+.mkd-iwt.mkd-iwt-icon-top {
+  text-align: center;
+}
+
+.mkd-iwt.mkd-iwt-icon-top .mkd-iwt-content {
+  padding: 23px 0 0;
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+.mkd-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.1em;
+}
+
+.mkd-icon-shortcode.mkd-circle, .mkd-icon-shortcode.mkd-square, .mkd-icon-shortcode.mkd-dropcaps.mkd-circle {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #f2e9e9;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.mkd-icon-shortcode.mkd-circle a, .mkd-icon-shortcode.mkd-square a, .mkd-icon-shortcode.mkd-dropcaps.mkd-circle a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.mkd-icon-shortcode.mkd-circle .mkd-icon-element, .mkd-icon-shortcode.mkd-square .mkd-icon-element, .mkd-icon-shortcode.mkd-dropcaps.mkd-circle .mkd-icon-element {
+  color: #fff;
+  line-height: inherit;
+}
+
+.mkd-icon-shortcode.mkd-circle {
+  border-radius: 50%;
+}
+
+.mkd-icon-shortcode .mkd-icon-element {
+  display: block;
+  line-height: inherit;
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.mkd-icon-shortcode .mkd-icon-element:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-icon-animation-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 0.15s ease-in-out;
+  -moz-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+}
+
+.mkd-icon-animation-holder.mkd-icon-animation-show {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.mkd-icon-tiny {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.mkd-icon-small {
+  font-size: 2em;
+}
+
+.mkd-icon-medium {
+  font-size: 2.67em;
+}
+
+.mkd-icon-large {
+  font-size: 4em;
+}
+
+.mkd-icon-huge {
+  font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.mkd-image-gallery {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Image Gallery Grid Style - begin *****/
+  /***** Image Gallery Grid Style - end *****/
+  /***** Image Gallery Masonry Style - begin *****/
+  /***** Image Gallery Masonry Style - end *****/
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.mkd-image-gallery.mkd-has-shadow .mkd-ig-image-inner {
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkd-image-gallery.mkd-has-shadow.mkd-ig-slider-type .owl-stage-outer, .mkd-image-gallery.mkd-has-shadow.mkd-ig-carousel-type .owl-stage-outer {
+  padding: 0 0 20px;
+}
+
+.mkd-image-gallery.mkd-has-shadow.mkd-ig-slider-type .mkd-ig-image, .mkd-image-gallery.mkd-has-shadow.mkd-ig-carousel-type .mkd-ig-image {
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkd-image-gallery .mkd-ig-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mkd-image-gallery .mkd-ig-image a, .mkd-image-gallery .mkd-ig-image img {
+  position: relative;
+  display: block;
+}
+
+.mkd-image-gallery .mkd-ig-image-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-image-gallery .mkd-ig-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-image-gallery .mkd-ig-slider.mkd-pointer-on .owl-nav {
+  pointer-events: none;
+}
+
+.mkd-image-gallery .mkd-ig-grid .mkd-ig-image {
+  float: left;
+}
+
+.mkd-image-gallery .mkd-ig-grid.mkd-ig-two-columns .mkd-ig-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-two-columns .mkd-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.mkd-image-gallery .mkd-ig-grid.mkd-ig-three-columns .mkd-ig-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-three-columns .mkd-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.mkd-image-gallery .mkd-ig-grid.mkd-ig-four-columns .mkd-ig-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-four-columns .mkd-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-five-columns .mkd-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkd-image-gallery .mkd-ig-grid.mkd-ig-six-columns .mkd-ig-image:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.mkd-image-gallery .mkd-ig-masonry {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkd-image-gallery .mkd-ig-masonry .mkd-ig-grid-sizer {
+  width: 100%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry .mkd-ig-grid-gutter {
+  width: 0;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-two-columns .mkd-ig-image,
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-two-columns .mkd-ig-grid-sizer {
+  width: 50%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-two-columns .mkd-ig-image.mkd-large-masonry-item {
+  width: 100%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-image,
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-grid-sizer {
+  width: 33.33333%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-three-columns .mkd-ig-image.mkd-large-masonry-item {
+  width: 66.66667%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-image,
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-grid-sizer {
+  width: 25%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-four-columns .mkd-ig-image.mkd-large-masonry-item {
+  width: 50%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image,
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-grid-sizer {
+  width: 20%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-five-columns .mkd-ig-image.mkd-large-masonry-item {
+  width: 40%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image,
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-grid-sizer {
+  width: 16.66667%;
+}
+
+.mkd-image-gallery .mkd-ig-masonry.mkd-ig-six-columns .mkd-ig-image.mkd-large-masonry-item {
+  width: 33.33333%;
+}
+
+.mkd-image-gallery.mkd-image-behavior-custom-link .mkd-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.mkd-image-gallery.mkd-image-behavior-custom-link .mkd-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(65, 67, 71, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkd-image-gallery.mkd-image-behavior-lightbox .mkd-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.mkd-image-gallery.mkd-image-behavior-lightbox .mkd-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(65, 67, 71, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkd-image-gallery.mkd-image-behavior-zoom .mkd-ig-image {
+  overflow: hidden;
+}
+
+.touch .mkd-image-gallery.mkd-image-behavior-zoom .mkd-ig-image {
+  cursor: pointer;
+}
+
+.mkd-image-gallery.mkd-image-behavior-zoom .mkd-ig-image:hover img {
+  -webkit-transform: scale(1.05) translateZ(0);
+  -moz-transform: scale(1.05) translateZ(0);
+  transform: scale(1.05) translateZ(0);
+  -webkit-transition: -webkit-transform 3s ease;
+  -moz-transition: -moz-transform 3s ease;
+  transition: transform 3s ease;
+}
+
+.mkd-image-gallery.mkd-image-behavior-zoom .mkd-ig-image img {
+  -webkit-transform: scale(1) translateZ(0);
+  -moz-transform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 1s ease;
+  -moz-transition: -moz-transform 1s ease;
+  transition: transform 1s ease;
+}
+
+.mkd-image-gallery.mkd-image-behavior-grayscale .mkd-ig-image {
+  overflow: hidden;
+}
+
+.touch .mkd-image-gallery.mkd-image-behavior-grayscale .mkd-ig-image {
+  cursor: pointer;
+}
+
+.mkd-image-gallery.mkd-image-behavior-grayscale .mkd-ig-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.mkd-image-gallery.mkd-image-behavior-grayscale .mkd-ig-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mkd-image-gallery:not(.mkd-ig-carousel-type) .mkd-owl-slider .owl-nav .owl-prev {
+  right: 35px;
+  left: auto;
+  top: calc(50% + 15px);
+}
+
+.mkd-image-gallery:not(.mkd-ig-carousel-type) .mkd-owl-slider .owl-nav .owl-prev > span {
+  font-size: 15px;
+}
+
+.mkd-image-gallery:not(.mkd-ig-carousel-type) .mkd-owl-slider .owl-nav .owl-next {
+  top: calc(50% - 15px);
+  right: 35px;
+}
+
+.mkd-image-gallery:not(.mkd-ig-carousel-type) .mkd-owl-slider .owl-nav .owl-next:hover {
+  right: 35px;
+}
+
+.mkd-image-gallery:not(.mkd-ig-carousel-type) .mkd-owl-slider .owl-nav .owl-next > span {
+  font-size: 15px;
+}
+
+.mkd-image-gallery.mkd-fullscreen-carousel .mkd-ig-slider {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Slider shortcode style - begin
+   ========================================================================== */
+.mkd-image-slider-holder .mkd-image-slider-item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner.mkd-image-slider-image {
+  display: none;
+}
+
+.mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner-wrapper {
+  position: relative;
+}
+
+.mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner-wrapper .mkd-image-slider-item-content {
+  height: auto;
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner-wrapper .mkd-image-slider-item-content .mkd-image-slider-item-inner.mkd-image-slider-title {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1em;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 12.5px;
+  text-transform: uppercase;
+  color: #414347;
+  margin: 0 0 5px;
+}
+
+.mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner-wrapper .mkd-image-slider-item-content .mkd-image-slider-item-inner.mkd-image-slider-content {
+  font-family: "Bellefair", serif;
+  line-height: 1em;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #414347;
+}
+
+.mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner-wrapper .mkd-image-slider-item-content.mkd-image-slider-item-light .mkd-image-slider-item-inner.mkd-image-slider-title, .mkd-image-slider-holder .mkd-image-slider-item .mkd-image-slider-item-inner-wrapper .mkd-image-slider-item-content.mkd-image-slider-item-light .mkd-image-slider-item-inner.mkd-image-slider-content {
+  color: #fff;
+}
+
+.mkd-image-slider-holder.mkd-owl-slider .owl-nav .mkd-next-icon,
+.mkd-image-slider-holder.mkd-owl-slider .owl-nav .mkd-prev-icon {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  line-height: 1em;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Image Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Tooltip shortcode style - begin
+   ========================================================================== */
+.mkd-image-tooltip {
+  position: relative;
+}
+
+.mkd-image-tooltip .mkd-image-tooltip-border {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  -webkit-transition: width 0.5s ease 0.2s;
+  -moz-transition: width 0.5s ease 0.2s;
+  transition: width 0.5s ease 0.2s;
+}
+
+.mkd-image-tooltip .mkd-image-tooltip-border.mkd-tooltip-appeared {
+  width: 100%;
+}
+
+.tooltip {
+  position: absolute !important;
+}
+
+/* ==========================================================================
+   Image Tooltip shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+.mkd-image-with-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.mkd-image-with-text-holder.mkd-has-shadow .mkd-iwt-image {
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkd-image-with-text-holder .mkd-iwt-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-image-with-text-holder .mkd-iwt-image a, .mkd-image-with-text-holder .mkd-iwt-image img {
+  position: relative;
+  display: block;
+}
+
+.mkd-image-with-text-holder .mkd-iwt-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-image-with-text-holder .mkd-iwt-title {
+  margin: 32px 0 0;
+}
+
+.mkd-image-with-text-holder .mkd-iwt-text {
+  margin: 14px 0 0;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-custom-link .mkd-iwt-image a:hover:after {
+  opacity: 1;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-custom-link .mkd-iwt-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(65, 67, 71, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-lightbox .mkd-iwt-image a:hover:after {
+  opacity: 1;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-lightbox .mkd-iwt-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(65, 67, 71, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-zoom .mkd-iwt-image {
+  overflow: hidden;
+}
+
+.touch .mkd-image-with-text-holder.mkd-image-behavior-zoom .mkd-iwt-image {
+  cursor: pointer;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-zoom .mkd-iwt-image:hover img {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-zoom .mkd-iwt-image img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-grayscale .mkd-iwt-image {
+  overflow: hidden;
+}
+
+.touch .mkd-image-with-text-holder.mkd-image-behavior-grayscale .mkd-iwt-image {
+  cursor: pointer;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-grayscale .mkd-iwt-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.mkd-image-with-text-holder.mkd-image-behavior-grayscale .mkd-iwt-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Item Showcase shortcode style - begin
+   ========================================================================== */
+.mkd-item-showcase-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0;
+}
+
+.mkd-item-showcase-holder .mkd-is-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 40%;
+  margin-top: -100px;
+  opacity: 0;
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+  transform: translateY(70px);
+}
+
+.mkd-item-showcase-holder .mkd-is-image.mkd-appeared {
+  -webkit-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -moz-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkd-item-showcase-holder .mkd-is-item-holder {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-left-holder {
+  float: left;
+}
+
+.mkd-item-showcase-holder .mkd-is-item-holder.mkd-is-right-holder {
+  float: right;
+}
+
+.mkd-item-showcase-holder .mkd-is-item-holder .mkd-is-item:first-child {
+  margin: 0;
+}
+
+.mkd-item-showcase-holder .mkd-is-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 56px 0 0;
+  opacity: 0;
+}
+
+.mkd-item-showcase-holder .mkd-is-item.mkd-is-left {
+  text-align: right;
+  -webkit-transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  transform: translateX(-70px);
+}
+
+.mkd-item-showcase-holder .mkd-is-item.mkd-is-left .mkd-is-content {
+  padding: 0 20px 0 0;
+}
+
+.mkd-item-showcase-holder .mkd-is-item.mkd-is-right {
+  text-align: left;
+  -webkit-transform: translateX(70px);
+  -moz-transform: translateX(70px);
+  transform: translateX(70px);
+}
+
+.mkd-item-showcase-holder .mkd-is-item.mkd-is-right .mkd-is-content {
+  padding: 0 0 0 20px;
+}
+
+.mkd-item-showcase-holder .mkd-is-item.mkd-appeared {
+  -webkit-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -moz-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.mkd-item-showcase-holder .mkd-is-item .mkd-is-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mkd-item-showcase-holder .mkd-is-item .mkd-is-title {
+  margin: 0;
+}
+
+.mkd-item-showcase-holder .mkd-is-item .mkd-is-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Item Showcase shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Parallax Drop Shadow Image Section shortcode style - begin
+   ========================================================================== */
+.mkd-parallax-ds-image-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkd-parallax-ds-image-section.mkd-parallax-dsis-with-text-type {
+  text-align: right;
+}
+
+.mkd-parallax-ds-image-section.mkd-parallax-dsis-with-text-type .mkd-parallax-dsis-image {
+  right: 6%;
+  width: 50%;
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-image img {
+  display: block;
+  width: 100%;
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 20%;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-text h6 {
+  margin: 0;
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #D8D5CE;
+  z-index: -1;
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-left {
+  top: 35px;
+  left: -35px;
+}
+
+.mkd-parallax-ds-image-section .mkd-parallax-dsis-shadow-holder.mkd-parallax-dsis-right {
+  top: 35px;
+  left: 35px;
+}
+
+/* ==========================================================================
+   Parallax Drop Shadow Image Section style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+.mkd-pie-chart-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.mkd-pie-chart-holder .mkd-pc-percentage {
+  position: relative;
+  display: block;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mkd-pie-chart-holder .mkd-pc-percentage canvas {
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+}
+
+.mkd-pie-chart-holder .mkd-pc-percentage .mkd-pc-percent {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #414347;
+  font-size: 47px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 185px;
+  font-weight: 700;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  border: 6px solid #f2e9e9;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.mkd-pie-chart-holder .mkd-pc-percentage .mkd-pc-percent:after {
+  position: relative;
+  right: -4px;
+  content: '%';
+}
+
+.mkd-pie-chart-holder .mkd-pc-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 50px 0 0;
+}
+
+.mkd-pie-chart-holder .mkd-pc-text-holder .mkd-pc-title {
+  margin: 0;
+}
+
+.mkd-pie-chart-holder .mkd-pc-text-holder .mkd-pc-text {
+  margin: 9px 0 0;
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+.mkd-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.mkd-pricing-tables .mkd-pt-wrapper {
+  position: relative;
+}
+
+.mkd-pricing-tables.mkd-two-columns .mkd-price-table {
+  width: 50%;
+}
+
+.mkd-pricing-tables.mkd-three-columns .mkd-price-table {
+  width: 33.33333%;
+}
+
+.mkd-pricing-tables.mkd-four-columns .mkd-price-table {
+  width: 25%;
+}
+
+.mkd-pricing-tables.mkd-five-columns .mkd-price-table {
+  width: 20%;
+}
+
+.mkd-price-table {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.mkd-price-table .mkd-pt-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #f2e9e9;
+}
+
+.mkd-price-table .mkd-pt-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mkd-price-table .mkd-pt-inner ul li {
+  margin: 0;
+  padding: 25px 30px 17px;
+  text-align: center;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-title-holder {
+  position: relative;
+  color: #414347;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-title-holder .mkd-pt-title {
+  display: block;
+  padding: 17px 0 32px;
+  border-bottom: 4px solid #f2e9e9;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-prices {
+  position: relative;
+  padding: 25px 15px 0;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-prices .mkd-pt-value {
+  position: relative;
+  vertical-align: super;
+  bottom: 2px;
+  font-size: 24px;
+  line-height: 1em;
+  font-weight: 600;
+  color: #414347;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-prices .mkd-pt-price {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  left: -5px;
+  font-size: 47px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  color: #414347;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-prices .mkd-pt-mark {
+  position: relative;
+  display: block;
+  margin: -3px 0 19px;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-content {
+  padding: 16px 15px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.mkd-price-table .mkd-pt-inner ul li.mkd-pt-button {
+  padding: 35px 15px 55px;
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+.mkd-progress-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-progress-bar .mkd-pb-title-holder {
+  position: relative;
+  margin: 10px 0 12px;
+}
+
+.mkd-progress-bar .mkd-pb-title-holder .mkd-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.mkd-progress-bar .mkd-pb-percent {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+}
+
+.mkd-progress-bar .mkd-pb-percent:after {
+  content: '%';
+  margin-left: 13px;
+}
+
+.mkd-progress-bar .mkd-pb-content-holder {
+  height: 6px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.mkd-progress-bar .mkd-pb-content-holder .mkd-pb-content {
+  height: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #f2e9e9;
+}
+
+.mkd-progress-bar .mkd-pb-content-holder .mkd-pb-content:after {
+  width: 100%;
+  content: '';
+  background-color: #c7c7c7;
+  height: 1px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+.mkd-section-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mkd-section-title-holder .mkd-st-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.mkd-section-title-holder .mkd-st-title .mkd-st-title-bold {
+  font-weight: 700;
+}
+
+.mkd-section-title-holder .mkd-st-title .mkd-st-title-light {
+  font-weight: 300;
+}
+
+.mkd-section-title-holder .mkd-st-subtitle,
+.mkd-section-title-holder .mkd-separator-holder {
+  display: inline-block;
+}
+
+.mkd-section-title-holder .mkd-separator-holder {
+  vertical-align: middle;
+  padding-left: 16%;
+  padding-right: 2.5%;
+}
+
+.mkd-section-title-holder .mkd-separator-holder .mkd-separator {
+  margin: 0;
+}
+
+.mkd-section-title-holder .mkd-st-text {
+  display: block;
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Separator shortcode style - begin
+   ========================================================================== */
+.mkd-separator-holder {
+  position: relative;
+  height: auto;
+  font-size: 0;
+  line-height: 1em;
+}
+
+.mkd-separator-holder.mkd-separator-center {
+  text-align: center;
+}
+
+.mkd-separator-holder.mkd-separator-left {
+  text-align: left;
+}
+
+.mkd-separator-holder.mkd-separator-right {
+  text-align: right;
+}
+
+.mkd-separator-holder.mkd-separator-full-width .mkd-separator {
+  width: 100% !important;
+}
+
+.mkd-separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 3px solid #f2e9e9;
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   Separator shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Single Image shortcode style - begin
+   ========================================================================== */
+.mkd-single-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+  /***** Moving Behavior Style - begin *****/
+  /***** Moving Behavior Style - end *****/
+}
+
+.mkd-single-image-holder .mkd-si-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-single-image-holder .mkd-si-inner a, .mkd-single-image-holder .mkd-si-inner img {
+  position: relative;
+  display: block;
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect .mkd-si-inner {
+  box-sizing: border-box;
+  width: auto;
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect .mkd-si-inner .mkd-si-drop-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f2e9e9;
+  bottom: -33px;
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect .mkd-si-inner img {
+  z-index: 10;
+  border: 1px solid rgba(235, 235, 235, 0.3);
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect.mkd-image-drop-shadow-left {
+  margin: 0 0 33px 33px;
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect.mkd-image-drop-shadow-left .mkd-si-inner .mkd-si-drop-shadow {
+  left: -33px;
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect.mkd-image-drop-shadow-right {
+  margin: 0 33px 33px 0;
+}
+
+.mkd-single-image-holder.mkd-image-has-drop-shadow-effect.mkd-image-drop-shadow-right .mkd-si-inner .mkd-si-drop-shadow {
+  right: -33px;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link .mkd-si-inner a:hover:after {
+  opacity: 1;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link .mkd-si-inner a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(65, 67, 71, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link.mkd-si-hover-animation .mkd-si-inner a:hover img {
+  -webkit-transform: translateX(-8px) translateY(-8px);
+  -moz-transform: translateX(-8px) translateY(-8px);
+  transform: translateX(-8px) translateY(-8px);
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link.mkd-si-hover-animation .mkd-si-inner a:hover + .mkd-si-drop-shadow {
+  -webkit-transform: translateX(8px) translateY(8px);
+  -moz-transform: translateX(8px) translateY(8px);
+  transform: translateX(8px) translateY(8px);
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link.mkd-si-hover-animation .mkd-si-inner a img {
+  -webkit-transform: translateX(0) translateY(0);
+  -moz-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+  -webkit-transition: -webkit-transform 0.35s ease;
+  -moz-transition: -moz-transform 0.35s ease;
+  transition: transform 0.35s ease;
+  backface-visibility: hidden;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link.mkd-si-hover-animation .mkd-si-inner a + .mkd-si-drop-shadow {
+  -webkit-transition: -webkit-transform 0.35s ease;
+  -moz-transition: -moz-transform 0.35s ease;
+  transition: transform 0.35s ease;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link.mkd-si-hover-animation .mkd-si-inner a:after {
+  display: none;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-custom-link.mkd-si-hover-animation.mkd-si-initial-animation .mkd-si-inner a img {
+  -webkit-transition: -webkit-transform 0.35s ease, right 0.5s ease 0.5s, bottom 0.5s ease 0.5s;
+  -moz-transition: -moz-transform 0.35s ease, right 0.5s ease 0.5s, bottom 0.5s ease 0.5s;
+  transition: transform 0.35s ease, right 0.5s ease 0.5s, bottom 0.5s ease 0.5s;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-lightbox {
+  overflow: hidden;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-lightbox .mkd-si-inner a img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 1s ease;
+  -moz-transition: -moz-transform 1s ease;
+  transition: transform 1s ease;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-lightbox .mkd-si-inner a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: -webkit-transform 3s ease;
+  -moz-transition: -moz-transform 3s ease;
+  transition: transform 3s ease;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-zoom .mkd-si-inner {
+  overflow: hidden;
+}
+
+.touch .mkd-single-image-holder.mkd-image-behavior-zoom .mkd-si-inner {
+  cursor: pointer;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-zoom .mkd-si-inner:hover img {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.mkd-single-image-holder.mkd-image-behavior-zoom .mkd-si-inner img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  -moz-transition: -moz-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-grayscale .mkd-si-inner {
+  overflow: hidden;
+}
+
+.touch .mkd-single-image-holder.mkd-image-behavior-grayscale .mkd-si-inner {
+  cursor: pointer;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-grayscale .mkd-si-inner:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-grayscale .mkd-si-inner img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-moving .mkd-si-inner {
+  overflow: hidden;
+  padding: 10% 0;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 120%;
+  -webkit-transition: background 0.7s ease-out;
+  -moz-transition: background 0.7s ease-out;
+  transition: background 0.7s ease-out;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-moving .mkd-si-inner:hover {
+  background-position: 90% center;
+}
+
+.touch .mkd-single-image-holder.mkd-image-behavior-moving .mkd-si-inner {
+  cursor: pointer;
+}
+
+.mkd-single-image-holder.mkd-image-behavior-moving .mkd-si-inner img {
+  z-index: -1;
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkd-single-image-holder.mkd-image-behavior-moving .mkd-si-inner {
+    padding: 0;
+    background: none;
+  }
+  .mkd-single-image-holder.mkd-image-behavior-moving .mkd-si-inner img {
+    z-index: inherit;
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Single Image shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+.mkd-social-share-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkd-social-share-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List type - begin
+========================================================================== */
+.mkd-social-share-holder.mkd-list .mkd-social-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  color: #707070;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.mkd-social-share-holder.mkd-list li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 26px 3px 0;
+}
+
+.mkd-social-share-holder.mkd-list li:last-child {
+  margin: 0 0 3px;
+}
+
+.mkd-social-share-holder.mkd-list li a {
+  font-size: 18px;
+}
+
+.mkd-social-share-holder.mkd-list li a:hover {
+  color: #f2e9e9;
+}
+
+/* List type - end
+========================================================================== */
+/* Dropdown type - begin
+========================================================================== */
+.mkd-social-share-holder.mkd-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown-opener {
+  display: block;
+  color: #707070;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown-opener .mkd-social-share-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown-opener .social_share {
+  font-size: 12px;
+  color: #414347;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown-opener:hover {
+  color: #f2e9e9;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown-opener:hover .social_share {
+  color: inherit;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown {
+  position: relative;
+  visibility: hidden;
+  z-index: 950;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul {
+  position: relative;
+  display: block;
+  z-index: 990;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li {
+  width: 88px;
+  height: 28px;
+  line-height: 28px;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+  font-size: 12px;
+  color: #707070;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  -moz-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:not(:first-child) {
+  border-top: none;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-facebook-share:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-twitter-share:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-google_plus-share:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-linkedin-share:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-tumblr-share:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-pinterest-share:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li.mkd-vk-share:hover {
+  background-color: #45668e;
+  color: #fff;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li * {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li a {
+  color: inherit !important;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(1) {
+  bottom: -28px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(2) {
+  bottom: -56px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(3) {
+  bottom: -84px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(4) {
+  bottom: -112px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(5) {
+  bottom: -140px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(6) {
+  bottom: -168px;
+}
+
+.mkd-social-share-holder.mkd-dropdown .mkd-social-share-dropdown ul li:nth-child(7) {
+  bottom: -196px;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li {
+  /* opacity and visibility need to be different, but not background-color */
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+}
+
+.mkd-social-share-holder.mkd-dropdown:hover .mkd-social-share-dropdown ul li:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+}
+
+/* Dropdown type - end
+========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Split Scrolling Section shortcode style - begin
+   ========================================================================== */
+.mkd-split-scrolling-section {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-left,
+.mkd-split-scrolling-section .mkd-sss-ms-right {
+  width: calc(50% - 22px);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-section {
+  height: 100%;
+  overflow: hidden;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-left {
+  position: fixed;
+  padding-right: 34px;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-left div, .mkd-split-scrolling-section .mkd-sss-ms-left ul, .mkd-split-scrolling-section .mkd-sss-ms-left li {
+  height: 100%;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-left .mkd-sss-ms-section {
+  background-position: 100% center;
+  background-size: cover;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-right {
+  float: right;
+  margin-top: 21px;
+  padding-left: 15px;
+}
+
+.mkd-split-scrolling-section .mkd-sss-ms-right .mkd-sss-ms-section {
+  background-position: 0 center;
+  background-size: cover;
+}
+
+.mkd-split-scrolling-section .mkd-owl-slider .owl-nav .owl-next,
+.mkd-split-scrolling-section .mkd-owl-slider .owl-nav .owl-prev {
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  top: calc(100% - 48px);
+}
+
+body.mkd-paspartu-enabled .mkd-split-scrolling-section .mkd-sss-ms-left {
+  height: calc(100vh - 72px);
+}
+
+/* ==========================================================================
+   Split Scrolling Section shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Split Section styles - begin
+   ========================================================================== */
+.mkd-ss-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-ss-holder.mkd-ss-image-right .mkd-ss-image {
+  left: 50%;
+}
+
+.mkd-ss-holder.mkd-ss-image-right .mkd-ss-content {
+  left: 0;
+}
+
+.mkd-ss-holder .mkd-ss-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mkd-ss-holder .mkd-ss-image img {
+  display: none;
+}
+
+.mkd-ss-holder .mkd-ss-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  left: 50%;
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.mkd-ss-holder .mkd-ss-title {
+  margin: 0;
+}
+
+.mkd-ss-holder .mkd-ss-text {
+  margin: 14px 0 0;
+}
+
+.mkd-ss-holder .mkd-ss-link {
+  margin: 25px 0 0;
+}
+
+/* ==========================================================================
+   Split Section styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.mkd-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-tabs .mkd-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+}
+
+.mkd-tabs .mkd-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.mkd-tabs .mkd-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mkd-tabs .mkd-tab-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-tabs .mkd-tab-container p {
+  margin: 0;
+}
+
+.mkd-tabs.mkd-tabs-standard .mkd-tabs-nav li a {
+  padding: 7px 26px;
+  font-size: 11px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #414347;
+}
+
+.mkd-tabs.mkd-tabs-standard .mkd-tabs-nav li.ui-state-active a,
+.mkd-tabs.mkd-tabs-standard .mkd-tabs-nav li.ui-state-hover a {
+  background-color: #f2e9e9;
+}
+
+.mkd-tabs.mkd-tabs-standard .mkd-tab-container {
+  margin: 25px 0 0;
+}
+
+.mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li {
+  margin: 0 12px 0 0;
+}
+
+.mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li a {
+  padding: 7px 26px;
+  font-size: 11px;
+  line-height: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #414347;
+  border-color: 2px solid #414347;
+}
+
+.mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li.ui-state-active a,
+.mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li.ui-state-hover a {
+  color: #414347;
+  background-color: #f2e9e9;
+}
+
+.mkd-tabs.mkd-tabs-boxed .mkd-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.mkd-tabs.mkd-tabs-boxed .mkd-tab-container {
+  margin: 25px 0 0;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav {
+  border-bottom: 1px solid #c7c7c7;
+  text-align: left;
+  clear: both;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  top: 1px;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 13px 26px;
+  text-transform: uppercase;
+  color: #414347;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.25em;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li a:after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  background-color: #f2e9e9;
+  height: 5px;
+  width: 0;
+  -webkit-transition: width 0.5s ease 0.5s;
+  -moz-transition: width 0.5s ease 0.5s;
+  transition: width 0.5s ease 0.5s;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li.ui-state-hover a:after {
+  width: 100%;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li.ui-state-active a.mkd-border-appeared:after {
+  width: 100%;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tabs-nav li:first-child a {
+  padding-left: 0;
+}
+
+.mkd-tabs.mkd-tabs-simple .mkd-tab-container {
+  padding: 31px 0;
+}
+
+.mkd-tabs.mkd-tabs-vertical {
+  display: table;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav {
+  display: table-cell;
+  vertical-align: top;
+  width: 140px;
+  height: 100%;
+  border-right: 1px solid #c7c7c7;
+  box-sizing: border-box;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li {
+  display: block;
+  float: none;
+  position: relative;
+  right: -1px;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 26px 15px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #414347;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.25em;
+  position: relative;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li a:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: #f2e9e9;
+  height: 5px;
+  width: 55px;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li.ui-state-active a {
+  border-right: 1px solid #fff;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li:last-child a {
+  padding-bottom: 0;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li:first-child a {
+  padding-top: 0;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tabs-nav li:first-child a:before {
+  display: none;
+}
+
+.mkd-tabs.mkd-tabs-vertical .mkd-tab-container {
+  display: table-cell;
+  vertical-align: top;
+  width: calc(100% - 140px);
+  height: 100%;
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+}
+
+.ui-widget-content {
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.ui-widget-content .ui-widget-header {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: initial;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.ui-widget-content .ui-tabs-nav li {
+  position: initial;
+  font-weight: inherit;
+  color: inherit;
+  background: initial;
+  border: 0;
+  border-radius: 0;
+}
+
+.ui-widget-content .ui-widget-content {
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+# Team style - begin
+========================================================================== */
+.touch .mkd-team .mkd-team-social-holder {
+  cursor: pointer;
+}
+
+.mkd-team {
+  /* Team type main info below image - begin
+========================================================================== */
+  /* Team type main info below image - end
+========================================================================== */
+  /* Team type main info on hover - begin
+========================================================================== */
+}
+
+.mkd-team p {
+  margin: 0;
+}
+
+.mkd-team .mkd-team-social-wrapp {
+  margin: 17px 0 0 0;
+}
+
+.mkd-team .mkd-team-social-wrapp .mkd-icon-shortcode {
+  font-size: 15px;
+  margin: 0 9px;
+}
+
+.mkd-team .mkd-team-social-wrapp .mkd-icon-shortcode.circle,
+.mkd-team .mkd-team-social-wrapp .mkd-icon-shortcode.square {
+  border: 1px solid #dbdbdb;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 10px;
+}
+
+.mkd-team.main-info-below-image .mkd-team-social-wrapp .mkd-icon-shortcode {
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+.mkd-team.main-info-below-image .mkd-team-social-wrapp .mkd-icon-shortcode span {
+  color: #d3d3d3;
+}
+
+.mkd-team.main-info-below-image .mkd-team-social-wrapp .mkd-icon-shortcode span:hover {
+  color: #f2e9e9;
+}
+
+.mkd-team.main-info-below-image .mkd-team-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.mkd-team.main-info-below-image .mkd-team-image:hover .mkd-team-image-overlay {
+  opacity: 1;
+}
+
+.mkd-team.main-info-below-image .mkd-team-image .mkd-team-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(67, 74, 84, 0.35);
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkd-team.main-info-below-image .mkd-team-image img {
+  display: block;
+}
+
+.mkd-team.main-info-below-image .mkd-team-info {
+  text-align: center;
+}
+
+.mkd-team.main-info-below-image .mkd-team-info .mkd-team-title-holder .mkd-team-name {
+  margin: 53px 0 5px;
+}
+
+.mkd-team.main-info-below-image .mkd-team-info .mkd-team-position,
+.mkd-team.main-info-below-image .mkd-team-info .mkd-team-email {
+  margin: 0;
+  display: block;
+}
+
+.mkd-team.main-info-below-image .mkd-team-info .mkd-team-description {
+  margin-top: 14px;
+}
+
+.mkd-team.main-info-below-image.info-below-image-standard .mkd-team-image {
+  margin-bottom: 23px;
+}
+
+.mkd-team.main-info-below-image.info-below-image-standard .mkd-team-social-wrapp .mkd-icon-shortcode .flip-icon-holder .icon-normal span {
+  color: #abb1bd;
+}
+
+.mkd-team.main-info-below-image.info-below-image-standard .mkd-team-social-wrapp .mkd-icon-shortcode .flip-icon-holder .icon-flip span {
+  color: #f2e9e9;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed {
+  background-color: #fff;
+  border: 2px solid #e6e9ee;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-inner {
+  box-sizing: border-box;
+  padding: 48px 20px;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-image-overlay {
+  display: none;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-image {
+  margin-bottom: 23px;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-image img {
+  display: block;
+  border: 2px solid #e6e9ee;
+  margin: 0 auto;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-info {
+  text-align: center;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-social-wrapp .mkd-icon-shortcode .flip-icon-holder .icon-normal span {
+  color: #f2e9e9;
+}
+
+.mkd-team.main-info-below-image.info-below-image-boxed .mkd-team-social-wrapp .mkd-icon-shortcode .flip-icon-holder .icon-flip span {
+  color: #414347;
+}
+
+.mkd-team.main-info-below-image.light .mkd-team-info .mkd-team-title-holder .mkd-team-name,
+.mkd-team.main-info-below-image.light .mkd-team-info .mkd-team-title-holder .mkd-team-position {
+  color: #ffffff;
+}
+
+.mkd-team.main-info-below-image.light .mkd-team-info .mkd-team-text .mkd-team-description p {
+  color: #ffffff;
+}
+
+.mkd-team.main-info-below-image.light .mkd-team-info .mkd-team-social-wrapp .mkd-icon-shortcode .mkd-icon-element {
+  color: #ffffff;
+}
+
+.mkd-team.main-info-below-image.light .mkd-team-info .mkd-team-social-wrapp .mkd-icon-shortcode .mkd-icon-element:hover {
+  color: #8d735f;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-image img {
+  display: block;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-inner {
+  position: relative;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-holder {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 18, 20, 0.78);
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  -webkit-transform: translateY(10px) translateZ(0);
+  -moz-transform: translateY(10px) translateZ(0);
+  transform: translateY(10px) translateZ(0);
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  opacity: 0;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-text {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-social-wrapp {
+  margin-top: 15px;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-social-wrapp .mkd-icon-shortcode {
+  font-size: 15px;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-wrapper .mkd-team-name {
+  margin: 3px 0 28px;
+  color: #fff;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-wrapper .mkd-team-position {
+  color: #f2e9e9;
+  position: relative;
+  font-style: italic;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-wrapper .mkd-team-social-wrapp span {
+  position: relative;
+  color: #b9b9b9;
+}
+
+.mkd-team.main-info-on-hover .mkd-team-info-wrapper .mkd-team-social-wrapp span:hover {
+  color: #f2e9e9;
+}
+
+.mkd-team.main-info-on-hover:hover .mkd-team-info-wrapper {
+  opacity: 1;
+}
+
+.mkd-team.main-info-on-hover:hover .mkd-team-info {
+  -webkit-transform: translateY(0) translateZ(0);
+  -moz-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
+  opacity: 1;
+}
+
+/* Team type main info on hover - end
+========================================================================== */
+/* ==========================================================================
+# Team style - end
+========================================================================== */
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.curtains {
+  width: 100%;
+}
+
+.curtains > li {
+  -webkit-transform: translateZ(0);
+  background: white;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.curtains > li.hidden {
+  display: none;
+}
+
+.curtains > li:first-child {
+  z-index: 2;
+}
+
+.mkd-uncovering-section-on-page:not(.mkd-header-bottom) .mkd-page-header {
+  -webkit-transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  transition: top 0.6s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mkd-uncovering-section-on-page:not(.mkd-header-bottom).mkd-header-top-enabled .mkd-top-bar {
+  -webkit-transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  transition: top 0.6s ease;
+  position: fixed;
+  top: -45px;
+  left: 0;
+}
+
+.mkd-uncovering-section-on-page:not(.mkd-header-bottom).mkd-header-top-enabled:not(.mkd-sticky-header-appear) .mkd-top-bar {
+  top: 0;
+}
+
+.mkd-uncovering-section-on-page:not(.mkd-header-bottom).mkd-header-top-enabled:not(.mkd-sticky-header-appear) .mkd-page-header {
+  top: 45px;
+}
+
+.mkd-uncovering-section-on-page footer {
+  display: none;
+}
+
+.mkd-uncovering-sections {
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.mkd-uncovering-sections ul, .mkd-uncovering-sections li {
+  margin: 0;
+  padding: 0;
+}
+
+.mkd-uncovering-sections.mkd-loaded {
+  opacity: 1;
+}
+
+.mkd-uncovering-sections .mkd-uss-item {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.mkd-uncovering-sections .mkd-uss-item .mkd-uss-image-holder {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 125%;
+  will-change: transform;
+  background-position: center;
+  background-size: cover;
+}
+
+.mkd-uncovering-sections .mkd-uss-item.mkd-uss-item-va-top .mkd-uss-item-inner {
+  vertical-align: top;
+}
+
+.mkd-uncovering-sections .mkd-uss-item.mkd-uss-item-va-bottom .mkd-uss-item-inner {
+  vertical-align: bottom;
+}
+
+.mkd-uncovering-sections .mkd-uss-item.mkd-uss-item-ha-left .mkd-uss-item-inner {
+  text-align: left;
+}
+
+.mkd-uncovering-sections .mkd-uss-item.mkd-uss-item-ha-center .mkd-uss-item-inner {
+  text-align: center;
+}
+
+.mkd-uncovering-sections .mkd-uss-item.mkd-uss-item-ha-right .mkd-uss-item-inner {
+  text-align: right;
+}
+
+.mkd-uncovering-sections .mkd-uss-item.mkd-uss-item-has-link .mkd-uss-item-inner a {
+  position: relative;
+}
+
+.mkd-uncovering-sections .mkd-uss-item .mkd-uss-item-outer {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkd-uncovering-sections .mkd-uss-item .mkd-uss-item-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.mkd-uncovering-sections .mkd-uss-item .mkd-uss-item-inner a {
+  position: relative;
+}
+
+.mkd-uncovering-sections .mkd-uss-item .mkd-uss-item-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mkd-fss-shadow {
+  background: #323134;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 19;
+  opacity: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: opacity;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+.mkd-vss-initialized .mkd-content .mkd-content-inner > .mkd-container > .mkd-container-inner {
+  padding: 0;
+}
+
+.mkd-vss-initialized .mkd-content .mkd-content-inner > .mkd-full-width > .mkd-full-width-inner {
+  padding: 0;
+}
+
+.mkd-vertical-split-slider {
+  position: relative;
+  opacity: 0;
+  margin: 0 -2px;
+  overflow: hidden;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-left,
+.mkd-vertical-split-slider .mkd-vss-ms-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-left {
+  top: 0;
+  left: 0;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-left .mkd-vss-ms-section {
+  background-position: 100% center;
+  background-size: cover;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-right {
+  top: 10000px;
+  right: 0;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-right .mkd-vss-ms-section {
+  background-position: 0 center;
+  background-size: cover;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-section.ms-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-section .ms-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-transition: padding 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: padding 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: padding 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mkd-vertical-split-slider .mkd-vss-ms-section .ms-easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.mkd-vertical-split-slider.mkd-vss-scrolled .mkd-vss-ms-left .mkd-vss-ms-section .ms-tableCell {
+  padding: 7.5rem 0 7.5rem 7.5rem;
+}
+
+.mkd-vertical-split-slider.mkd-vss-scrolled .mkd-vss-ms-right .mkd-vss-ms-section .ms-tableCell {
+  padding: 7.5rem 7.5rem 7.5rem 0;
+}
+
+.mkd-vertical-split-slider.mkd-vss-scrolled .mkd-vss-horizontal-mask:before, .mkd-vertical-split-slider.mkd-vss-scrolled .mkd-vss-horizontal-mask:after {
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.mkd-vertical-split-slider.mkd-vss-scrolled .mkd-vss-vertical-mask:before, .mkd-vertical-split-slider.mkd-vss-scrolled .mkd-vss-vertical-mask:after {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.mkd-vertical-split-slider .mkd-vss-horizontal-mask:before, .mkd-vertical-split-slider .mkd-vss-horizontal-mask:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 7.5rem;
+  z-index: 500;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: -moz-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mkd-vertical-split-slider .mkd-vss-horizontal-mask:before {
+  top: 0;
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.mkd-vertical-split-slider .mkd-vss-horizontal-mask:after {
+  bottom: 0;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.mkd-vertical-split-slider .mkd-vss-vertical-mask:before, .mkd-vertical-split-slider .mkd-vss-vertical-mask:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 7.5rem;
+  z-index: 500;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: -moz-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mkd-vertical-split-slider .mkd-vss-vertical-mask:before {
+  left: 0;
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.mkd-vertical-split-slider .mkd-vss-vertical-mask:after {
+  right: 0;
+  -webkit-transform-origin: center right;
+  -ms-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.mkd-vss-responsive {
+  display: none;
+}
+
+.mkd-vss-responsive .mkd-vss-ms-section {
+  background-position: center;
+  background-size: cover;
+}
+
+#multiscroll-nav {
+  position: fixed;
+  top: 50%;
+  right: 64px;
+  margin-top: -10px;
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.mkd-fullscreen-menu-opened #multiscroll-nav {
+  z-index: -1;
+}
+
+#multiscroll-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#multiscroll-nav ul li {
+  position: relative;
+  display: block;
+  margin: 12px 3px;
+  overflow: hidden;
+}
+
+#multiscroll-nav ul li a {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 2px solid rgba(65, 67, 71, 0.5);
+  border-radius: 3em;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+#multiscroll-nav ul li a.active {
+  background-color: #414347;
+  border-color: #414347;
+}
+
+.mkd-light-header #multiscroll-nav ul li a {
+  border-color: #fff;
+}
+
+.mkd-light-header #multiscroll-nav ul li a.active {
+  background-color: #fff;
+}
+
+.mkd-dark-header #multiscroll-nav ul li a {
+  border-color: #333;
+}
+
+.mkd-dark-header #multiscroll-nav ul li a.active {
+  background-color: #333;
+}
+
+#multiscroll-nav ul li a span {
+  display: block;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+.mkd-video-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkd-video-button-holder.mkd-vb-has-img .mkd-video-button-play,
+.mkd-video-button-holder.mkd-vb-has-img .mkd-video-button-play-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mkd-video-button-holder.mkd-vb-has-img .mkd-video-button-play .mkd-video-button-play-inner,
+.mkd-video-button-holder.mkd-vb-has-img .mkd-video-button-play-image .mkd-video-button-play-inner {
+  position: relative;
+  top: 50%;
+  left: 0;
+  display: block;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mkd-video-button-holder .mkd-video-button-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkd-video-button-holder .mkd-video-button-image img {
+  display: block;
+}
+
+.mkd-video-button-holder .mkd-video-button-play,
+.mkd-video-button-holder .mkd-video-button-play-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+}
+
+.mkd-video-button-holder .mkd-video-button-play {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.mkd-video-button-holder .mkd-video-button-play span {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-video-button-holder .mkd-video-button-play span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkd-video-button-holder .mkd-video-button-play-image.mkd-vb-has-hover-image:hover img:first-child {
+  opacity: 0;
+}
+
+.mkd-video-button-holder .mkd-video-button-play-image.mkd-vb-has-hover-image:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.mkd-video-button-holder .mkd-video-button-play-image img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mkd-video-button-holder .mkd-video-button-play-image img:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.mkd-video-button-holder .mkd-video-button-play-image img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateZ(0);
+  -moz-transform: translateX(-50%) translateZ(0);
+  transform: translateX(-50%) translateZ(0);
+}
+
+.rev_slider_wrapper .mkd-video-button-holder .mkd-video-button-play-image img:nth-child(2) {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+body .pp_pic_holder .pp_details {
+  display: none;
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/mkd-core/assets/css/shortcodes-map.css.map */

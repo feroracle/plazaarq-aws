@@ -1,0 +1,91 @@
+1.7
+- Added WPML config file
+- Added WooCommerce 10.x compatibility
+- Updated Mikado Core plugin to 1.3
+- Updated WPBakery page builder to 8.6.1
+- Updated Revolution Slider plugin to 6.7.37
+- Improved PHP 8.3 compatibility
+- Improved social sharing
+- Improved theme security
+- Improved Google Map API compatibility
+- Fixed image upload issue on single portfolio items
+- Removed Mikado Instagram Feed due to Instagram API changes
+- Removed Mikado Twitter Feed due to Twitter API changes
+- Minor fixes
+
+1.6
+- Added WordPress 6.0 compatibility
+- Added WooCommerce 6.6.1 compatibility
+- Added PHP8 compatibility
+- Updated WPBakery page builder to 6.9.0
+- Updated Revolution Slider plugin to 6.5.25
+- Updated Entre Child theme to 1.0.1
+- Updated Mikado Core plugin to 1.2
+- Updated Mikado Instagram Feed to 2.0.1
+- Updated Mikado Twitter Feed to 1.1.2
+- Fixed Title Background Image with Zoom Out
+- Fixed Twitter Social Share
+- Fixed cart widgets in WordPress 5.8
+- Fixed creation of the Custom Sidebars in new Widgets layout
+- Fixed Blog List shortcode
+- Fixed SimpleLine Icons version
+- Fixed Search Opener Widget
+- Fixed og description rendering for pages
+- Fixed countdown calculation
+- Fixed revolution slider preview functionality
+- Fixed Product Review Stars
+- Fixed potential security issue
+- Improved entre_mikado_get_attachment_id_from_url function
+- Removed Google Plus Social Share
+
+1.5.2
+- Updated WPBakery page builder to 6.4.1
+- Updated Revolution Slider plugin to 6.2.23
+- Updated Mikado Instagram Feed to 2.0
+- Updated Mikado Twitter Feed to 1.1.1
+- Removed unused file instagram-redirect.php from Mikado Instagram Feed plugin
+- Removed unused file twitter-redirect.php from Mikado Twitter Feed plugin
+
+1.5.1
+- Fixed issue with mobile header
+
+1.5
+- Added WordPress 5.5 compatibility
+- Added WooCommerce 4.5.2 compatibility
+- Updated WPBakery page builder to 6.4.0
+- Updated Revolution Slider plugin to 6.2.22
+- Updated Mikado Core plugin to 1.1.2
+- Fixed portfolio slider slide from left bottom layout
+
+1.4
+- Added WooCommerce 3.6.5 compatibility
+- Updated WPBakery Page Builder to 6.0.3
+
+1.3
+- Added WooCommerce 3.6.1 compatibility
+- Updated Instagram Feed to 1.1
+- Updated Twitter Feed to 1.1
+- Improved import functionality
+- Improved theme security
+
+1.2
+- Added WooCommerce 3.5.5 compatibility
+- Updated Mikado Core plugin to 1.1
+- Updated Visual Composer to 5.7
+- Updated Revolution Slider to 5.4.8.3
+- Updated pot file
+- Improved framework files
+
+1.1
+- Added WooCommerce 3.4.5 compatibility
+- Added compatibility with Gutenberg plugin
+- Added compatibility with PHP 7.2
+- Added Envato Market plugin as required
+- Updated WPBakery Page Builder to 5.5.2
+- Updated Revolution Slider to 5.4.8
+- Updated Mikado Core to 1.0.1
+- Fixed issue with http/https links
+- Fixed portfolio archive page
+- Fixed invalid content in pot file
+- Improved product list feature options
+- Improved mobile menu dropdown functionality

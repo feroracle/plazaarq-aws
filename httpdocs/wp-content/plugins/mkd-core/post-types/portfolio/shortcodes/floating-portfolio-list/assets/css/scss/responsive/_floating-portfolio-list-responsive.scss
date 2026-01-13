@@ -1,0 +1,19 @@
+@include ipad-portrait {
+	.mkd-portfolio-list-holder {
+		&.mkd-pl-floating-portfolio-item {
+			article {
+				.mkd-pl-item-inner {
+					display: block;
+					.mkd-pli-image-holder {
+						width: 100% !important;
+					}
+
+					.mkd-pli-text-holder {
+						padding: 50px 0 0 !important;
+						width: 100% !important;
+					}
+				}
+			}
+		}
+    }	
+}

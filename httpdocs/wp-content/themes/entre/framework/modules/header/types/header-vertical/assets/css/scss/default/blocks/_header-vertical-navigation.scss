@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Header Vertical navigation style - begin
+   ========================================================================== */
+
+.mkd-header-vertical {
+
+    .mkd-vertical-alignment-center {
+    
+        .mkd-vertical-menu-outer {
+            @include mkdAbsoluteHolderLayout();
+            padding: 100px 0;
+        }
+    
+        .mkd-vertical-menu {
+            display: table;
+            width: 100%;
+            height: 100%;
+            min-height: 0;
+        
+            > ul {
+                display: table-cell;
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    .mkd-vertical-menu-outer {
+        @include mkdRelativeHolderLayout();
+	    box-sizing: border-box;
+    }
+
+    .mkd-vertical-menu {
+        @include mkdRelativeHolderLayout();
+        margin: 75px 0 54px;
+        padding: 0;
+        z-index: 100;
+        
+        ul {
+            position: relative;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                position: relative;
+                padding: 0;
+                margin: 0;
+                
+                a {
+	                position: relative;
+	                display: block;
+	                margin: 0;
+	                padding: 0;
+                    color: $default-heading-color;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: $default-menu-font;
+
+                    span.item_text  {
+                        border-bottom: 1px solid transparent;
+                        
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            bottom: 1px;
+                            right: 0;
+                            width: 0;
+                            border-bottom: 1px solid $default-heading-color;
+                            @include mkdTransition(width 0.4s ease-out);
+                            -webkit-transition-delay: 50ms;
+                            transition-delay: 50ms;
+                        }
+
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            bottom: 1px;
+                            left: 0;
+                            width: 0;
+                            border-bottom: 1px solid $default-heading-color;
+                            @include mkdTransition(width 0.4s ease-out);
+                            -webkit-transition-delay: 50ms;
+                            transition-delay: 50ms;
+                        }
+                    }
+                    
+                    &:hover {
+
+                        span.item_text  {
+                            &:after, 
+                            &:before {
+                                width: 100%;
+                            }    
+                        }
+                        
+                        .mkd-menu-arrow {
+                            @include mkdTransform(rotate(0deg));
+                        }
+                    }
+                    
+                    .item_outer {
+                        position: relative;
+                        display: inline-block;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    .mkd-menu-arrow {
+                        position: absolute;
+                        top: 1px;
+                        right: -22px;
+	                    font-size: 15px;
+                        font-weight: 400;
+	                    line-height: inherit;
+                        margin: 0;
+                        @include mkdTransform(rotate(-90deg));
+                        @include mkdTransitionTransform(.2s ease-in-out);
+                    }
+                    
+                    .mkd-menu-featured-icon {
+                        position: relative;
+                        top: -4px;
+                        left: 3px;
+                        color: $default-heading-color;
+                        font-size: 12px;
+                        margin: 0;
+                    }
+                    
+                    .menu_icon:not(.blank):not(.null) {
+                        padding: 0 5px 0 0;
+                    }
+                }
+	
+	            &.mkd-active-item > a,
+	            &.current_page_item > a,
+	            &.current-menu-item > a,
+	            &.current-menu-ancestor > a {
+
+                    .item_text {
+                        &::after {
+                            border-bottom: 1px solid $default-heading-color;
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                    
+                    .mkd-menu-arrow {
+                        @include mkdTransform(rotate(0deg));
+                    }
+                }
+                
+                ul {
+                    padding: 1px 0 3px;
+                    
+                    li {
+                        
+                        &.sub {
+                            
+                            > a {
+                                
+                                .item_outer {
+                                    position: relative;
+                                    display: inline-block;
+                                    
+                                    &:after {
+                                        position: absolute;
+                                        top: 3px;
+                                        right: -34px;
+                                        margin: 0;
+                                        font-family: 'ElegantIcons'; 
+	                                    font-size: 15px;
+                                        font-weight: 400;
+	                                    line-height: inherit;
+                                        content: "\24";
+                                    }
+                                }
+                            }
+                            
+                            &.current_page_item > a,
+                            &.current-menu-ancestor > a {
+                                
+                                .item_outer:after {
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .second {
+                    display: none;
+                    @include mkdTransform(translateZ(0));
+                    
+                    .inner {
+                        position: relative;
+                        display: block;
+                        padding: 0;
+                        z-index: 997;
+                    }
+                }
+            }
+        }
+        
+        > ul {
+            
+            > li {
+                
+                > a {
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding: 10px 0;
+                    
+                    span.item_text {
+	                    position: relative;
+	                    display: inline-block;
+	                    vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mkd-light-header.mkd-header-vertical .mkd-vertical-menu ul li {
+    
+    a {
+        color: $header-light-color !important;
+        
+        &:hover {
+            color: $header-light-hover-color !important;
+        }
+
+        span.item_text:before,
+        span.item_text:after {
+            border-bottom-color: $header-light-color !important;
+        }
+    }
+    
+    ul li {
+        
+        &.current_page_item > a,
+        &.current-menu-item > a,
+        &.current-menu-ancestor > a {
+            color: $header-light-hover-color !important;
+        }
+    }
+}
+
+.mkd-light-header.mkd-header-vertical .mkd-vertical-menu > ul > li {
+    
+    &.mkd-active-item > a,
+    &.current-menu-ancestor > a {
+        color: $header-light-hover-color !important;
+    }
+}
+
+.mkd-dark-header.mkd-header-vertical .mkd-vertical-menu ul li {
+    
+    a {
+        color: $header-dark-color !important;
+        
+        &:hover {
+            color: $header-dark-hover-color !important;
+        }
+    }
+    
+    ul li {
+        
+        &.current_page_item > a,
+        &.current-menu-item > a,
+        &.current-menu-ancestor > a {
+            color: $header-dark-hover-color !important;
+        }
+    }
+}
+
+.mkd-dark-header.mkd-header-vertical .mkd-vertical-menu > ul > li {
+    
+    &.mkd-active-item > a,
+    &.current-menu-ancestor > a {
+        color: $header-dark-hover-color !important;
+    }
+}
+/* ==========================================================================
+   Header Vertical navigation style - end
+   ========================================================================== */

@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Testimonials boxed style - begin
+   ========================================================================== */
+
+.mkd-testimonials-holder {
+    
+    &.mkd-testimonials-boxed {
+
+        .mkd-testimonials {
+            margin: 0 -50px;
+        }
+
+        .mkd-testimonial-content {
+            padding: 40px 57px 58px;
+            background-color: #fbfbfb;
+            box-sizing: border-box;
+        }
+
+        .mkd-testimonials-author-holder {
+            @include mkdRelativeHolderLayout();
+            margin: 9px 0 0;
+
+            .mkd-testimonial-image {
+                float: left;
+            }
+
+            .mkd-testimonial-author {
+                padding: 3px 0 0 110px;
+            }
+        }
+
+        /* Light/Dark styles */
+        &.mkd-testimonials-light {
+            
+            .mkd-testimonial-title,
+            .mkd-testimonial-text,
+            .mkd-testimonial-author {
+                color: #fff;
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials boxed style - end
+   ========================================================================== */
+

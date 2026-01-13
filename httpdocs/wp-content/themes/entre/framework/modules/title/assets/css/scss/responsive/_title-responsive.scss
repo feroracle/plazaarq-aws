@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-medium {
+    
+    .mkd-title-holder {
+        
+        &.mkd-title-full-width {
+            
+            .mkd-grid {
+                padding: 0 40px;
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    
+    .mkd-title-holder {
+        
+        &.mkd-has-bg-image {
+            height: auto !important; // because of inline style
+            padding: 0 !important; // because of inline style
+	        background-image: none !important; // because of inline style
+    
+            .mkd-title-image {
+                display: block;
+            }
+    
+            .mkd-title-wrapper {
+                position: absolute;
+                top: 50%;
+                left: 0;
+	            height: 100% !important;
+                @include mkdTransform(translateY(-50%));
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */

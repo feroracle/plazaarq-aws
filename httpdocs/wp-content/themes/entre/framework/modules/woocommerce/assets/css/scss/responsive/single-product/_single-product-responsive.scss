@@ -1,0 +1,159 @@
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - begin
+   ========================================================================== */
+@media only screen and ( max-width: 1440px ) {
+    .mkd-woo-single-page {
+        .mkd-related-products {
+            .mkd-full-width-inner-wrapper {
+                padding: 40px 7% 80px;
+            }     
+        }
+    }  
+}
+
+
+@media only screen and ( max-width: 1366px ) {
+    .mkd-woo-single-page {
+        .mkd-related-products {
+            .mkd-full-width-inner-wrapper {
+                padding: 40px 9% 80px;
+            }     
+        }
+    }  
+}
+
+@media only screen and (min-width: $ipad-landscape-plus-pixel) and (max-width: $laptop-landscape) {
+    
+    .mkd-woo-single-page {
+        
+        .woocommerce-tabs {
+            
+            ul.tabs {
+                
+                > li {
+                    
+                    a {
+                        padding: 12px 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    
+    .mkd-woo-single-page {
+        
+        .mkd-single-product-content {
+            
+            .images,
+            .mkd-single-product-summary {
+                float: none;
+                width: 100%;
+                padding: 0;
+            }
+	        
+	        .images {
+		
+		        .woocommerce-product-gallery__trigger {
+			        right: 10px;
+		        }
+	        }
+            
+            .mkd-single-product-summary {
+                margin: 30px 0 0;
+            }
+        }
+
+        .mkd-related-products {
+            .mkd-full-width-inner-wrapper {
+                padding: 40px 12.5% 80px;
+            }     
+        }
+        
+        .woocommerce-tabs {
+            
+            ul.tabs {
+                
+                > li {
+                    
+                    a {
+                        padding: 13px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    .mkd-woo-single-page.mkd-woocommerce-columns-3 {
+        .related.products > {
+            .products > {
+                .product {
+                    width: 50%;
+                }
+            } 
+        } 
+    }   
+}
+
+@include phone-landscape {
+    
+    .mkd-woo-single-page {
+	
+	    &.mkd-woo-single-thumb-on-left-side {
+		
+		    .mkd-single-product-content {
+			
+			    .images {
+				
+				    &.woocommerce-product-gallery--columns-4 {
+					
+					    .woocommerce-product-gallery__image {
+						
+						    &:not(:first-child) {
+							    width: 50%;
+						    }
+					    }
+				    }
+			    }
+		    }
+	    }
+        
+        .mkd-single-product-content {
+            
+            .images {
+    
+                &.woocommerce-product-gallery--columns-4 {
+        
+                    .woocommerce-product-gallery__image {
+            
+                        &:not(:first-child) {
+	                        width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mkd-woo-single-page.mkd-woocommerce-columns-3 {
+        .related.products > {
+            .products > {
+                .product {
+                    width: 100%;
+                }
+            } 
+        } 
+    } 
+
+    .mkd-woo-single-page .related.products>h2, 
+    .mkd-woo-single-page .upsells.products>h2 {
+        font-size: 38px;
+    }
+}
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - end
+   ========================================================================== */

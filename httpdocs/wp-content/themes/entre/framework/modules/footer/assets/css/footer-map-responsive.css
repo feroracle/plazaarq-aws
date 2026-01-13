@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3:nth-child(3), .mkd-page-footer .mkd-column-content.mkd-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 .mkd-footer-column-inner {
+    float: none !important;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 .mkd-social-icons-group-widget.text-align-left {
+    text-align: left;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-4 {
+    width: 33.3333333333%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-page-footer .mkd-footer-top-holder .mkd-footer-top-alignment-left {
+    text-align: left;
+  }
+  .mkd-page-footer .mkd-footer-top-holder .mkd-footer-top-inner .mkd-footer-logo-area .mkd-footer-logo-wrapper {
+    width: 40%;
+  }
+  .mkd-page-footer .text-align-left {
+    text-align: left;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 {
+    margin-bottom: 30px;
+  }
+  .mkd-page-footer .mkd-column-content.mkd-grid-col-3 .mkd-footer-column-inner {
+    float: none !important;
+  }
+}
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+/*# sourceMappingURL=footer-map-responsive.css.map */

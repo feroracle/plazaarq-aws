@@ -1,0 +1,928 @@
+/* ==========================================================================
+   WooCommerce Responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/*------------------------------------------------------------------
+ * This is main woocommerce responsive css file for theme. It is broken into following sections:
+ * 1.  Global Responsive
+ * 2.  Single Product Responsive
+ * 3.  WooCommerce Product Lists and Shortcodes Responsive
+ * 4.  Cart Responsive
+ * 5.  Checkout Responsive
+ * 6.  My Account Responsive
+ * 7.  Shortcodes Responsive
+ * 8.  Widgets Responsive
+-------------------------------------------------------------------*/
+/* ==========================================================================
+   WooCommerce Cart page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-page table.cart td.actions .coupon input[type=text] {
+    width: 180px;
+    margin: 0 17px 0 0;
+    padding: 9px 20px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-woocommerce-page table.cart tr th, .mkd-woocommerce-page table.cart tr td {
+    font-size: 12px;
+  }
+  .mkd-woocommerce-page table.cart tr.cart_item td.product-thumbnail {
+    width: auto;
+    padding-right: 0;
+  }
+  .mkd-woocommerce-page table.cart tr.cart_item td.product-thumbnail img {
+    display: none;
+  }
+  .mkd-woocommerce-page table.cart td.actions .coupon {
+    margin: 0 0 20px;
+  }
+  .mkd-woocommerce-page table.cart td.actions .coupon input[type=text] {
+    width: 160px;
+    padding: 9px 15px;
+    margin: 0 10px 20px 0;
+  }
+  .mkd-woocommerce-page table.cart td.actions .coupon,
+  .mkd-woocommerce-page table.cart td.actions > input {
+    float: none;
+    display: block;
+  }
+}
+/* ==========================================================================
+   WooCommerce Cart page responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Checkout page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-page .woocommerce-checkout .col-1,
+  .mkd-woocommerce-page .woocommerce-checkout .col-2 {
+    width: 100%;
+  }
+  .mkd-woocommerce-page .woocommerce-checkout .col-1 {
+    margin: 0 0 25px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-woocommerce-page .woocommerce-checkout .col-1 .form-row,
+  .mkd-woocommerce-page .woocommerce-checkout .col-2 .form-row {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mkd-woocommerce-page .woocommerce-checkout .woocommerce-checkout-payment ul li.payment_method_paypal label img {
+    display: none;
+  }
+}
+/* ==========================================================================
+   WooCommerce Checkout page responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Checkout page - Order Received responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-page.woocommerce-order-received .woocommerce .col2-set.addresses .col-1,
+  .mkd-woocommerce-page.woocommerce-order-received .woocommerce .col2-set.addresses .col-2 {
+    width: 100%;
+  }
+  .mkd-woocommerce-page.woocommerce-order-received .woocommerce .col2-set.addresses .col-1 {
+    margin: 0 0 25px;
+  }
+}
+/* ==========================================================================
+   WooCommerce Checkout page - Order Received responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Buttons responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .woocommerce-page .mkd-content a.button,
+  .woocommerce-page .mkd-content a.added_to_cart,
+  .woocommerce-page .mkd-content input[type=submit],
+  .woocommerce-page .mkd-content button[type=submit]:not(.mkd-woo-search-widget-button),
+  .woocommerce-page .mkd-content .wc-forward:not(.added_to_cart):not(.checkout-button),
+  div.woocommerce a.button,
+  div.woocommerce a.added_to_cart,
+  div.woocommerce input[type=submit],
+  div.woocommerce button[type=submit]:not(.mkd-woo-search-widget-button),
+  div.woocommerce .wc-forward:not(.added_to_cart):not(.checkout-button) {
+    padding: 2px 24px 6px 26px;
+    font-size: 16px;
+  }
+}
+/* ==========================================================================
+   WooCommerce Buttons responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkd-woo-single-page .mkd-single-product-content .mkd-out-of-stock {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-woo-single-page.mkd-woo-single-thumb-on-left-side .mkd-single-product-content .mkd-onsale {
+    left: 10px;
+  }
+}
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Message Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-page .woocommerce-message,
+  .mkd-woocommerce-page .woocommerce-info,
+  .mkd-woocommerce-page .woocommerce-error {
+    padding: 17px 25px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-woocommerce-page .woocommerce-message,
+  .mkd-woocommerce-page .woocommerce-info,
+  .mkd-woocommerce-page .woocommerce-error {
+    padding: 14px 20px;
+    line-height: 2em;
+  }
+  .mkd-woocommerce-page .woocommerce-message a,
+  .mkd-woocommerce-page .woocommerce-info a,
+  .mkd-woocommerce-page .woocommerce-error a {
+    float: none;
+    margin: 0 70% 15px 0;
+  }
+}
+/* ==========================================================================
+   WooCommerce Message Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Quantity Inputs responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .woocommerce-page .mkd-content .mkd-quantity-buttons .mkd-quantity-input,
+  .woocommerce-page .mkd-content .mkd-quantity-buttons .mkd-quantity-minus,
+  .woocommerce-page .mkd-content .mkd-quantity-buttons .mkd-quantity-plus,
+  div.woocommerce .mkd-quantity-buttons .mkd-quantity-input,
+  div.woocommerce .mkd-quantity-buttons .mkd-quantity-minus,
+  div.woocommerce .mkd-quantity-buttons .mkd-quantity-plus {
+    font-size: 13px;
+  }
+  .woocommerce-page .mkd-content .mkd-quantity-buttons .mkd-quantity-input,
+  div.woocommerce .mkd-quantity-buttons .mkd-quantity-input {
+    height: 38px;
+    width: 38px;
+    margin: 0 19px 0 0;
+    line-height: 36px;
+  }
+  .woocommerce-page .mkd-content .mkd-quantity-buttons .mkd-quantity-minus,
+  .woocommerce-page .mkd-content .mkd-quantity-buttons .mkd-quantity-plus,
+  div.woocommerce .mkd-quantity-buttons .mkd-quantity-minus,
+  div.woocommerce .mkd-quantity-buttons .mkd-quantity-plus {
+    width: 19px;
+    height: 19px;
+    line-height: 17px;
+  }
+}
+/* ==========================================================================
+   WooCommerce Quantity Inputs responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Result and Ordering Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkd-woocommerce-page .woocommerce-result-count,
+  .mkd-woocommerce-page .woocommerce-ordering {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .mkd-woocommerce-page .woocommerce-ordering {
+    text-align: initial;
+  }
+  .mkd-woocommerce-page .woocommerce-ordering .orderby {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Result and Ordering Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce MyAccount page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 28%;
+  }
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    width: 72%;
+    padding: 0 0 0 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation,
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    border-right: none;
+  }
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation ul li:not(:last-child) {
+    margin: 0 0 14px;
+  }
+  .mkd-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    margin: 40px 0 0;
+  }
+  .mkd-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-1,
+  .mkd-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-2 {
+    width: 100%;
+  }
+  .mkd-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-1 {
+    margin: 0 0 25px;
+  }
+}
+/* ==========================================================================
+   WooCommerce MyAccount page responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Product List page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(5n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .woocommerce.columns-5 > .products > .product {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .woocommerce.columns-5 > .products > .product:nth-child(4n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(4n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-woocommerce-columns-3 .mkd-pl-main-holder > .products > .product,
+  .mkd-woocommerce-columns-3 .related.products > .products > .product,
+  .mkd-woocommerce-columns-3 .upsells.products > .products > .product,
+  .mkd-woocommerce-columns-3 .cross-sells > .products > .product {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-woocommerce-columns-3 .mkd-pl-main-holder > .products > .product:nth-child(3n+1),
+  .mkd-woocommerce-columns-3 .related.products > .products > .product:nth-child(3n+1),
+  .mkd-woocommerce-columns-3 .upsells.products > .products > .product:nth-child(3n+1),
+  .mkd-woocommerce-columns-3 .cross-sells > .products > .product:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-woocommerce-columns-4 .mkd-pl-main-holder > .products > .product,
+  .mkd-woocommerce-columns-4 .related.products > .products > .product,
+  .mkd-woocommerce-columns-4 .upsells.products > .products > .product,
+  .mkd-woocommerce-columns-4 .cross-sells > .products > .product {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-woocommerce-columns-4 .mkd-pl-main-holder > .products > .product:nth-child(3n+1),
+  .mkd-woocommerce-columns-4 .related.products > .products > .product:nth-child(3n+1),
+  .mkd-woocommerce-columns-4 .upsells.products > .products > .product:nth-child(3n+1),
+  .mkd-woocommerce-columns-4 .cross-sells > .products > .product:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-4 > .products > .product {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .woocommerce.columns-4 > .products > .product:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-5 > .products > .product {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .woocommerce.columns-5 > .products > .product:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-columns-3 .mkd-pl-main-holder > .products > .product,
+  .mkd-woocommerce-columns-3 .related.products > .products > .product,
+  .mkd-woocommerce-columns-3 .upsells.products > .products > .product,
+  .mkd-woocommerce-columns-3 .cross-sells > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-woocommerce-columns-3 .mkd-pl-main-holder > .products > .product:nth-child(2n+1),
+  .mkd-woocommerce-columns-3 .related.products > .products > .product:nth-child(2n+1),
+  .mkd-woocommerce-columns-3 .upsells.products > .products > .product:nth-child(2n+1),
+  .mkd-woocommerce-columns-3 .cross-sells > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-woocommerce-columns-4 .mkd-pl-main-holder > .products > .product,
+  .mkd-woocommerce-columns-4 .related.products > .products > .product,
+  .mkd-woocommerce-columns-4 .upsells.products > .products > .product,
+  .mkd-woocommerce-columns-4 .cross-sells > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-woocommerce-columns-4 .mkd-pl-main-holder > .products > .product:nth-child(2n+1),
+  .mkd-woocommerce-columns-4 .related.products > .products > .product:nth-child(2n+1),
+  .mkd-woocommerce-columns-4 .upsells.products > .products > .product:nth-child(2n+1),
+  .mkd-woocommerce-columns-4 .cross-sells > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce.columns-3 > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .woocommerce.columns-3 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce.columns-4 > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .woocommerce.columns-4 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce.columns-5 > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .woocommerce.columns-5 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-woocommerce-columns-3 .mkd-pl-main-holder > .products > .product,
+  .mkd-woocommerce-columns-3 .related.products > .products > .product,
+  .mkd-woocommerce-columns-3 .upsells.products > .products > .product,
+  .mkd-woocommerce-columns-3 .cross-sells > .products > .product {
+    width: 100%;
+  }
+  .mkd-woocommerce-columns-4 .mkd-pl-main-holder > .products > .product,
+  .mkd-woocommerce-columns-4 .related.products > .products > .product,
+  .mkd-woocommerce-columns-4 .upsells.products > .products > .product,
+  .mkd-woocommerce-columns-4 .cross-sells > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-2 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-3 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-4 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-5 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-6 > .products > .product {
+    width: 100%;
+  }
+}
+/* ==========================================================================
+   WooCommerce Product List page responsive styles - end
+   ========================================================================== */
+/* Woocommerce Product Page shortcode responsive style - begin
+========================================================================== */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  div.woocommerce > .single-product .woocommerce-tabs ul.tabs > li a {
+    padding: 12px 7px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  div.woocommerce > .single-product .woocommerce-tabs ul.tabs > li a {
+    padding: 13px 10px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  div.woocommerce > .single-product .images.woocommerce-product-gallery--columns-4 .woocommerce-product-gallery__image:not(:first-child) {
+    width: 50%;
+  }
+}
+/* Woocommerce Product Page shortcode responsive style - end
+========================================================================== */
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkd-woo-single-page .mkd-related-products .mkd-full-width-inner-wrapper {
+    padding: 40px 7% 80px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .mkd-woo-single-page .mkd-related-products .mkd-full-width-inner-wrapper {
+    padding: 40px 9% 80px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .mkd-woo-single-page .woocommerce-tabs ul.tabs > li a {
+    padding: 12px 7px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-woo-single-page .mkd-single-product-content .images,
+  .mkd-woo-single-page .mkd-single-product-content .mkd-single-product-summary {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .mkd-woo-single-page .mkd-single-product-content .images .woocommerce-product-gallery__trigger {
+    right: 10px;
+  }
+  .mkd-woo-single-page .mkd-single-product-content .mkd-single-product-summary {
+    margin: 30px 0 0;
+  }
+  .mkd-woo-single-page .mkd-related-products .mkd-full-width-inner-wrapper {
+    padding: 40px 12.5% 80px;
+  }
+  .mkd-woo-single-page .woocommerce-tabs ul.tabs > li a {
+    padding: 13px 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-woo-single-page.mkd-woocommerce-columns-3 .related.products > .products > .product {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-woo-single-page.mkd-woo-single-thumb-on-left-side .mkd-single-product-content .images.woocommerce-product-gallery--columns-4 .woocommerce-product-gallery__image:not(:first-child) {
+    width: 50%;
+  }
+  .mkd-woo-single-page .mkd-single-product-content .images.woocommerce-product-gallery--columns-4 .woocommerce-product-gallery__image:not(:first-child) {
+    width: 50%;
+  }
+  .mkd-woo-single-page.mkd-woocommerce-columns-3 .related.products > .products > .product {
+    width: 100%;
+  }
+  .mkd-woo-single-page .related.products > h2,
+  .mkd-woo-single-page .upsells.products > h2 {
+    font-size: 38px;
+  }
+}
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Dropdown Cart Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkd-shopping-cart-dropdown ul {
+    margin: 20px;
+  }
+}
+/* ==========================================================================
+   WooCommerce Dropdown Cart Responsive styles - end
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkd-floating-prod-cats-holder.mkd-two-columns .mkd-floating-prod-cat {
+    width: 100%;
+  }
+  .mkd-floating-prod-cats-holder.mkd-three-columns .mkd-floating-prod-cat {
+    width: 100%;
+  }
+  .mkd-floating-prod-cats-holder.mkd-four-columns .mkd-floating-prod-cat {
+    width: 100%;
+  }
+  .mkd-floating-prod-cats-holder.mkd-normal-space .mkd-floating-prod-cat-holder-inner .mkd-floating-prod-cat {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mkd-floating-prod-cats-holder .mkd-floating-prod-cat.mkd-content-middle-left .mkd-floating-cat-content {
+    left: auto;
+  }
+  .mkd-floating-prod-cats-holder .mkd-floating-prod-cat.mkd-content-middle-right .mkd-floating-cat-content {
+    right: auto;
+  }
+  .mkd-floating-prod-cats-holder .mkd-floating-prod-cat.mkd-content-bottom-right .mkd-floating-cat-content {
+    right: auto;
+  }
+  .mkd-floating-prod-cats-holder .mkd-floating-prod-cat.mkd-content-bottom-left .mkd-floating-cat-content {
+    left: auto;
+  }
+}
+
+/* ==========================================================================
+Product Categories shortcode responsive styles - begin
+========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .mkd-prod-cats-holder .mkd-prod-cat.mkd-cat-with-image:hover .mkd-prod-cat-content.bottom {
+    margin-top: 3px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-prod-cats-holder .mkd-four-columns .mkd-prod-cat {
+    width: 50%;
+  }
+  .mkd-prod-cats-holder .mkd-four-columns .mkd-prod-cat:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-prod-cats-holder .mkd-two-columns .mkd-prod-cat {
+    width: 100%;
+  }
+  .mkd-prod-cats-holder .mkd-three-columns .mkd-prod-cat {
+    width: 100%;
+  }
+  .mkd-prod-cats-holder .mkd-four-columns .mkd-prod-cat {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+Product Categories shortcode responsive styles - end
+========================================================================== */
+/* ==========================================================================
+   Product List - Carousel shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkd-plc-holder.mkd-simple-type .mkd-plc-image-outer,
+  .mkd-plc-holder.mkd-simple-type .mkd-plc-text-wrapper {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  .mkd-plc-holder.mkd-simple-type .mkd-plc-text-wrapper {
+    margin: 30px 0 40px;
+  }
+}
+/* ==========================================================================
+   Product List - Carousel shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Product List shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli:nth-child(6n+1) {
+    clear: none;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli:nth-child(5n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pl-sizer {
+    width: 25%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pl-sizer {
+    width: 25%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli:nth-child(5n+1) {
+    clear: none;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli:nth-child(4n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli:nth-child(6n+1) {
+    clear: none;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli:nth-child(4n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pl-sizer {
+    width: 33.3333333333%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 66.6666666667%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pl-sizer {
+    width: 25%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pl-sizer {
+    width: 25%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pl-sizer {
+    width: 25%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-four-columns .mkd-pli {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-four-columns .mkd-pli:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-two-columns .mkd-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-three-columns .mkd-pli:nth-child(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pl-sizer {
+    width: 33.3333333333%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 66.6666666667%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pl-sizer {
+    width: 33.3333333333%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 66.6666666667%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pl-sizer {
+    width: 33.3333333333%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 66.6666666667%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pl-sizer {
+    width: 33.3333333333%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 66.6666666667%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-two-columns .mkd-pli {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-two-columns .mkd-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-three-columns .mkd-pli {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-three-columns .mkd-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-four-columns .mkd-pli {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-four-columns .mkd-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pl-sizer {
+    width: 50%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .mkd-pl-holder.mkd-standard-layout.mkd-two-columns .mkd-pli {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-three-columns .mkd-pli {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-four-columns .mkd-pli {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-five-columns .mkd-pli {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-standard-layout.mkd-six-columns .mkd-pli {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pl-sizer,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-two-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pl-sizer,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-three-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pl-sizer,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-four-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pl-sizer,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-five-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pl-sizer,
+  .mkd-pl-holder.mkd-masonry-layout.mkd-six-columns .mkd-pli.mkd-woo-image-large-width {
+    width: 100%;
+  }
+}
+/* ==========================================================================
+   Product List shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Responsive styles - end
+   ========================================================================== */
+/*# sourceMappingURL=../css/woocommerce-responsive.css.map */

@@ -1,0 +1,371 @@
+/* ==========================================================================
+   Product List shortcode styles - begin
+   ========================================================================== */
+
+.mkd-pl-holder {
+    @include mkdRelativeHolderLayout();
+	
+	&.mkd-info-on-image {
+		
+		.mkd-pli {
+			
+			.mkd-pli-add-to-cart {
+				margin: 38px 0 0;
+			}
+		}
+	}
+
+    .mkd-pli {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 0;
+        z-index: 100;
+        box-sizing: border-box;
+
+	    .mkd-pli-title {
+		    margin: 0 0 4px;
+	    }
+	
+	    .mkd-pli-category {
+		    margin: 11px 0 3px;
+	    }
+
+        .mkd-pli-excerpt {
+            color: $default-heading-color;
+	        line-height: 1.3em;
+            margin: 11px 0 3px;
+        }
+
+	    .mkd-pli-rating-holder {
+		    @include mkdRelativeHolderLayout();
+		    line-height: 1;
+		    margin: 10px 0 3px;
+	    }
+
+	    .mkd-pli-rating {
+		    @include mkdWooCommerceRatingsStyle();
+	    }
+
+        .mkd-pli-price {
+	        @include mkdWooCommercePriceStyle();
+        }
+    }
+
+    .mkd-pli-inner {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+
+        &:hover {
+
+            .mkd-pli-text {
+                opacity: 1;
+            }
+        }
+
+        .touch & {
+            cursor: pointer;
+        }
+
+        .mkd-pli-image {
+            @include mkdRelativeHolderLayout();
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            .mkd-pli-onsale,
+            .mkd-pli-out-of-stock {
+	            @include mkdWooCommerceMarksGeneralStyle();
+            }
+
+            .mkd-pli-onsale {
+	            @include mkdWooCommerceSaleStyle();
+            }
+
+            .mkd-pli-out-of-stock {
+	            @include mkdWooCommerceOutOfStockyStyle();
+            }
+        }
+            
+        .mkd-pli-text {
+            @include mkdAbsoluteHolderLayout();
+            padding: 10px;
+            opacity: 0;
+            background-color: transparent;
+            box-sizing: border-box;
+            @include mkdTransition(opacity .2s ease-out);
+        }
+
+        .mkd-pli-text-outer {
+	        @include mkdTableLayout();
+	        text-align: center;
+        }
+
+        .mkd-pli-text-inner {
+            @include mkdTableCellLayout();
+
+            .mkd-pli-title {
+            	margin: 0 0 22px;
+            }
+
+            .mkd-pli-price {
+
+            }
+
+	        .mkd-pli-add-to-cart {
+
+		        &.mkd-default-skin {
+
+			        .button,
+			        .added_to_cart {
+				        @include mkdButtonDefaultStyle();
+				        @include mkdButtonSmallParams();
+				        @include mkdButtonOutlineColor();
+				        background-size: 203% 100%;
+				        padding: 1px 15px;
+				        background-color: transparent;
+				        font-size: 18px;
+				        text-transform: lowercase;
+				        color: $default-heading-color;
+				        white-space: nowrap;
+				        cursor: pointer;
+				        z-index: 3;
+
+				        &:hover {
+				            @include mkdButtonSolidHoverColor();
+                            color: #fff;
+				        }
+			        }
+		        }
+
+		        &.mkd-light-skin {
+
+			        .button,
+			        .added_to_cart {
+				        @include mkdButtonDefaultStyle();
+				        @include mkdButtonSmallParams();
+				        @include mkdButtonOutlineColor();
+				        background-size: 203% 100%;
+				        padding: 1px 15px;
+				        background-color: transparent;
+				        font-size: 18px;
+				        text-transform: lowercase;
+				        white-space: nowrap;
+				        cursor: pointer;
+				        z-index: 3;
+				        border-color:#fff;
+				        color: #fff;
+				        background-image: linear-gradient(to right, #fff 50%, #fff 50%), linear-gradient(to right, #fff 50%, transparent 50%);
+
+				        &:hover {
+					        @include mkdButtonSolidHoverColor();
+					        color: $default-heading-color;	
+					    }
+			        }
+		        }
+		
+		        &.mkd-dark-skin {
+			
+			        .button,
+			        .added_to_cart {
+				        @include mkdButtonDefaultStyle();
+				        @include mkdButtonSmallParams();
+				        @include mkdButtonOutlineColor();
+				        padding: 1px 15px 1px 16px;
+				        background-color: transparent;
+				        font-size: 18px;
+				        text-transform: lowercase;
+				        color: $default-heading-color;
+				        white-space: nowrap;
+				        cursor: pointer;
+				        z-index: 3;
+				
+				        &:hover {
+					        @include mkdButtonSolidHoverColor();
+				        }
+			        }
+		        }
+	        }
+
+            .button,
+            .added_to_cart {
+	            @include mkdButtonDefaultStyle();
+	            @include mkdButtonMediumParams();
+	            white-space: nowrap;
+	            z-index: 3;
+            }
+
+            .button.added {
+                display: none !important;
+            }
+        }
+
+	    .mkd-pli-link {
+		    @include mkdAbsoluteHolderLayout();
+	    }
+    }
+
+    .mkd-pli-text-wrapper {
+        @include mkdRelativeHolderLayout();
+        width: 100%;
+        margin: 22px 0 35px;
+
+        .mkd-pli-title {
+		    width: auto;
+		    float: left;
+		    display: inline-block;
+		    text-align: left;
+		    vertical-align: top;
+        }
+
+        .mkd-pli-rating-holder {
+    	    position: absolute;
+		    right: 0;
+		    width: auto;
+		    overflow: hidden;
+		    margin: 0;
+        }
+
+        .mkd-pli-price {
+        	clear: both;
+        	margin: 0;
+        }
+    }
+	
+	&.mkd-product-info-light {
+		
+		.mkd-pli-inner {
+			
+			.mkd-pli-text-inner {
+				
+				.mkd-pli-title,
+				.mkd-pli-category a,
+				.mkd-pli-excerpt,
+				.mkd-pli-rating span:before,
+				.mkd-pli-price,
+				.mkd-pli-price del{
+					color: #fff;
+				}
+				
+				.mkd-pli-category a:hover {
+					color: rgba(#fff, .8);
+				}
+			}
+		}
+	}
+	
+	&.mkd-product-info-dark {
+		
+		.mkd-pli-inner {
+			
+			.mkd-pli-text-inner {
+				
+				.mkd-pli-title,
+				.mkd-pli-category a,
+				.mkd-pli-excerpt,
+				.mkd-pli-rating,
+				.mkd-pli-price {
+					color: $default-heading-color;
+				}
+				
+				.mkd-pli-category a:hover {
+					color: rgba($default-heading-color, .8);
+				}
+			}
+		}
+	}
+	
+	/*************** Standard Layout - begin ***************/
+	
+	&.mkd-standard-layout {
+		
+		.mkd-pli {
+			float: left;
+		}
+		
+		&.mkd-large-space {
+			margin: 0 0 -50px;
+		}
+		
+		&.mkd-normal-space {
+			margin: 0 0 -30px;
+		}
+		
+		&.mkd-small-space {
+			margin: 0 0 -20px;
+		}
+		
+		&.mkd-tiny-space {
+			margin: 0 0 -10px;
+		}
+		
+		$standard_list_columns: ('two', 'three', 'four', 'five', 'six');
+		
+		@for $i from 0 to length($standard_list_columns) {
+			&.mkd-#{nth($standard_list_columns,$i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				.mkd-pli {
+					width: $column_width;
+					
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/*************** Standard Layout - end ***************/
+	
+	/*************** Masonry Layout - begin ***************/
+	
+	&.mkd-masonry-layout {
+		
+		.mkd-pl-outer {
+			opacity: 0;
+		}
+		
+		.mkd-pl-sizer {
+			width: 100%;
+		}
+		
+		.mkd-pl-gutter {
+			width: 0;
+		}
+		
+		.mkd-pli-inner {
+			width: 100%;
+		}
+		
+		$masonry_list_columns: ('two', 'three', 'four', 'five', 'six');
+		
+		@for $i from 0 to length($masonry_list_columns) {
+			&.mkd-#{nth($masonry_list_columns,$i+1)}-columns {
+				$column_width: 100%/($i+2);
+				
+				.mkd-pli,
+				.mkd-pl-sizer {
+					width: $column_width;
+				}
+				
+				.mkd-pli.mkd-woo-image-large-width {
+					width: $column_width*2;
+				}
+			}
+		}
+	}
+	
+	/*************** Masonry Layout - end ***************/
+}
+/* ==========================================================================
+   Product List shortcode styles - end
+   ========================================================================== */
