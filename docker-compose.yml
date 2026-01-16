@@ -20,12 +20,13 @@ services:
     container_name: plazaarq_web
     restart: always
     ports:
-      - "8081:80"
-    environment:
+      - "8081:80"      
+    environment:      
       WORDPRESS_DB_HOST: db-plazaarq
       WORDPRESS_DB_NAME: db_plazaarq
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: password_seguro
+      WORDPRESS_TABLE_PREFIX: o7VMD_
       # 3. EL TRUCO: Forzamos que la web responda a la IP de AWS (y no al dominio antiguo)
       # Cuando tengas dominio real, cambias esto por tu dominio
       WORDPRESS_CONFIG_EXTRA: |
