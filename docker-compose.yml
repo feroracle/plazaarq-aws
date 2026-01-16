@@ -1,3 +1,4 @@
+
 version: '3.8'
 
 services:
@@ -9,8 +10,10 @@ services:
       MYSQL_DATABASE: db_plazaarq
       MYSQL_ROOT_PASSWORD: password_seguro
     volumes:
-      # Importante: aquí va tu archivo .sql real
+      # 1. LA MAGIA: Importa tu copia de seguridad al arrancar
       - ./rociopla_wp_k40qo_2026-01-10_13-00-47.sql:/docker-entrypoint-initdb.d/init.sql
+      # 2. LA SEGURIDAD: Esto guarda los datos permanentemente en Coolify
+      - plazaarq_db_data:/var/lib/mysql
 
   web-plazaarq:
     image: wordpress:5.8-php7.4-apache
@@ -23,7 +26,16 @@ services:
       WORDPRESS_DB_NAME: db_plazaarq
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: password_seguro
+      # 3. EL TRUCO: Forzamos que la web responda a la IP de AWS (y no al dominio antiguo)
+      # Cuando tengas dominio real, cambias esto por tu dominio
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', 'http://54.87.69.188:8081');
+        define('WP_SITEURL', 'http://54.87.69.188:8081');
     volumes:
       - ./httpdocs:/var/www/html
     depends_on:
       - db-plazaarq
+
+# Definimos el volumen persistente de la base de datos
+volumes:
+  plazaarq_db_data:
