@@ -13,7 +13,7 @@ services:
       # 1.Importamos la copia de seguridad al arrancar
       - ./rociopla_wp_k40qo_2026-01-10_13-00-47.sql:/docker-entrypoint-initdb.d/init.sql
       # 2. LA SEGURIDAD: Esto guarda los datos permanentemente en Coolify
-      - plazaarq_db_data:/var/lib/mysql
+      - plazaarq_db_data_v2:/var/lib/mysql
 
   web-plazaarq:
     image: wordpress:5.8-php7.4-apache
@@ -39,4 +39,4 @@ services:
 
 # Definimos el volumen persistente de la base de datos
 volumes:
-  plazaarq_db_data:
+  plazaarq_db_data_v2:
